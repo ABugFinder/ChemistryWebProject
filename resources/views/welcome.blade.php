@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    ChemistryWeb - Proyect
+                    <a href="/home" style="text-decoration: none; color: #636b6f;"> ChemistryWeb - Proyect </a>
                 </div>
 
                 <div class="links">

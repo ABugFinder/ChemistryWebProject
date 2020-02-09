@@ -23,7 +23,9 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                @can('edit-users')
+                <a class="navbar-brand" href="{{ url('/home') }}">
+                @endcan
                     <!--{{ config('app.name', 'Laravel') }} -->
                     ChemistryWeb - Proyect
                 </a>
@@ -62,8 +64,13 @@
                                         {{ __('Logout') }}
                                     </a>
 
+                                    @can('manage-users')
                                     <a class="dropdown-item" href="{{ route('admin.users.index') }}">
                                         User Management
+                                    </a>
+                                    @endcan
+                                    <a class="dropdown-item" href="#">
+                                        My profile
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
