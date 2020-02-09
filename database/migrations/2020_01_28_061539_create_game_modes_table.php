@@ -13,6 +13,7 @@ class CreateGameModesTable extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('game_modes');
         Schema::create('game_modes', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('dificulty');

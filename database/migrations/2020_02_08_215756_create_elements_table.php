@@ -13,6 +13,7 @@ class CreateElementsTable extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('elements');
         Schema::create('elements', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');

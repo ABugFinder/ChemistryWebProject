@@ -13,6 +13,7 @@ class CreateGamesTable extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('games');
         Schema::create('games', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');

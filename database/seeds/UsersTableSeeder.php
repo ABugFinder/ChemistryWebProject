@@ -36,7 +36,7 @@ class UsersTableSeeder extends Seeder
             'password' => Hash::make('password'),
         ]);
 
-        $admin = User::create([
+        $admin2 = User::create([
             'name' => 'Jan',
             'surname' => 'Palacios',
             'username' => 'Phobocenturned',
@@ -44,7 +44,7 @@ class UsersTableSeeder extends Seeder
             'password' => Hash::make('password'),
         ]);
 
-        $admin = User::create([
+        $admin3 = User::create([
             'name' => 'Erick',
             'surname' => 'Acevedo',
             'username' => '2h4ck',
@@ -62,6 +62,8 @@ class UsersTableSeeder extends Seeder
 
 
         $admin->roles()->attach($adminRole);
+        $admin2->roles()->attach($adminRole);
+        $admin3->roles()->attach($adminRole);
         $user->roles()->attach($userRole);
 
     }
