@@ -68,12 +68,12 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}">Inicio</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
+                            <a href="{{ route('register') }}">Registrarse</a>
                         @endif
                     @endauth
                 </div>
@@ -85,8 +85,8 @@
                 </div>
 
                 <div class="links">
-                    <a href="#">Try Tetris!</a>
-                    <a href="#">Try Memory game!</a>
+                    <a href="#">¡Probar Tetris!</a>
+                    <a href="#">¡Probar Memorama!</a>
                 </div>
             </div>
         </div>

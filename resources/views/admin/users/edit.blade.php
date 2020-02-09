@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-            <div class="card-header">Edit User - {{$user->name}} {{$user->surname}}</div>
+            <div class="card-header">Editar Usuario - {{$user->name}} {{$user->surname}}</div>
 
                 <div class="card-body">
                   <form action="{{ route('admin.users.update', $user) }}" method="POST">
@@ -17,7 +17,7 @@
                           <label>{{$role->name}}</label>
                         </div>
                     @endforeach
-                    <button type="submit" class="btn btn-primary">Update</button>
+                    <button type="submit" class="btn btn-primary">Actualizar</button>
                   </form>
                 </div>
 

@@ -5,22 +5,22 @@
     <div class="row justify-content-center">
         <div class="">
             <div class="card">
-                <div class="card-header">Elements</div>
+                <div class="card-header">Elementos</div>
 
                 <div class="card-body">
                     <table class="table">
                         <thead>
                           <tr>
                             <th scope="col">#</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Symbol</th>
-                            <th scope="col">Atomic Number</th>
-                            <th scope="col">Atomic Mass</th>
-                            <th scope="col">Category</th>
-                            <th scope="col">Element Type</th>
-                            <th scope="col">State Mass</th>
-                            <th scope="col">Group</th>
-                            <th scope="col">Block</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Símbolo</th>
+                            <th scope="col">Número Atómico</th>
+                            <th scope="col">Masa Atómica</th>
+                            <th scope="col">Categoría</th>
+                            <th scope="col">Tipo de Elemento</th>
+                            <th scope="col">Estado de la Materia</th>
+                            <th scope="col">Grupo</th>
+                            <th scope="col">Bloque</th>
                           </tr>
                         </thead>
                         <tbody>

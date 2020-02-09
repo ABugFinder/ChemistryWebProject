@@ -16,23 +16,23 @@
                 </div>
 
                 <div class="card-body"> 
-                    <a href="#"> My Profile</a>
+                    <a href="#"> Mi Perfil</a>
                 </div>
 
                 <div class="card-body"> 
-                    <a href="#"> Tetris Menu</a>
+                    <a href="#"> Tetris</a>
                 </div>
 
                 <div class="card-body"> 
-                    <a href="#"> Memory Menu</a>
+                    <a href="#"> Memorama</a>
                 </div>
 
                 <div class="card-body"> 
-                    <a href="#"> Duolingo Menu</a>
+                    <a href="#"> Duolingo</a>
                 </div>
 
                 <div class="card-body"> 
-                    <a href="#"> Store Menu</a>
+                    <a href="#"> Tienda</a>
                 </div>
 
             </div>
