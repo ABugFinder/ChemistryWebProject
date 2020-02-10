@@ -38,6 +38,14 @@
                             </tr>
                         </tbody>
                     </table>
+                    <p>
+                        {{$element->description}} En este espacio aparecerá descripción e Historia del elemento seleccionado
+                    </p>
+
+                    <div class="image">
+                        {{$element->image}}
+                        Aquí deberá aparecer una imagen para el elemento actual
+                    </div>
                 </div>
 
             </div>
