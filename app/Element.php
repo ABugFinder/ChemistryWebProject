@@ -16,5 +16,7 @@ class Element extends Model
         'stateMass',
         'group',
         'block',
+        'description',
+        'image',
     ];
 }

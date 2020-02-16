@@ -11,7 +11,6 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th scope="col">#</th>
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Símbolo</th>
                                 <th scope="col">Número Atómico</th>
@@ -25,7 +24,6 @@
                           </thead>
                           <tbody>
                             <tr>
-                                <th scope="row">{{$element->id}}</th>
                                 <td>{{$element->name}}</td>
                                 <td>{{$element->symbol}}</td>
                                 <td>{{$element->atomicNumber}}</td>
@@ -39,12 +37,13 @@
                         </tbody>
                     </table>
                     <p>
-                        {{$element->description}} En este espacio aparecerá descripción e Historia del elemento seleccionado
+                        {{$element->description}}
                     </p>
 
                     <div class="image">
                         {{$element->image}}
                         Aquí deberá aparecer una imagen para el elemento actual
+                    <img src="/images/{{$element->atomicNumber}}.jpg" alt="">
                     </div>
                 </div>
 

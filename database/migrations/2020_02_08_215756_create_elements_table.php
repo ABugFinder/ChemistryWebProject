@@ -25,6 +25,8 @@ class CreateElementsTable extends Migration
             $table->string('stateMass');
             $table->integer('group')->nullable();
             $table->string('block');
+            $table->longText('description');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
