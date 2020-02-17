@@ -37,13 +37,12 @@
                         </tbody>
                     </table>
                     <p>
+                        <hr>
                         {{$element->description}}
                     </p>
 
                     <div class="image">
-                        {{$element->image}}
-                        Aquí deberá aparecer una imagen para el elemento actual
-                    <img src="/images/{{$element->atomicNumber}}.jpg" alt="">
+                        <img src="/images/{{$element->atomicNumber}}.jpg" alt="">
                     </div>
                 </div>
 
