@@ -11,7 +11,6 @@
                     <table class="table">
                         <thead>
                           <tr>
-                            <th scope="col">#</th>
                             <th scope="col">Nombre</th>
                             <th scope="col">Símbolo</th>
                             <th scope="col">Número Atómico</th>
@@ -26,7 +25,6 @@
                         <tbody>
                         @foreach ($elements as $element)
                           <tr>
-                            <th scope="row">{{$element->id}}</th>
                             <td> <a href="{{ route('elements.show', $element->id) }}"> {{$element->name}} </a> </td>
                             <td>{{$element->symbol}}</td>
                             <td>{{$element->atomicNumber}}</td>

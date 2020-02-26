@@ -81,13 +81,20 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <a href="/home" style="text-decoration: none; color: #636b6f;"> ChemistryWeb - Proyect </a>
+                    <a href="/home" style="text-decoration: none; color: #636b6f;"> ChemistryWeb - Project </a>
                 </div>
 
-                <div class="links">
-                    <a href="#">¡Probar Tetris!</a>
-                    <a href="#">¡Probar Memorama!</a>
-                </div>
+                @auth
+                @else
+                    @if (Route::has('register'))
+                        
+                        <div class="links">
+                            <a href="#">¡Probar Tetris!</a>
+                            <a href="#">¡Probar Memorama!</a>
+                        </div>
+                    @endif
+                @endauth
+                
             </div>
         </div>
     </body>
