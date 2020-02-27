@@ -67,7 +67,7 @@
                                     </a>
                                     @endcan
 
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="{{route('myProfile')}}">
                                         Mi Perfil
                                     </a>
 

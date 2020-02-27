@@ -3,50 +3,25 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
-            <div class="">
-                <div class="card">
+            <div class="" style="width: 80%">
+                <div class="card" style="width: 100%">
                     <div class="card-header">Usuarios</div>
 
-                    <div class="card-body">
-                        <table class="table">
-                            <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Nombre</th>
-                                <th scope="col">Username</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Roles</th>
-                                <th scope="col">Acciones</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            @foreach ($users as $user)
-                                <tr>
-                                    <th scope="row">{{$user->id}}</th>
-                                    <td>{{$user->name}} {{$user->surname}}</td>
-                                    <td>{{$user->username}}</td>
-                                    <td>{{$user->email}}</td>
-                                    <td>{{ implode(', ', $user->roles()->get()->pluck('name')->toArray()) }}</td>
-                                    <td>
-                                        @can('edit-users')
-                                            <a href="{{ route('admin.users.edit', $user->id) }}"> <button type="button" class="btn btn-primary float-left">Editar</button> </a>
-                                        @endcan
-                                        @can('delete-users')
-                                            <form action="{{route('admin.users.destroy', $user)}}" method="POST" class="float-left">
-                                                @endcan
-                                                @csrf
-                                                {{method_field('DELETE')}}
-                                                <button type="submit" class="btn btn-danger">Borrar</button>
-                                            </form>
-                                    </td>
-                                </tr>
-                            @endforeach
-                            </tbody>
-                        </table>
-                    </div>
-
+                    <h2>Mi perfil</h2>
+                    <p>Usuario: {{$user->username}}</p>
+                    <p>Nombre(s) del usuario: {{$user->name}}</p>
+                    <p>Apellido(s): {{$user->surname}}</p>
+                    <p>Email del usuario: {{$user->email}}</p>
+                    <p>Puntos de la tienda:</p>
+                    <hr>
+                    <p>Puntuacion Global:</p>
+                    <p>Puntuacion Tetris:</p>
+                    <p>Puntuacion Memorama:</p>
+                    <p>Puntuacion Duolingo:</p>
                 </div>
+
             </div>
         </div>
+    </div>
     </div>
 @endsection

@@ -15,23 +15,23 @@
                     @endif
                 </div>
 
-                <div class="card-body"> 
-                    <a href="#"> Mi Perfil</a>
+                <div class="card-body">
+                    <a href="{{route('myProfile')}}"> Mi Perfil</a>
                 </div>
 
-                <div class="card-body"> 
+                <div class="card-body">
                     <a href="#"> Tetris</a>
                 </div>
 
-                <div class="card-body"> 
+                <div class="card-body">
                     <a href="#"> Memorama</a>
                 </div>
 
-                <div class="card-body"> 
+                <div class="card-body">
                     <a href="#"> Duolingo</a>
                 </div>
 
-                <div class="card-body"> 
+                <div class="card-body">
                     <a href="#"> Tienda</a>
                 </div>
 

@@ -23,8 +23,9 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:mana
     Route::resource('/users', 'UsersController', ['except' => ['show', 'create', 'store']]);
 });
 
-// Profile
-Route::get('/myProfile/{id}', 'UserController@show');
+// Profiles
+Route::get('/myProfile', 'UserController@showMyProfile')->name('myProfile');
+Route::get('/userProfile/{id}', 'UserController@showUserProfile');
 
 // Elements
 Route::resource('/elements', 'ElementController', ['except' => ['create', 'store', 'edit', 'update', 'destroy']]);
