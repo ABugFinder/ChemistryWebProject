@@ -36,13 +36,14 @@
                                     @endcan
                                     @csrf
                                     {{method_field('DELETE')}}
-                                    <button type="submit" class="btn btn-danger">Borrar</button> 
+                                    <button type="submit" class="btn btn-danger">Borrar</button>
                                 </form>
                             </td>
                           </tr>
                         @endforeach
                         </tbody>
                       </table>
+                    <a class="btn btn-primary" href="/home" role="button">Regresar</a>
                 </div>
 
             </div>

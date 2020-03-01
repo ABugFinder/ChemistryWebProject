@@ -38,6 +38,8 @@
                         @endforeach
                         </tbody>
                       </table>
+
+                    <a class="btn btn-primary" href="/home" role="button">Regresar</a>
                 </div>
 
             </div>

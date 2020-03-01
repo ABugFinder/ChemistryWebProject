@@ -16,23 +16,23 @@
                 </div>
 
                 <div class="card-body">
-                    <a href="{{route('myProfile')}}"> Mi Perfil</a>
+                    <a class="btn btn-primary" href="{{route('myProfile')}}" role="button"> Mi Perfil</a>
                 </div>
 
                 <div class="card-body">
-                    <a href="#"> Tetris</a>
+                    <a class="btn btn-primary" href="{{route('gamesMenu')}}" role="button"> Minijuegos</a>
                 </div>
 
                 <div class="card-body">
-                    <a href="#"> Memorama</a>
+                    <a class="btn btn-primary" href="#" role="button"> Duolingo</a>
                 </div>
 
                 <div class="card-body">
-                    <a href="#"> Duolingo</a>
+                    <a class="btn btn-primary" href="#" role="button"> Tienda</a>
                 </div>
 
                 <div class="card-body">
-                    <a href="#"> Tienda</a>
+                    <a class="btn btn-primary" href="{{route('elements.index')}}" role="button"> Elementos</a>
                 </div>
 
             </div>

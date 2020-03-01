@@ -8,13 +8,18 @@
 
                     <div class="card-header"><h4>Perfil de {{$user->username}}</h4></div>
 
-                        <p>Alias: {{$user->username}}</p>
-                        <p>Puntos de la tienda:</p>
+                        <div class="card-body">
+                            <br>
+                            <p>Aquí va la imagen de perfil</p>
+                            <p>Aquí va la descripación del usuario</p>
+                        </div>
                         <hr>
-                        <p>Puntuacion Global:</p>
-                        <p>Puntuacion Tetris:</p>
-                        <p>Puntuacion Memorama:</p>
-                        <p>Puntuacion Duolingo:</p>
+                        <div class="card-body">
+                            <p>Puntuacion Global:</p>
+                            <p>Puntuacion Tetris:</p>
+                            <p>Puntuacion Memorama:</p>
+                            <p>Puntuacion Duolingo:</p>
+                        </div>
                     </div>
 
                 </div>

@@ -5,7 +5,13 @@
     <div class="row justify-content-center">
         <div class="">
             <div class="card">
-            <div class="card-header"> <a href="{{ route('elements.show', $element->id-1) }}"> Elemento Anterior </a> - Elemento Actual {{$element->name}} - <a href="{{ route('elements.show', $element->id+1) }}"> Siguiente Elemento </a> </div>
+            <div class="card-header">
+                <a href="{{ route('elements.show', $element->id-1) }}"> Elemento Anterior </a>
+                - Elemento Actual {{$element->name}} -
+                <a href="{{ route('elements.show', $element->id+1) }}"> Siguiente Elemento </a>
+                - <a href="{{route('elements.index')}}"> Volver a la lista de elemenetos </a>
+
+            </div>
 
                 <div class="card-body">
                     <table class="table">
