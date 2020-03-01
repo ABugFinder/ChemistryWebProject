@@ -53,6 +53,21 @@ class GameController extends Controller
         return view('games.gamesMenu');
     }
 
+    public function showTetrisMenu()
+    {
+        return view('games.tetrisMenu');
+    }
+
+    public function showMemoramaMenu()
+    {
+        return view('games.memoramaMenu');
+    }
+
+    public function showDuolingoMenu()
+    {
+        return view('games.duolingoMenu');
+    }
+
     /**
      * Show the form for editing the specified resource.
      *

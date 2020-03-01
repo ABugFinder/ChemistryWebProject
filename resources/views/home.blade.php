@@ -24,7 +24,7 @@
                 </div>
 
                 <div class="card-body">
-                    <a class="btn btn-primary" href="#" role="button"> Duolingo</a>
+                    <a class="btn btn-primary" href="{{route('duolingoMenu')}}" role="button"> Duolingo</a>
                 </div>
 
                 <div class="card-body">

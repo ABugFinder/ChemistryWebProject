@@ -29,6 +29,9 @@ Route::get('/userProfile/{id}', 'UserController@showUserProfile');
 
 //Games
 Route::get('/gamesMenu', 'GameController@showGamesMenu')->name('gamesMenu');
+Route::get('/tetrisMenu', 'GameController@showTetrisMenu')->name('tetrisMenu');
+Route::get('/memoramaMenu', 'GameController@showMemoramaMenu')->name('memoramaMenu');
+Route::get('/duolingoMenu', 'GameController@showDuolingoMenu')->name('duolingoMenu');
 
 // Elements
 Route::resource('/elements', 'ElementController', ['except' => ['create', 'store', 'edit', 'update', 'destroy']]);

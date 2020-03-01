@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Seleccionar mini-juego</div>
+                    <div class="card-header">Tetris - Menú principal</div>
 
                     <div class="card-body">
                         @if (session('status'))
@@ -16,15 +16,19 @@
                     </div>
 
                     <div class="card-body">
-                        <a class="btn btn-primary" href="{{route('tetrisMenu')}}" role="button">Tetris</a>
+                        <a class="btn btn-primary" href="#" role="button">Seleccionar Nivel</a>
                     </div>
 
                     <div class="card-body">
-                        <a class="btn btn-primary" href="{{route('memoramaMenu')}}" role="button"> Memorama</a>
+                        <a class="btn btn-primary" href="#" role="button"> Leaderboards</a>
                     </div>
 
                     <div class="card-body">
-                        <a class="btn btn-primary" href="/home" role="button">Regresar</a>
+                        <a class="btn btn-primary" href="#" role="button"> ¿Cómo jugar</a>
+                    </div>
+
+                    <div class="card-body">
+                        <a class="btn btn-primary" href="{{route('gamesMenu')}}" role="button">Regresar</a>
                     </div>
 
                 </div>
