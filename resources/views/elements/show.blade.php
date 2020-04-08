@@ -57,19 +57,22 @@
                     <p>
                         <hr>
                         {{$element->description}}
+                    </p>
+
+                    <div>
+                        <img src="/images/{{$element->atomicNumber}}.jpg" alt="" width="500"  style="display: block; margin-left: auto; margin-right: auto;">
+                    </div>
+                    <br>
+                    <p>
                         <?php
                             // Shows a video about fun facts of bismuth
                             if($element->atomicNumber==83){
-                                echo '<iframe width="560" height="315" src="https://www.youtube.com/embed/C3uawwBg4CY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                                echo '<iframe  style="display: block; margin-left: auto; margin-right: auto;" width="560" height="315" src="https://www.youtube.com/embed/C3uawwBg4CY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
                             }
                         ?>
                     </p>
 
-                    <div class="image">
-                        <img src="/images/{{$element->atomicNumber}}.jpg" alt="">
-                    </div>
                 </div>
-
             </div>
         </div>
     </div>
