@@ -6,10 +6,22 @@
         <div class="">
             <div class="card">
             <div class="card-header">
-                <a href="{{ route('elements.show', $element->id-1) }}"> Elemento Anterior </a>
-                - Elemento Actual {{$element->name}} -
-                <a href="{{ route('elements.show', $element->id+1) }}"> Siguiente Elemento </a>
-                - <a href="{{route('elements.index')}}"> Volver a la lista de elemenetos </a>
+                
+                <?php
+                    if($element->id == 1){
+                        echo '<a href="118"> Elemento Anterior</a> - Elemento Actual '; 
+                        echo $element->name;
+                        echo ' - <a href="'; echo $element->id+1; echo '"> Siguiente Elemento </a>';
+                    } else if($element->id == 118){
+                        echo ' - <a href="'; echo $element->id-1; echo '"> Elemento Anterior </a> - Elemento Actual ';
+                        echo $element->name;
+                        echo ' - <a href="1"> Siguiente Elemento </a>';
+                    } else {
+                        echo ' - <a href="'; echo $element->id-1; echo '"> Elemento Anterior </a> - Elemento Actual ';
+                        echo $element->name;
+                        echo ' - <a href="'; echo $element->id+1; echo '"> Siguiente Elemento </a>';
+                    }
+                ?> 
 
             </div>
 
