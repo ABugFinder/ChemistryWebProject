@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="card-body" style="margin-left: auto; margin-right: auto;">
-                    <a class="btn btn-primary" href="#" role="button"> Tienda</a>
+                    <a class="btn btn-primary" href="{{route('myStore')}}" role="button"> Tienda</a>
                 </div>
 
                 <div class="card-body" style="margin-left: auto; margin-right: auto;">

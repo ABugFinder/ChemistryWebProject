@@ -27,6 +27,9 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:mana
 Route::get('/myProfile', 'UserController@showMyProfile')->name('myProfile');
 Route::get('/userProfile/{id}', 'UserController@showUserProfile');
 
+// Store
+Route::get('/myStore', 'StoreController@showStore')->name('myStore');
+
 //Games
 Route::get('/gamesMenu', 'GameController@showGamesMenu')->name('gamesMenu');
 
