@@ -3,171 +3,140 @@
 
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md">
                 <div class="card">
                     <div class="card-header">Tienda</div>
                         
                     <div class="card-body">
-                        <!-- DISEÑO -->
-                        <div class="row">
-                            <!-- ARTICULO 1 -->
-                            <div class="col">
-                               <div class="card mb-4 shadow-sm">
-                               <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                               <div class="card-body">
-                                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                   <div class="d-flex justify-content-between align-items-center">
-                                   <div class="btn-group">
-                                       <button type="button" class="btn btn-sm btn-outline-secondary">Agregar</button>
 
-                                   </div>
-                                   <small class="text-muted">9000 puntos</small>
-                                   </div>
-                               </div>
-                               </div>
-                           </div>
+                        <!-- Skin items -->
+                        <h3>Diseños</h3>
+                        <div class="row row-cols-4">
+                            
+                            <div class="col mb-4">
+                              <div class="card text-center">
+                                <img src="..." class="card-img-top" alt="imagen memorama medieval">
+                                <div class="card-body">
+                                  <h5 class="card-title">Memorama: Mediaval</h5>
+                                  <p class="card-text">Desbloquea el skin Medieval para Memorama.</p>
+                                  <p>Precio: 1000 Chemicoins</p>
+                                  <a href="#" class="btn btn-success">Comprar</a>
+                                </div>
+                              </div>
+                            </div>
 
-                           <!-- ARTICULO 2 -->
-                           <div class="col">
-                               <div class="card mb-4 shadow-sm">
-                               <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                               <div class="card-body">
-                                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                   <div class="d-flex justify-content-between align-items-center">
-                                   <div class="btn-group">
-                                       <button type="button" class="btn btn-sm btn-outline-secondary">Agregar</button>
+                            <div class="col mb-4">
+                              <div class="card text-center">
+                                <img src="..." class="card-img-top" alt="imagen tetris medieval">
+                                <div class="card-body">
+                                  <h5 class="card-title">Tetris: Mediaval</h5>
+                                  <p class="card-text">Desbloquea el skin Medieval para Tetris.</p>
+                                  <p>Precio: 1000 Chemicoins</p>
+                                  <a href="#" class="btn btn-success">Comprar</a>
+                                </div>
+                              </div>
+                            </div>
 
-                                   </div>
-                                   <small class="text-muted">9000 puntos</small>
-                                   </div>
-                               </div>
-                               </div>
-                           </div>
+                            <div class="col mb-4">
+                              <div class="card text-center">
+                                <img src="..." class="card-img-top" alt="imagen memorama cyber">
+                                <div class="card-body">
+                                  <h5 class="card-title">Memorama: Cyber</h5>
+                                  <p class="card-text">Desbloquea el skin Cyber para Memorama.</p>
+                                  <p>Precio: 1000 Chemicoins</p>
+                                  <a href="#" class="btn btn-success">Comprar</a>
+                                </div>
+                              </div>
+                            </div>
 
-                           <!-- ARTICULO 3 -->
-                           <div class="col">
-                               <div class="card mb-4 shadow-sm">
-                               <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                               <div class="card-body">
-                                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                   <div class="d-flex justify-content-between align-items-center">
-                                   <div class="btn-group">
-                                       <button type="button" class="btn btn-sm btn-outline-secondary">Agregar</button>
+                            <div class="col mb-4">
+                              <div class="card text-center">
+                                <img src="..." class="card-img-top" alt="imagen tetris">
+                                <div class="card-body">
+                                  <h5 class="card-title">Tetris: Cyber</h5>
+                                  <p class="card-text">Desbloquea el skin Cyber para Tetris.</p>
+                                  <p>Precio: 1000 Chemicoins</p>
+                                  <a href="#" class="btn btn-success">Comprar</a>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <hr>
 
-                                   </div>
-                                   <small class="text-muted">9000 puntos</small>
-                                   </div>
-                               </div>
-                               </div>
-                           </div>
+                        <!-- Random tip item -->
+                        <h3>Tips</h3>
 
-                           <!-- ARTICULO 4 -->
-                           <div class="col">
-                               <div class="card mb-4 shadow-sm">
-                               <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                               <div class="card-body">
-                                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                   <div class="d-flex justify-content-between align-items-center">
-                                   <div class="btn-group">
-                                       <button type="button" class="btn btn-sm btn-outline-secondary">Agregar</button>
+                            <div class="col mb-4">
+                            <div class="card text-center" style="margin-left:auto; margin-right:auto; width: 35%;">
+                              <img src="..." class="card-img-top" alt="imagen tip">
+                              <div class="card-body">
+                                <h5 class="card-title">Tips</h5>
+                                <p class="card-text">Desbloquea un tip aleatorio.</p>
+                                <p>Precio: 100 Chemicoins</p>
+                                <a href="#" class="btn btn-warning">Comprar</a>
+                              </div>
+                            </div>
+                          </div>
 
-                                   </div>
-                                   <small class="text-muted">9000 puntos</small>
-                                   </div>
-                               </div>
-                               </div>
-                           </div>
+                        <hr>
 
-                           <!-- CONOCIMIENTO -->
+                        <!-- Difficulty items -->
+                        <h3>Dificultades</h3>
+                        <div class="row row-cols-4">
+                            
+                            <div class="col mb-4">
+                              <div class="card text-center">
+                                <img src="..." class="card-img-top" alt="imagen memorama">
+                                <div class="card-body">
+                                  <h5 class="card-title">Memorama: Experto</h5>
+                                  <p class="card-text">Desbloquea la dificultad para el juego Memorama.</p>
+                                  <p>Precio: 1000 Chemicoins</p>
+                                  <a href="#" class="btn btn-danger">Comprar</a>
+                                </div>
+                              </div>
+                            </div>
 
-                           <!-- ARTICULO 1 -->
-                           <div class="col">
-                               <div class="card mb-4 shadow-sm">
-                               <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                               <div class="card-body">
-                                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                   <div class="d-flex justify-content-between align-items-center">
-                                   <div class="btn-group">
-                                       <button type="button" class="btn btn-sm btn-outline-secondary">Agregar</button>
-                                   </div>
-                                   <small class="text-muted">250 puntos</small>
-                                   </div>
-                               </div>
-                               </div>
-                           </div>
+                            <div class="col mb-4">
+                              <div class="card text-center">
+                                <img src="..." class="card-img-top" alt="imagen tetris">
+                                <div class="card-body">
+                                  <h5 class="card-title">Tetris: Experto</h5>
+                                  <p class="card-text">Desbloquea la dificultad para el juego Tetris.</p>
+                                  <p>Precio: 1000 Chemicoins</p>
+                                  <a href="#" class="btn btn-danger">Comprar</a>
+                                </div>
+                              </div>
+                            </div>
 
-                           <!-- DIFICULTADES -->
+                            <div class="col mb-4">
+                              <div class="card text-center">
+                                <img src="..." class="card-img-top" alt="imagen memorama">
+                                <div class="card-body">
+                                  <h5 class="card-title">Memorama: Extremo</h5>
+                                  <p class="card-text">Desbloquea la dificultad para el juego Memorama.</p>
+                                  <p>Precio: 1000 Chemicoins</p>
+                                  <a href="#" class="btn btn-danger">Comprar</a>
+                                </div>
+                              </div>
+                            </div>
 
-                            <!-- ARTICULO 1 -->
-                            <div class="col">
-                               <div class="card mb-4 shadow-sm">
-                               <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                               <div class="card-body">
-                                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                   <div class="d-flex justify-content-between align-items-center">
-                                   <div class="btn-group">
-                                       <button type="button" class="btn btn-sm btn-outline-secondary">Agregar</button>
-                                   </div>
-                                   <small class="text-muted">2800 puntos</small>
-                                   </div>
-                               </div>
-                               </div>
-                           </div>
+                            <div class="col mb-4">
+                              <div class="card text-center">
+                                <img src="..." class="card-img-top" alt="imagen tetris">
+                                <div class="card-body">
+                                  <h5 class="card-title">Tetris: Extremo</h5>
+                                  <p class="card-text">Desbloquea la dificultad para el juego Tetris.</p>
+                                  <p>Precio: 1000 Chemicoins</p>
+                                  <a href="#" class="btn btn-danger">Comprar</a>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
 
-                            <!-- ARTICULO 2 -->
-                            <div class="col">
-                               <div class="card mb-4 shadow-sm">
-                               <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                               <div class="card-body">
-                                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                   <div class="d-flex justify-content-between align-items-center">
-                                   <div class="btn-group">
-                                       <button type="button" class="btn btn-sm btn-outline-secondary">Agregar </button>
-                                   </div>
-                                   <small class="text-muted">3800 puntos</small>
-                                   </div>
-                               </div>
-                               </div>
-                           </div>
-
-                            <!-- ARTICULO 3 -->
-                            <div class="col">
-                               <div class="card mb-4 shadow-sm">
-                               <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                               <div class="card-body">
-                                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                   <div class="d-flex justify-content-between align-items-center">
-                                   <div class="btn-group">
-                                       <button type="button" class="btn btn-sm btn-outline-secondary">Agregar</button>
-                                   </div>
-                                   <small class="text-muted">4570 puntos</small>
-                                   </div>
-                               </div>
-                               </div>
-                           </div>
-
-                            <!-- ARTICULO 4 -->
-                            <div class="col">
-                               <div class="card mb-4 shadow-sm">
-                               <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                               <div class="card-body">
-                                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                   <div class="d-flex justify-content-between align-items-center">
-                                   <div class="btn-group">
-                                       <button type="button" class="btn btn-sm btn-outline-secondary">Agregar</button>
-                                   </div>
-                                   <small class="text-muted">5,600 puntos</small>
-                                   </div>
-                               </div>
-                               </div>
-                           </div>
-
-                       </div>
-                    </div>
-
-                    <!-- BOTON CARRITO -->
-                    <div class="card-body">
-                        <a class="btn btn-primary" href=" " role="button">Carrito</a>
+                        <!-- Go back button -->
+                        <div class="card-body">
+                            <a class="btn btn-primary" href="#" role="button">Regresar</a>
+                        </div>
                     </div>
 
                 </div>
