@@ -18,6 +18,37 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <!-- TETRIS -->
+
+    @if (Request::path() == 'newbieTetris')
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/newbieTetris.css') }}" />
+    @endif
+
+    @if (Request::path() == 'easyTetris')
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/easyTetris.css') }}" />
+    @endif
+
+    @if (Request::path() == 'normalTetris')
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/normalTetris.css') }}" />
+    @endif
+
+    @if (Request::path() == 'advanceTetris')
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/advanceTetris.css') }}" />
+    @endif
+
+    @if (Request::path() == 'hardTetris')
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/hardTetris.css') }}" />
+    @endif
+
+    @if (Request::path() == 'expertTetris')
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/expertTetris.css') }}" />
+    @endif
+
+    @if (Request::path() == 'extremeTetris')
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/extremeTetris.css') }}" />
+    @endif
+
 </head>
 <body>
     <div id="app">

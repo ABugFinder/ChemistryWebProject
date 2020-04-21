@@ -53,19 +53,121 @@ class GameController extends Controller
         return view('games.gamesMenu');
     }
 
+    //Tetris
     public function showTetrisMenu()
     {
         return view('games.tetrisMenu');
     }
 
+    public function showTetrisDifficultyMenu()
+    {
+        return view('games.chooseTetrisLevel');
+    }
+
+    public function playNewbieTetris(){
+        return view('games.newbieTetris');
+    }
+
+    public function playEasyTetris(){
+        return view('games.easyTetris');
+    }
+
+    public function playNormalTetris(){
+        return view('games.normalTetris');
+    }
+
+    public function playAdvanceTetris(){
+        return view('games.advanceTetris');
+    }
+
+    public function playHardTetris(){
+        return view('games.hardTetris');
+    }
+
+    public function playExpertTetris(){
+        return view('games.expertTetris');
+    }
+
+    public function playExtremeTetris(){
+        return view('games.extremeTetris');
+    }
+
+    //Memorama
     public function showMemoramaMenu()
     {
         return view('games.memoramaMenu');
     }
 
+    public function showMemoramaDifficultyMenu()
+    {
+        return view('games.chooseMemoramaLevel');
+    }
+
+    public function playNewbieMemorama(){
+        return view('games.newbieMemorama');
+    }
+
+    public function playEasyMemorama(){
+        return view('games.easyMemorama');
+    }
+
+    public function playNormalMemorama(){
+        return view('games.normalMemorama');
+    }
+
+    public function playAdvanceMemorama(){
+        return view('games.advanceMemorama');
+    }
+
+    public function playHardMemorama(){
+        return view('games.hardMemorama');
+    }
+
+    public function playExpertMemorama(){
+        return view('games.expertMemorama');
+    }
+
+    public function playExtremeMemorama(){
+        return view('games.extremeMemorama');
+    }
+
+    //Duolingo
     public function showDuolingoMenu()
     {
         return view('games.duolingoMenu');
+    }
+
+    public function showDuolingoDifficultyMenu()
+    {
+        return view('games.chooseDuolingoLevel');
+    }
+
+    public function playNewbieDuolingo(){
+        return view('games.newbieDuolingo');
+    }
+
+    public function playEasyDuolingo(){
+        return view('games.easyDuolingo');
+    }
+
+    public function playNormalDuolingo(){
+        return view('games.normalDuolingo');
+    }
+
+    public function playAdvanceDuolingo(){
+        return view('games.advanceDuolingo');
+    }
+
+    public function playHardDuolingo(){
+        return view('games.hardDuolingo');
+    }
+
+    public function playExpertDuolingo(){
+        return view('games.experDuolingo');
+    }
+
+    public function playExtremeDuolingo(){
+        return view('games.extremeDuolingo');
     }
 
     /**

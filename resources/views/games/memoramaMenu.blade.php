@@ -15,16 +15,16 @@
                         @endif
                     </div>
 
-                    <div class="card-body">
-                        <a class="btn btn-primary" href="#" role="button">Seleccionar Nivel</a>
+                    <div class="card-body" style="margin-left: auto; margin-right: auto;">
+                        <a class="btn btn-primary" href="{{route('memoramaDifficulty')}}" role="button">Seleccionar Nivel</a>
                     </div>
 
-                    <div class="card-body">
+                    <div class="card-body" style="margin-left: auto; margin-right: auto;">
                         <a class="btn btn-primary" href="#" role="button"> Leaderboards</a>
                     </div>
 
-                    <div class="card-body">
-                        <a class="btn btn-primary" href="#" role="button"> ¿Cómo jugar</a>
+                    <div class="card-body" style="margin-left: auto; margin-right: auto;">
+                        <a class="btn btn-primary" href="#" role="button"> ¿Cómo jugar?</a>
                     </div>
 
                     <div class="card-body">

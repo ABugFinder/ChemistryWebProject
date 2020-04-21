@@ -15,23 +15,23 @@
                     @endif
                 </div>
 
-                <div class="card-body">
+                <div class="card-body" style="margin-left: auto; margin-right: auto;">
                     <a class="btn btn-primary" href="{{route('myProfile')}}" role="button"> Mi Perfil</a>
                 </div>
 
-                <div class="card-body">
+                <div class="card-body" style="margin-left: auto; margin-right: auto;">
                     <a class="btn btn-primary" href="{{route('gamesMenu')}}" role="button"> Minijuegos</a>
                 </div>
 
-                <div class="card-body">
+                <div class="card-body" style="margin-left: auto; margin-right: auto;">
                     <a class="btn btn-primary" href="{{route('duolingoMenu')}}" role="button"> Duolingo</a>
                 </div>
 
-                <div class="card-body">
+                <div class="card-body" style="margin-left: auto; margin-right: auto;">
                     <a class="btn btn-primary" href="#" role="button"> Tienda</a>
                 </div>
 
-                <div class="card-body">
+                <div class="card-body" style="margin-left: auto; margin-right: auto;">
                     <a class="btn btn-primary" href="{{route('elements.index')}}" role="button"> Elementos</a>
                 </div>
 

@@ -15,16 +15,16 @@
                         @endif
                     </div>
 
-                    <div class="card-body">
+                    <div class="card-body" style="margin-left: auto; margin-right: auto;">
                         <a class="btn btn-primary" href="{{route('tetrisMenu')}}" role="button">Tetris</a>
                     </div>
 
-                    <div class="card-body">
+                    <div class="card-body" style="margin-left: auto; margin-right: auto;">
                         <a class="btn btn-primary" href="{{route('memoramaMenu')}}" role="button"> Memorama</a>
                     </div>
 
                     <div class="card-body">
-                        <a class="btn btn-primary" href="/home" role="button">Regresar</a>
+                        <a class="btn btn-primary" href="{{route('home')}}" role="button">Regresar</a>
                     </div>
 
                 </div>
