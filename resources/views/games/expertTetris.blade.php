@@ -12,12 +12,21 @@
               
               <ul id="flex-container">
                 <p> Elementos descubiertos</p>
-                <li id ="e1" style=""> Helio - He <br> 4.0026  </li> <!-- display: none; para que no aparezcan -->
-                <li id ="e2" style=""> Neón - Ne <br> 20.180 </li>
-                <li id ="e3" style=""> Argón - Ar <br> 39.948 </li>
-                <li id ="e4" style=""> Kriptón - Kr <br> 83.798 </li>
-                <li id ="e5" style=""> Xenón - Xe - 131.29 </li>
-                <li id ="e6" style=""> Radón - Mg <br> 140.90765 </li>
+                <li id ="e1" style="display: none;"> Lantano - La <br> 138.9055 </li> <!-- display: none; para que no aparezcan -->
+                <li id ="e2" style="display: none;"> Cerio - Ce <br> 140.116 </li>
+                <li id ="e3" style="display: none;"> Praseodimio - Pr <br> 140.90765 </li>
+                <li id ="e4" style="display: none;"> Neodimio - Nd <br> 144.24 </li>
+                <li id ="e5" style="display: none;"> Prometio - Pm <br> 145 </li>
+                <li id ="e6" style="display: none;"> Samario - Sm <br> 150.35 </li>
+                <li id ="e7" style="display: none;"> Europio - Eu <br> 151.964 </li>
+                <li id ="e8" style="display: none;"> Galodinio - Gd <br> 157.25 </li>
+                <li id ="e9" style="display: none;"> Terbio - Tb <br> 158.92534 </li>
+                <li id ="e10" style="display: none;"> Disprosio - Dy <br> 162.5 </li>
+                <li id ="e11" style="display: none;"> Holmio - Ho <br> 164.9304 </li>
+                <li id ="e12" style="display: none;"> Erbio - Er <br> 167.259 </li>
+                <li id ="e13" style="display: none;"> Tulio - Tm <br> 168.934 </li>
+                <li id ="e14" style="display: none;"> Iterbio - Yb <br> 173.04 </li>
+                <li id ="e15" style="display: none;"> Lutecio - Lu <br> 174.967 </li>
               </ul>
             </div>   
           </li>
@@ -53,8 +62,6 @@
           </li>
         </div>
       </ul>
-
-      
 
     </div>
 

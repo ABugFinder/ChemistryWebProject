@@ -12,21 +12,21 @@
               
               <ul id="flex-container">
                 <p> Elementos descubiertos</p>
-                <li id="e1" style=""> Boro - B <br> 10.811 </li> <!-- display: none; para que no aparezcan -->
-                <li id="e2" style=""> Hidrógeno - H <br> 1.00794  </li>
-                <li id="e3" style=""> Silicio - Si <br> 28.085 </li>
-                <li id="e4" style=""> Carbono - C <br> 12.0107 </li>
-                <li id="e5" style=""> Germnio - Ge <br> 72.64 </li>
-                <li id="e6" style=""> Carbono - C <br> 12.0107 </li>
-                <li id="e7" style=""> Arsénico - As <br> 74.92160 </li>
-                <li id="e8" style=""> Nitrógeno - N <br> 17.0067 </li>
-                <li id="e9" style=""> Antimonio - Sb <br> 121.760 </li>
-                <li id="e10" style=""> Oxígeno - P <br> 15.9994 </li>
-                <li id="e11" style=""> Telurio - Te <br> 127.6 </li>
-                <li id="e12" style=""> Fósforo - Xe <br> 30.973762 </li>
-                <li id="e13" style=""> Polonio - Po <br> 209.9824 </li>
-                <li id="e14" style=""> Azufre - S <br> 32.065 </li>
-                <li id="e15" style=""> Selenio - Se <br> 78.96 </li>
+                <li id="e1" style="display: none;"> Boro - B <br> 10.811 </li> <!-- display: none; para que no aparezcan -->
+                <li id="e2" style="display: none;"> Hidrógeno - H <br> 1.00794  </li>
+                <li id="e3" style="display: none;"> Silicio - Si <br> 28.085 </li>
+                <li id="e4" style="display: none;"> Carbono - C <br> 12.0107 </li>
+                <li id="e5" style="display: none;"> Germnio - Ge <br> 72.64 </li>
+                <li id="e6" style="display: none;"> Carbono - C <br> 12.0107 </li>
+                <li id="e7" style="display: none;"> Arsénico - As <br> 74.92160 </li>
+                <li id="e8" style="display: none;"> Nitrógeno - N <br> 17.0067 </li>
+                <li id="e9" style="display: none;"> Antimonio - Sb <br> 121.760 </li>
+                <li id="e10" style="display: none;"> Oxígeno - P <br> 15.9994 </li>
+                <li id="e11" style="display: none;"> Telurio - Te <br> 127.6 </li>
+                <li id="e12" style="display: none;"> Fósforo - Xe <br> 30.973762 </li>
+                <li id="e13" style="display: none;"> Polonio - Po <br> 209.9824 </li>
+                <li id="e14" style="display: none;"> Azufre - S <br> 32.065 </li>
+                <li id="e15" style="display: none;"> Selenio - Se <br> 78.96 </li>
               </ul>
             </div>   
           </li>

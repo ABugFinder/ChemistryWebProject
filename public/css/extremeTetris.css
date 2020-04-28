@@ -1,0 +1,196 @@
+/* Element's section */
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+#flex-container p {
+    font-size: 20px;
+}
+
+li #e1 {
+    background: rgb(170, 127, 226);
+    width: 120px;
+    padding: 5px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+li #e2 {
+    background: rgb(170, 127, 226);
+    width: 120px;
+    padding: 5px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+li #e3 {
+    background: rgb(170, 127, 226);
+    width: 120px;
+    padding: 5px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+li #e4 {
+    background: rgb(170, 127, 226);
+    width: 120px;
+    padding: 5px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+li #e5 {
+    background: rgb(170, 127, 226);
+    width: 120px;
+    padding: 5px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+li #e6 {
+    background: rgb(170, 127, 226);
+    width: 120px;
+    padding: 5px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+li #e7 {
+    background: rgb(170, 127, 226);
+    width: 120px;
+    padding: 5px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+li #e8 {
+    background: rgb(170, 127, 226);
+    width: 120px;
+    padding: 5px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+li #e9 {
+    background: rgb(170, 127, 226);
+    width: 120px;
+    padding: 5px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+li #e10 {
+    background: rgb(170, 127, 226);
+    width: 120px;
+    padding: 5px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+li #e11 {
+    background: rgb(170, 127, 226);
+    width: 120px;
+    padding: 5px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+li #e12 {
+    background: rgb(170, 127, 226);
+    width: 120px;
+    padding: 5px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+li #e13 {
+    background: rgb(170, 127, 226);
+    width: 120px;
+    padding: 5px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+li #e14 {
+    background: rgb(170, 127, 226);
+    width: 120px;
+    padding: 5px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+li #e15 {
+    background: rgb(170, 127, 226);
+    width: 120px;
+    padding: 5px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+/* Data section */
+#game-data p {
+    font-size: 20px;
+}
+
+#game-data .score-div {
+    font-size: 18px;
+}
+
+#game-data .level-div {
+    font-size: 18px;
+}
+
+#game-data .diffculty-div {
+    font-size: 18px;
+}
+
+#game-data .game-div {
+    font-size: 18px;
+}

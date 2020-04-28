@@ -12,12 +12,16 @@
               
               <ul id="flex-container">
                 <p> Elementos descubiertos</p>
-                <li id ="e1" style=""> Helio - He <br> 4.0026  </li> <!-- display: none; para que no aparezcan -->
-                <li id ="e2" style=""> Neón - Ne <br> 20.180 </li>
-                <li id ="e3" style=""> Argón - Ar <br> 39.948 </li>
-                <li id ="e4" style=""> Kriptón - Kr <br> 83.798 </li>
-                <li id ="e5" style=""> Xenón - Xe - 131.29 </li>
-                <li id ="e6" style=""> Radón - Mg <br> 140.90765 </li>
+                <li id ="e1" style="display: none;"> Litio - Li <br> 6.941  </li> <!-- display: none; para que no aparezcan -->
+                <li id ="e2" style="display: none;"> Sodio - Na <br> 22.98976 </li>
+                <li id ="e3" style="display: none;"> Potasio - K <br> 39.0983 </li>
+                <li id ="e4" style="display: none;"> Cesio - Cs <br> 132.90545 </li>
+                <li id ="e5" style="display: none;"> Francio - Fr <br> 223 </li>
+                <li id ="e6" style="display: none;"> Magnesio - Mg <br> 24.305 </li>
+                <li id ="e7" style="display: none;"> Calcio - Ca <br> 40.078 </li>
+                <li id ="e8" style="display: none;"> Estroncio - Sr <br> 87.62 </li>
+                <li id ="e9" style="display: none;"> Bario - Ba <br> 137.327 </li>
+                <li id ="e10" style="display: none;"> Radio - Ra <br> 226.0254 </li>
               </ul>
             </div>   
           </li>
@@ -53,8 +57,6 @@
           </li>
         </div>
       </ul>
-
-      
 
     </div>
 

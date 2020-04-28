@@ -12,12 +12,16 @@
               
               <ul id="flex-container">
                 <p> Elementos descubiertos</p>
-                <li id ="e1" style=""> Helio - He <br> 4.0026  </li> <!-- display: none; para que no aparezcan -->
-                <li id ="e2" style=""> Neón - Ne <br> 20.180 </li>
-                <li id ="e3" style=""> Argón - Ar <br> 39.948 </li>
-                <li id ="e4" style=""> Kriptón - Kr <br> 83.798 </li>
-                <li id ="e5" style=""> Xenón - Xe - 131.29 </li>
-                <li id ="e6" style=""> Radón - Mg <br> 140.90765 </li>
+                <li id ="e1" style="display: none;"> Escandio - Sc <br> 44.955910  </li> <!-- display: none; para que no aparezcan -->
+                <li id ="e2" style="display: none;"> Titanio - Ti <br> 47.867 </li>
+                <li id ="e3" style="display: none;"> Cromo - Cr <br> 51.9961 </li>
+                <li id ="e4" style="display: none;"> Hierro - Fe <br> 55.847 </li>
+                <li id ="e5" style="display: none;"> Cobalto - Co - 58.9332 </li>
+                <li id ="e6" style="display: none;"> Níquel - Ni <br> 58.6934 </li>
+                <li id ="e7" style="display: none;"> Plata - Ag <br> 107.8683 </li>
+                <li id ="e8" style="display: none;"> Estaño - Sn <br> 118.710 </li>
+                <li id ="e9" style="display: none;"> Tántalo - Ta <br> 180.9479 </li>
+                <li id ="e10" style="display: none;"> Wolframio - W <br> 183.84 </li>
               </ul>
             </div>   
           </li>
@@ -53,8 +57,6 @@
           </li>
         </div>
       </ul>
-
-      
 
     </div>
 

@@ -12,12 +12,21 @@
               
               <ul id="flex-container">
                 <p> Elementos descubiertos</p>
-                <li id ="e1" style=""> Helio - He <br> 4.0026  </li> <!-- display: none; para que no aparezcan -->
-                <li id ="e2" style=""> Neón - Ne <br> 20.180 </li>
-                <li id ="e3" style=""> Argón - Ar <br> 39.948 </li>
-                <li id ="e4" style=""> Kriptón - Kr <br> 83.798 </li>
-                <li id ="e5" style=""> Xenón - Xe - 131.29 </li>
-                <li id ="e6" style=""> Radón - Mg <br> 140.90765 </li>
+                <li id ="e1" style="display: none;"> Actinio - Ac <br> 227 </li> <!-- display: none; para que no aparezcan -->
+                <li id ="e2" style="display: none;"> Torio - Th <br> 232.0381 </li>
+                <li id ="e3" style="display: none;"> Protactinio - Pa <br> 231.03588 </li>
+                <li id ="e4" style="display: none;"> Uranio - U <br> 238.02891 </li>
+                <li id ="e5" style="display: none;"> Neptunio - Np <br> 237 </li>
+                <li id ="e6" style="display: none;"> Plutonio - Pu <br> 244 </li>
+                <li id ="e7" style="display: none;"> Americio - Am <br> 243 </li>
+                <li id ="e8" style="display: none;"> Curio - Cm <br> 247 </li>
+                <li id ="e9" style="display: none;"> Berkelio - Bk <br> 247 </li>
+                <li id ="e10" style="display: none;"> Californio - Cf <br> 251 </li>
+                <li id ="e11" style="display: none;"> Einstenio - Es <br> 252 </li>
+                <li id ="e12" style="display: none;"> Fermio - Fm <br> 257 </li>
+                <li id ="e13" style="display: none;"> Mendelevio - Md <br> 258.1 </li>
+                <li id ="e14" style="display: none;"> Nobelio - No <br> 259 </li>
+                <li id ="e15" style="display: none;"> Lawrencio - Lr <br> 262 </li>
               </ul>
             </div>   
           </li>
@@ -53,8 +62,6 @@
           </li>
         </div>
       </ul>
-
-      
 
     </div>
 
