@@ -1,0 +1,75 @@
+
+#card-container {
+    margin-top: 100px;
+}
+
+.position-ref {
+    position: relative;
+}
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 75px;
+}
+
+
+.content{
+    margin: auto;
+    font-family: 'Nunito', sans-serif;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+.memory-game{
+    
+    background-color: #3B0B0B ;
+    width: 605px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+.memory-card{
+    width: 110px;
+    height: 220;
+    
+    position: relative;
+    margin: 5px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: .5s;
+}
+
+.memory-card:active{
+    transform: scale(.97);
+    transition: .2s;
+}
+
+
+.memory-card.flip{  /* Relacionado con JS para el flip de la carta*/
+    transform: rotateY(180deg);
+}
+
+
+.front-face,
+.back-face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    backface-visibility: hidden;
+   
+}
+
+.front-face{
+    transform: rotateY(180deg);
+}

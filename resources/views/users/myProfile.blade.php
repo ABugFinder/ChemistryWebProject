@@ -21,9 +21,10 @@
                         <p>Puntuacion Tetris:</p>
                         <p>Puntuacion Memorama:</p>
                         <p>Puntuacion Duolingo:</p>
+
+                        <a class="btn btn-primary" href="/home" role="button">Regresar</a>
                     </div>
                 </div>
-                <a class="btn btn-primary" href="/home" role="button">Regresar</a>
             </div>
         </div>
     </div>

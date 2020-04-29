@@ -135,7 +135,7 @@
 
                       <!-- Go back button -->
                       <div class="card-body">
-                          <a class="btn btn-primary" href="#" role="button">Regresar</a>
+                          <a class="btn btn-primary" href="{{route('home')}}" role="button">Regresar</a>
                       </div>
                     </div>
 

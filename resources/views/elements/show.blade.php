@@ -60,7 +60,7 @@
                     </p>
 
                     <div>
-                        <img src="/images/{{$element->atomicNumber}}.jpg" alt="" width="500"  style="display: block; margin-left: auto; margin-right: auto;">
+                        <img src="/images/elementDescription/{{$element->atomicNumber}}.jpg" alt="" width="500"  style="display: block; margin-left: auto; margin-right: auto;">
                     </div>
                     <br>
                     <p>

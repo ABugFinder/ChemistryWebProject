@@ -49,6 +49,38 @@
         <link rel="stylesheet" type="text/css" href="{{ url('/css/extremeTetris.css') }}" />
     @endif
 
+    <!-- MEMORAMA -->
+
+    @if (Request::path() == 'newbieMemorama')
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/newbieMemorama.css') }}" />
+    @endif
+
+    @if (Request::path() == 'easyMemorama')
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/easyMemorama.css') }}" />
+    @endif
+
+    @if (Request::path() == 'normalMemorama')
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/normalMemorama.css') }}" />
+    @endif
+
+    @if (Request::path() == 'advanceMemorama')
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/advanceMemorama.css') }}" />
+    @endif
+
+    @if (Request::path() == 'hardMemorama')
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/hardMemorama.css') }}" />
+    @endif
+
+    @if (Request::path() == 'expertMemorama')
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/expertMemorama.css') }}" />
+    @endif
+
+    @if (Request::path() == 'extremeMemorama')
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/extremeMemorama.css') }}" />
+    @endif
+
+    <!-- DUOLINGO -->
+
 </head>
 <body>
     <div id="app">
