@@ -131,7 +131,7 @@ let firstCard, secondCard;
 let lockBoard = false;
 var i = Math.round(Math.random()*5)
 var tm = 60;
-
+var paresCartas = 0;
 
 //Sounds 
 /*
@@ -184,6 +184,7 @@ function checkFormatch(){
         // It's a Match 
         disableCards();
         playAudioC();
+        contador(); //Contador funcion
 
     } else {
         // Not a Match
@@ -240,6 +241,13 @@ function timer1(){
     document.form1.time1.value=tm;
     if(tm<=0){clearInterval();window.location.href='ot raweb.htm'}
     else{tm--}
+}
+
+function contador() { //Contador de pares
+    paresCartas++;
+    var paresCartasContenedor = document.getElementById('contenedor').innerHTML = "Pares realizados: " + paresCartas;
+    console.log(paresCartas);
+
 }
 
 cards.forEach(card => card.addEventListener('click',flipCard))
