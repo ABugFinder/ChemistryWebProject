@@ -35,68 +35,133 @@ function shuffle(array) {
   }
 // Game init
 const cardContainer = document.getElementById("card-container");
-var cardListRookie = [ //RookieCards
+
+var cardListAdvance = [ //NormalCards
     {
-        name: "helio",
-        img: "../images/memoramaCards/2.png"
+        name: "lantano",
+        img: "../images/memoramaCards/57.png"
     },
     {
-        name: "helio",
-        img: "../images/memoramaCards/2.png"
+        name: "lantano",
+        img: "../images/memoramaCards/57.png"
     },
     {
-        name: "neon",
-        img: "../images/memoramaCards/10.png"
+        name: "cerio",
+        img: "../images/memoramaCards/58.png"
     },
     {
-        name: "neon",
-        img: "../images/memoramaCards/10.png"
+        name: "cerio",
+        img: "../images/memoramaCards/58.png"
     },
     {
-        name: "argon",
-        img: "../images/memoramaCards/18.png"
+        name: "praseodimio",
+        img: "../images/memoramaCards/59.png"
     },
     {
-        name: "argon",
-        img: "../images/memoramaCards/18.png"
+        name: "praseodimio",
+        img: "../images/memoramaCards/59.png"
     },
     {
-        name: "kripton",
-        img: "../images/memoramaCards/36.png"
+        name: "neodimio",
+        img: "../images/memoramaCards/60.png"
     },
     {
-        name: "kripton",
-        img: "../images/memoramaCards/36.png"
+        name: "neodimio",
+        img: "../images/memoramaCards/60.png"
     },
     {
-        name: "xenon",
-        img: "../images/memoramaCards/54.png"
+        name: "prometio",
+        img: "../images/memoramaCards/61.png"
     },
     {
-        name: "xenon",
-        img: "../images/memoramaCards/54.png"
+        name: "prometio",
+        img: "../images/memoramaCards/61.png"
     },
     {
-        name: "radon",
-        img: "../images/memoramaCards/86.png"
+        name: "samario",
+        img: "../images/memoramaCards/62.png"
     },
     {
-        name: "radon",
-        img: "../images/memoramaCards/86.png"
+        name: "samario",
+        img: "../images/memoramaCards/62.png"
     },
     {
-        name: "oganeson",
-        img: "../images/memoramaCards/118.png"
+        name: "europio",
+        img: "../images/memoramaCards/63.png"
     },
     {
-        name: "oganeson",
-        img: "../images/memoramaCards/118.png"
+        name: "europio",
+        img: "../images/memoramaCards/63.png"
+    },
+    {
+        name: "galodinio",
+        img: "../images/memoramaCards/64.png"
+    },
+    {
+        name: "galodinio",
+        img: "../images/memoramaCards/64.png"
+    },
+    {
+        name: "terbio",
+        img: "../images/memoramaCards/65.png"
+    },
+    {
+        name: "terbio",
+        img: "../images/memoramaCards/65.png"
+    },
+    {
+        name: "disprosio",
+        img: "../images/memoramaCards/66.png"
+    },
+    {
+        name: "disprosio",
+        img: "../images/memoramaCards/66.png"
+    },
+    {
+        name: "holmio",
+        img: "../images/memoramaCards/67.png"
+    },
+    {
+        name: "holmio",
+        img: "../images/memoramaCards/67.png"
+    },
+    {
+        name: "erbio",
+        img: "../images/memoramaCards/68.png"
+    },
+    {
+        name: "erbio",
+        img: "../images/memoramaCards/68.png"
+    },
+    {
+        name: "tulio",
+        img: "../images/memoramaCards/69.png"
+    },
+    {
+        name: "tulio",
+        img: "../images/memoramaCards/69.png"
+    },
+    {
+        name: "iterbio",
+        img: "../images/memoramaCards/70.png"
+    },
+    {
+        name: "iterbio",
+        img: "../images/memoramaCards/70.png"
+    },
+    {
+        name: "lutecio",
+        img: "../images/memoramaCards/71.png"
+    },
+    {
+        name: "lutecio",
+        img: "../images/memoramaCards/71.png"
     },
 ];
 
 
-cardListRookie = shuffle(cardListRookie);
-cardListRookie.forEach(card => {
+cardListAdvance = shuffle(cardListAdvance);
+cardListAdvance.forEach(card => {
     cardContainer.appendChild(cardPrototype(card.name, card.img));
 })
 

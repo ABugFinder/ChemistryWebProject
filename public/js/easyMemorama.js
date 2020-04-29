@@ -35,68 +35,92 @@ function shuffle(array) {
   }
 // Game init
 const cardContainer = document.getElementById("card-container");
-var cardListRookie = [ //RookieCards
-    {
-        name: "helio",
-        img: "../images/memoramaCards/2.png"
-    },
-    {
-        name: "helio",
-        img: "../images/memoramaCards/2.png"
-    },
-    {
-        name: "neon",
-        img: "../images/memoramaCards/10.png"
-    },
-    {
-        name: "neon",
-        img: "../images/memoramaCards/10.png"
-    },
-    {
-        name: "argon",
-        img: "../images/memoramaCards/18.png"
-    },
-    {
-        name: "argon",
-        img: "../images/memoramaCards/18.png"
-    },
-    {
-        name: "kripton",
-        img: "../images/memoramaCards/36.png"
-    },
-    {
-        name: "kripton",
-        img: "../images/memoramaCards/36.png"
-    },
-    {
-        name: "xenon",
-        img: "../images/memoramaCards/54.png"
-    },
-    {
-        name: "xenon",
-        img: "../images/memoramaCards/54.png"
-    },
-    {
-        name: "radon",
-        img: "../images/memoramaCards/86.png"
-    },
-    {
-        name: "radon",
-        img: "../images/memoramaCards/86.png"
-    },
-    {
-        name: "oganeson",
-        img: "../images/memoramaCards/118.png"
-    },
-    {
-        name: "oganeson",
-        img: "../images/memoramaCards/118.png"
-    },
-];
 
+var cardListEasy = [ //EasyCards
+    {
+        name: "litio",
+        img: "../images/memoramaCards/3.png"
+    },
+    {
+        name: "litio",
+        img: "../images/memoramaCards/3.png"
+    },
+    {
+        name: "sodio",
+        img: "../images/memoramaCards/11.png"
+    },
+    {
+        name: "sodio",
+        img: "../images/memoramaCards/11.png"
+    },
+    {
+        name: "potasio",
+        img: "../images/memoramaCards/19.png"
+    },
+    {
+        name: "potasio",
+        img: "../images/memoramaCards/19.png"
+    },
+    {
+        name: "rubidio",
+        img: "../images/memoramaCards/37.png"
+    },
+    {
+        name: "rubidio",
+        img: "../images/memoramaCards/37.png"
+    },
+    {
+        name: "cesio",
+        img: "../images/memoramaCards/55.png"
+    },
+    {
+        name: "cesio",
+        img: "../images/memoramaCards/55.png"
+    },
+    {
+        name: "francio",
+        img: "../images/memoramaCards/87.png"
+    },
+    {
+        name: "francio",
+        img: "../images/memoramaCards/87.png"
+    },
+    {
+        name: "berilio",
+        img: "../images/memoramaCards/4.png"
+    },
+    {
+        name: "berilio",
+        img: "../images/memoramaCards/4.png"
+    },
+    {
+        name: "magnesio",
+        img: "../images/memoramaCards/12.png"
+    },
+    {
+        name: "magnesio",
+        img: "../images/memoramaCards/12.png"
+    },
+    {
+        name: "calcio",
+        img: "../images/memoramaCards/20.png"
+    },
+    {
+        name: "calcio",
+        img: "../images/memoramaCards/20.png"
+    },
+    {
+        name: "estroncio",
+        img: "../images/memoramaCards/38.png"
+    },
+    {
+        name: "estroncio",
+        img: "../images/memoramaCards/38.png"
+    },
+]; 
 
-cardListRookie = shuffle(cardListRookie);
-cardListRookie.forEach(card => {
+cardListEasy = shuffle(cardListEasy);
+cardListEasy.forEach(card => {
     cardContainer.appendChild(cardPrototype(card.name, card.img));
 })
 

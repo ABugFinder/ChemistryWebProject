@@ -447,7 +447,7 @@ class ElementSeeder extends Seeder
         ]);
 
         $element = Element::create([
-            'name' => 'Germnio',
+            'name' => 'Germio',
             'symbol' => 'Ge',
             'atomicNumber' => 32,
             'atomicMass' => 72.64,

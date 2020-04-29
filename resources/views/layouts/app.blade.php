@@ -56,27 +56,27 @@
     @endif
 
     @if (Request::path() == 'easyMemorama')
-        <link rel="stylesheet" type="text/css" href="{{ url('/css/easyMemorama.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/newbieMemorama.css') }}" />
     @endif
 
     @if (Request::path() == 'normalMemorama')
-        <link rel="stylesheet" type="text/css" href="{{ url('/css/normalMemorama.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/newbieMemorama.css') }}" />
     @endif
 
     @if (Request::path() == 'advanceMemorama')
-        <link rel="stylesheet" type="text/css" href="{{ url('/css/advanceMemorama.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/newbieMemorama.css') }}" />
     @endif
 
     @if (Request::path() == 'hardMemorama')
-        <link rel="stylesheet" type="text/css" href="{{ url('/css/hardMemorama.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/newbieMemorama.css') }}" />
     @endif
 
     @if (Request::path() == 'expertMemorama')
-        <link rel="stylesheet" type="text/css" href="{{ url('/css/expertMemorama.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/newbieMemorama.css') }}" />
     @endif
 
     @if (Request::path() == 'extremeMemorama')
-        <link rel="stylesheet" type="text/css" href="{{ url('/css/extremeMemorama.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/newbieMemorama.css') }}" />
     @endif
 
     <!-- DUOLINGO -->
