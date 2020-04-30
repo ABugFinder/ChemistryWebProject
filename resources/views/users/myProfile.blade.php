@@ -14,7 +14,12 @@
                         <p>Nombre: {{$user->name}} {{$user->surname}}</p>
                         <p>Email: {{$user->email}}</p>
                         <p>Chemicoins: {{$user->points}} </p>
-                        <p>Artículos comprados: </p>
+                        <p>Artículos comprados:</p>
+                        @if($userStore)
+                            @foreach($userStore as $article)
+                                <p>- {{$article->name}}<p/>
+                            @endforeach
+                        @endif
                     </div>
                     <hr>
                     <div class="card-body">

@@ -54,8 +54,11 @@ class UserController extends Controller
     {
         $user = Auth::user();
 
+        $userStore = User::find(1)->store()->where('id_user', '=', $user->id)->get();
+        
         return view('users.myProfile', [
             'user' => $user,
+            'userStore' => $userStore
         ]);
 
     }

@@ -63,7 +63,7 @@ class User extends Authenticatable
 
     public function store()
     {
-        return $this->belongsToMany('App\Store','purchases', 'id_store', 'id_user');
+        return $this->belongsToMany('App\Store','purchases', 'id_user', 'id_store');
     }
 
 }
