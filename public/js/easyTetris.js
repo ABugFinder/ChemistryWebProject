@@ -230,35 +230,33 @@ Piece.prototype.rotate = function() {
     }
 };
 
-const gameOverAlert = () =>
-    Swal.fire({
-        title: '¡Perdiste!',
-        text: "¿Quieres volver a intentarlo?",
-        icon: 'error',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Si, otro intento',
-        cancelButtonText: 'No, volver al menú',
-    }).then((result) => {
-        if (result.value) {
-            window.location.reload();
-        } else {
-            window.location.href="/tetrisDifficulty";
-        }
-    });
+const gameOverAlert = () => Swal.fire({
+    title: '¡Perdiste!',
+    text: "¿Quieres volver a intentarlo?",
+    icon: 'error',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Si, otro intento',
+    cancelButtonText: 'No, volver al menú',
+}).then((result) => {
+    if (result.value) {
+        window.location.reload();
+    } else {
+        window.location.href="/tetrisDifficulty";
+    }
+});
 
-const gameAlert = () =>
-    Swal.fire({
-        title: "¡Lo lograste!",
-        text: "¡Encontraste todos los elementos!",
-        icon: "success",
-        confirmButtonText: "Volver al menú"
-    }).then((result) => {
-        if (result.value) {
-            window.location.href="/tetrisDifficulty";
-        }
-    });
+const gameAlert = () => Swal.fire({
+    title: "¡Lo lograste!",
+    text: "¡Encontraste todos los elementos!",
+    icon: "success",
+    confirmButtonText: "Volver al menú"
+}).then((result) => {
+    if (result.value) {
+        window.location.href="/tetrisDifficulty";
+    }
+});
 
 Piece.prototype.lock = function() {
     for (r = 0; r < this.activeTetromino.length; r++) {

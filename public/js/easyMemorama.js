@@ -132,6 +132,8 @@ let lockBoard = false;
 var i = Math.round(Math.random()*5)
 var tm = 60;
 var paresCartas = 0;
+var paresCartasContenedor;
+var contIntentos = 20;
 
 //Sounds 
 /*
@@ -183,13 +185,14 @@ function checkFormatch(){
     if(firstCard.dataset.framework ===  secondCard.dataset.framework) {
         // It's a Match 
         disableCards();
-        playAudioC();
+        //playAudioC();
         contador(); //Contador funcion
 
     } else {
         // Not a Match
         unFlipcards();
-        playAudioI();  
+        intentos();
+        //playAudioI();  
     }
 
 }
@@ -245,9 +248,48 @@ function timer1(){
 
 function contador() { //Contador de pares
     paresCartas++;
-    var paresCartasContenedor = document.getElementById('contenedor').innerHTML = "Pares realizados: " + paresCartas;
+    paresCartasContenedor = document.getElementById('contenedor').innerHTML = "Pares encontrados: " + paresCartas;
     console.log(paresCartas);
-
+    if(paresCartas == 10){
+        gameAlert(); 
+     }
 }
+
+function intentos() { //Contador de intentos
+    contIntentos--;
+    paresCartasContenedor = document.getElementById('contenedorIntentos').innerHTML = "Intentos restantes: " + contIntentos;
+    console.log(contIntentos);
+    if(contIntentos == 0){
+        gameOverAlert(); 
+    }
+}
+
+const gameAlert = () => Swal.fire({
+    title: "¡Lo lograste!",
+    text: "¡Encontraste todos los elementos!",
+    icon: "success",
+    confirmButtonText: "Volver al menú"
+}).then((result) => {
+    if (result.value) {
+        window.location.href="/memoramaDifficulty";
+    }
+});
+
+const gameOverAlert = () => Swal.fire({
+    title: '¡Perdiste!',
+    text: "¿Quieres volver a intentarlo?",
+    icon: 'error',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Si, otro intento',
+    cancelButtonText: 'No, volver al menú',
+}).then((result) => {
+    if (result.value) {
+        window.location.reload();
+    } else {
+        window.location.href="/memoramaDifficulty";
+    }
+});
 
 cards.forEach(card => card.addEventListener('click',flipCard))
