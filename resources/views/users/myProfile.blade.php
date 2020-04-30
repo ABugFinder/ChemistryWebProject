@@ -17,7 +17,7 @@
                         <p>Artículos comprados:</p>
                         @if($userStore)
                             @foreach($userStore as $article)
-                                <p>- {{$article->name}}<p/>
+                                <p>- {{$article->name}}</p>
                             @endforeach
                         @endif
                     </div>
