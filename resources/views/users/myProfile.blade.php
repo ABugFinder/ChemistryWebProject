@@ -13,7 +13,8 @@
                         <p>Usuario: {{$user->username}}</p>
                         <p>Nombre: {{$user->name}} {{$user->surname}}</p>
                         <p>Email: {{$user->email}}</p>
-                        <p>Puntos de la tienda:</p>
+                        <p>Chemicoins: {{$user->points}} </p>
+                        <p>Artículos comprados: </p>
                     </div>
                     <hr>
                     <div class="card-body">
