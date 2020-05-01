@@ -42,6 +42,7 @@ Route::get('/gamesMenu', 'GameController@showGamesMenu')->name('gamesMenu');
 Route::get('/tetrisMenu', 'GameController@showTetrisMenu')->name('tetrisMenu');
 Route::get('/tetrisDifficulty', 'GameController@showTetrisDifficultyMenu')->name('tetrisDifficulty');
 Route::get('/easyTetris', 'GameController@playEasyTetris')->name('easyTetris');
+Route::post('/easyTetris/points', 'UserController@update')->name('updatePoints');
 Route::get('/newbieTetris', 'GameController@playNewbieTetris')->name('newbieTetris');
 Route::get('/normalTetris', 'GameController@playNormalTetris')->name('normalTetris');
 Route::get('/advanceTetris', 'GameController@playAdvanceTetris')->name('advanceTetris');

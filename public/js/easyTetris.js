@@ -15,6 +15,8 @@ const ROW = 17;
 const COL = (COLUMN = 10);
 const SQ = (squareSize = 25);
 const VACANT = "WHITE"; // color of an empty square
+var formPoints = document.createElement("form");
+var points = document.createElement("input");
 
 const LVL1 = 999,
     LVL2 = 1999,
@@ -488,6 +490,13 @@ function drop() {
             levelElement.innerHTML = 13;
             currentLVL = 13;
             e6.style.display = "block";
+            $.ajax({
+                headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') },
+                type: "POST",
+                url: "/easyTetris/points",
+                data: "800",
+                dataType: "jso"
+            });
             gameAlert();
             gameOver = true;
         }
