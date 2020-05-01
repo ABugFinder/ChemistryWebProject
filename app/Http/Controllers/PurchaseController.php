@@ -41,9 +41,12 @@ class PurchaseController extends Controller
         
         $user = Auth::user();
         
-        if(Purchase::all()->where('id_user', '=', $user->id)->where('id_store', '=', $request->id)->count() > 0){
+        if(Purchase::all()->where('id_user', '=', $user->id)
+                          ->where('id_store', '=', $request->id)
+                          ->count() > 0){
 
-            return 'ya posee este producto'; 
+            //return 'ya posee este producto';
+            return view('nobuy');
 
         }
 
@@ -51,8 +54,9 @@ class PurchaseController extends Controller
             'id_user' => $user->id,
             'id_store' => $request->id
         ]);
-
-        return redirect()->route('myStore');
+        
+        //return redirect()->route('myStore');
+        return view('yesbuy');
         
     }
 
@@ -65,6 +69,14 @@ class PurchaseController extends Controller
     public function show(Purchase $purchase)
     {
         //
+    }
+
+    public function showNoBuy(){
+        return view('nobuy');
+    }
+
+    public function showYesBuy(){
+        return view('yesbuy');
     }
 
     /**

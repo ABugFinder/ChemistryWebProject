@@ -255,7 +255,7 @@ function contador() { //Contador de pares
     console.log(paresCartas);
     if(paresCartas == 10){
         gameAlert(); 
-     }
+    }
 }
 
 function intentos() { //Contador de intentos

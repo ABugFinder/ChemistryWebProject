@@ -251,8 +251,8 @@ function contador() { //Contador de pares
     paresCartasContenedor = document.getElementById('contenedor').innerHTML = "Pares encontrados: " + paresCartas;
     console.log(paresCartas);
     if(paresCartas == 10){
-        gameAlert(); 
-     }
+        gameAlert();
+    }
 }
 
 function intentos() { //Contador de intentos

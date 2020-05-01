@@ -12,7 +12,7 @@ class PurchasesSeeder extends Seeder
      */
     public function run()
     {
-       
+        
         $purchase = Purchase::create([
             'id_user' => '1',
             'id_store' =>  '2'
@@ -57,5 +57,6 @@ class PurchasesSeeder extends Seeder
             'id_user' => '2',
             'id_store' =>  '8'
         ]);
+        
     }
 }

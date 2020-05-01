@@ -12,68 +12,47 @@
                       <!-- Skin items -->
                       <h3>Diseños</h3>
                       <div class="row row-cols-4">
-                          
+
+                        @for ($i = 0; $i < 4; $i++)
                           <div class="col mb-4">
                             <div class="card text-center">
                               <img src="..." class="card-img-top" alt="imagen memorama medieval">
                               <div class="card-body">
-                                <h5 class="card-title">Memorama: Mediaval</h5>
-                                <p class="card-text">Desbloquea el skin Medieval para Memorama.</p>
-                                <p>Precio: 1000 Chemicoins</p>
+                              <h5 class="card-title"> {{ $store[$i]['name'] }}</h5>
+                                <p class="card-text">{{ $store[$i]['description'] }}</p>
+                                <p>Precio: {{ $store[$i]['price'] }} Chemicoins</p>
+                                <form method="POST" action="{{route('purchaseTest')}}">
+                                  @csrf
+                                  <button type="submit" value="{{$i+1}}" name="id" class="btn btn-success">Comprar</button>
+                                </form>
                                 
+                              </div>
+                            </div>
+                          </div>
+                        @endfor
+                        
+                        
+                        @for ($i = 4; $i < 8; $i++)
+                          <div class="col mb-4">
+                            <div class="card text-center">
+                              <img src="..." class="card-img-top" alt="imagen memorama medieval">
+                              <div class="card-body">
+                                <h5 class="card-title"> {{ $store[$i]['name'] }}</h5>
+                                  <p class="card-text">{{ $store[$i]['description'] }}</p>
+                                  <p>Precio: {{ $store[$i]['price'] }} Chemicoins</p>
                                   <form method="POST" action="{{route('purchaseTest')}}">
-                                      @csrf
-                                      <button type="submit" value="1" name="id" class="btn btn-success">Comprar</button>
+                                    @csrf
+                                    <button type="submit" value="{{$i}}" name="id" class="btn btn-danger">Comprar</button>
                                   </form>
-                                
                               </div>
                             </div>
                           </div>
-
-                          <div class="col mb-4">
-                            <div class="card text-center">
-                              <img src="..." class="card-img-top" alt="imagen tetris medieval">
-                              <div class="card-body">
-                                <h5 class="card-title">Tetris: Mediaval</h5>
-                                <p class="card-text">Desbloquea el skin Medieval para Tetris.</p>
-                                <p>Precio: 1000 Chemicoins</p>
-                               
-                                  <a href="#" value="2" name="id" class="btn btn-success">Comprar</a>
-                              
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="col mb-4">
-                            <div class="card text-center">
-                              <img src="..." class="card-img-top" alt="imagen memorama cyber">
-                              <div class="card-body">
-                                <h5 class="card-title">Memorama: Cyber</h5>
-                                <p class="card-text">Desbloquea el skin Cyber para Memorama.</p>
-                                <p>Precio: 1000 Chemicoins</p>
-                                <a href="#" class="btn btn-success">Comprar</a>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="col mb-4">
-                            <div class="card text-center">
-                              <img src="..." class="card-img-top" alt="imagen tetris">
-                              <div class="card-body">
-                                <h5 class="card-title">Tetris: Cyber</h5>
-                                <p class="card-text">Desbloquea el skin Cyber para Tetris.</p>
-                                <p>Precio: 1000 Chemicoins</p>
-                                <a href="#" class="btn btn-success">Comprar</a>
-                              </div>
-                            </div>
-                          </div>
-                      </div>
-                      <hr>
-
+                        @endfor
+                          
                       <!-- Random tip item --
                       <h3>Tips</h3>
 
-                          <div class="col mb-4">
+                        <div class="col mb-4">
                           <div class="card text-center" style="margin-left:auto; margin-right:auto; width: 35%;">
                             <img src="..." class="card-img-top" alt="imagen tip">
                             <div class="card-body">
@@ -85,63 +64,11 @@
                           </div>
                         </div>-->
 
-                      <hr>
+                      <!--<hr>
 
-                      <!-- Difficulty items -->
-                      <h3>Dificultades</h3>
-                      <div class="row row-cols-4">
-                          
-                          <div class="col mb-4">
-                            <div class="card text-center">
-                              <img src="..." class="card-img-top" alt="imagen memorama">
-                              <div class="card-body">
-                                <h5 class="card-title">Memorama: Experto</h5>
-                                <p class="card-text">Desbloquea la dificultad para el juego Memorama.</p>
-                                <p>Precio: 1000 Chemicoins</p>
-                                <a href="#" class="btn btn-danger">Comprar</a>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="col mb-4">
-                            <div class="card text-center">
-                              <img src="..." class="card-img-top" alt="imagen tetris">
-                              <div class="card-body">
-                                <h5 class="card-title">Tetris: Experto</h5>
-                                <p class="card-text">Desbloquea la dificultad para el juego Tetris.</p>
-                                <p>Precio: 1000 Chemicoins</p>
-                                <a href="#" class="btn btn-danger">Comprar</a>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="col mb-4">
-                            <div class="card text-center">
-                              <img src="..." class="card-img-top" alt="imagen memorama">
-                              <div class="card-body">
-                                <h5 class="card-title">Memorama: Extremo</h5>
-                                <p class="card-text">Desbloquea la dificultad para el juego Memorama.</p>
-                                <p>Precio: 1000 Chemicoins</p>
-                                <a href="#" class="btn btn-danger">Comprar</a>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="col mb-4">
-                            <div class="card text-center">
-                              <img src="..." class="card-img-top" alt="imagen tetris">
-                              <div class="card-body">
-                                <h5 class="card-title">Tetris: Extremo</h5>
-                                <p class="card-text">Desbloquea la dificultad para el juego Tetris.</p>
-                                <p>Precio: 1000 Chemicoins</p>
-                                <a href="#" class="btn btn-danger">Comprar</a>
-                              </div>
-                            </div>
-                          </div>
-
-                          
-                      </div>
-
+                       Difficulty items 
+                      <h3>Dificultades</h3>-->
+                      
                       <!-- Go back button -->
                       <div class="card-body">
                           <a class="btn btn-primary" href="{{route('home')}}" role="button">Regresar</a>

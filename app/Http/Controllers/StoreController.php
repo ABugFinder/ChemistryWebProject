@@ -87,7 +87,11 @@ class StoreController extends Controller
     public function showStore() {
         $user = Auth::user();
         $userPurchase = $user->store;
+
+        $store = Store::all();
+
+        //dd($store);
         
-        return view('store',['user' => $user]);
+        return view('store',['user' => $user], ['store' => $store]);
     }
 }

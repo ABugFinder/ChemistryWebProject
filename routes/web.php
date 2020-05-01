@@ -31,6 +31,10 @@ Route::get('/userProfile/{id}', 'UserController@showUserProfile');
 Route::get('/myStore', 'StoreController@showStore')->name('myStore');
 Route::post('/myStore/purchase', 'PurchaseController@store')->name('purchaseTest');
 
+// Notifications
+Route::get('/myStore/cantbuythis', 'StoreController@showNoBuy')->name('nobuy');
+Route::get('/myStore/canbuythis', 'StoreController@showyesBuy')->name('yesbuy');
+
 //Games
 Route::get('/gamesMenu', 'GameController@showGamesMenu')->name('gamesMenu');
 
