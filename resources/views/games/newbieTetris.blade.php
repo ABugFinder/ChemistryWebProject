@@ -12,13 +12,13 @@
               
               <ul id="flex-container">
                 <p> Elementos descubiertos</p>
-                <li id="e1" style=" display: none;"> Hidrógeno - H <br> 1.00794  </li> <!-- display: none; para que no aparezcan -->
-                <li id="e2" style=" display: none;"> Carbono - C <br> 12.0107 </li>
-                <li id="e3" style=" display: none;"> Nitrógeno - N <br> 17.0067 </li>
-                <li id="e4" style=" display: none;"> Oxígeno - P <br> 15.9994 </li>
-                <li id="e5" style=" display: none;"> Fósforo - Xe <br> 30.973762 </li>
-                <li id="e6" style=" display: none;"> Azufre - S <br> 32.065 </li>
-                <li id="e7" style=" display: none;"> Selenio - Se <br> 78.96 </li>
+                <li id="e1" style="display: none;"> Hidrógeno - H <br> 1.00794  </li> <!-- display: none; para que no aparezcan -->
+                <li id="e2" style="display: none;"> Carbono - C <br> 12.0107 </li>
+                <li id="e3" style="display: none;"> Nitrógeno - N <br> 17.0067 </li>
+                <li id="e4" style="display: none;"> Oxígeno - P <br> 15.9994 </li>
+                <li id="e5" style="display: none;"> Fósforo - Xe <br> 30.973762 </li>
+                <li id="e6" style="display: none;"> Azufre - S <br> 32.065 </li>
+                <li id="e7" style="display: none;"> Selenio - Se <br> 78.96 </li>
               </ul>
             </div>   
           </li>
@@ -60,7 +60,7 @@
     </div>
 
     <script src="{{ asset('/js/tetrominoes.js')}}"></script>
-    <script src="{{ asset('/js/easyTetris.js')}}"></script>
+    <script src="{{ asset('/js/newbieTetris.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <!-- <script src="sweetalert2.all.min.js"></script> -->
     <!-- Optional: include a polyfill for ES6 Promises for IE11 -->
