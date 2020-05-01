@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Store;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class StoreController extends Controller
 {
@@ -35,7 +36,7 @@ class StoreController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
@@ -84,6 +85,9 @@ class StoreController extends Controller
     }
 
     public function showStore() {
-        return view('store');
+        $user = Auth::user();
+        $userPurchase = $user->store;
+        
+        return view('store',['user' => $user]);
     }
 }

@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Purchase;
+use App\Store;
+use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class PurchaseController extends Controller
 {
@@ -35,7 +38,22 @@ class PurchaseController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+        $user = Auth::user();
+        
+        if(Purchase::all()->where('id_user', '=', $user->id)->where('id_store', '=', $request->id)->count() > 0){
+
+            return 'ya posee este producto'; 
+
+        }
+
+        $purchase = Purchase::create([
+            'id_user' => $user->id,
+            'id_store' => $request->id
+        ]);
+
+        return redirect()->route('myStore');
+        
     }
 
     /**

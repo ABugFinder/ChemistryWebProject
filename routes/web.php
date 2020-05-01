@@ -29,6 +29,7 @@ Route::get('/userProfile/{id}', 'UserController@showUserProfile');
 
 // Store
 Route::get('/myStore', 'StoreController@showStore')->name('myStore');
+Route::post('/myStore/purchase', 'PurchaseController@store')->name('purchaseTest');
 
 //Games
 Route::get('/gamesMenu', 'GameController@showGamesMenu')->name('gamesMenu');

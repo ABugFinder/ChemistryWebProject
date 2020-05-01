@@ -20,7 +20,12 @@
                                 <h5 class="card-title">Memorama: Mediaval</h5>
                                 <p class="card-text">Desbloquea el skin Medieval para Memorama.</p>
                                 <p>Precio: 1000 Chemicoins</p>
-                                <a href="#" class="btn btn-success">Comprar</a>
+                                
+                                  <form method="POST" action="{{route('purchaseTest')}}">
+                                      @csrf
+                                      <button type="submit" value="1" name="id" class="btn btn-success">Comprar</button>
+                                  </form>
+                                
                               </div>
                             </div>
                           </div>
@@ -32,7 +37,9 @@
                                 <h5 class="card-title">Tetris: Mediaval</h5>
                                 <p class="card-text">Desbloquea el skin Medieval para Tetris.</p>
                                 <p>Precio: 1000 Chemicoins</p>
-                                <a href="#" class="btn btn-success">Comprar</a>
+                               
+                                  <a href="#" value="2" name="id" class="btn btn-success">Comprar</a>
+                              
                               </div>
                             </div>
                           </div>
@@ -63,7 +70,7 @@
                       </div>
                       <hr>
 
-                      <!-- Random tip item -->
+                      <!-- Random tip item --
                       <h3>Tips</h3>
 
                           <div class="col mb-4">
@@ -76,7 +83,7 @@
                               <a href="#" class="btn btn-warning">Comprar</a>
                             </div>
                           </div>
-                        </div>
+                        </div>-->
 
                       <hr>
 
@@ -131,6 +138,8 @@
                               </div>
                             </div>
                           </div>
+
+                          
                       </div>
 
                       <!-- Go back button -->

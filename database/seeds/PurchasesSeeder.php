@@ -12,11 +12,7 @@ class PurchasesSeeder extends Seeder
      */
     public function run()
     {
-        $purchase = Purchase::create([
-            'id_user' => '1',
-            'id_store' =>  '1'
-        ]);
-
+       
         $purchase = Purchase::create([
             'id_user' => '1',
             'id_store' =>  '2'

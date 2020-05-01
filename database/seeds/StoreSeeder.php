@@ -11,29 +11,6 @@ class StoreSeeder extends Seeder
      */
     public function run()
     {
-        $product = Store::create([
-            'name' => 'Memorama - Experto',
-            'description' => 'Nuevo modo de dificultad',
-            'price' => '2500' 
-        ]);
-
-        $product = Store::create([
-            'name' => 'Tetris - Experto',
-            'description' => 'Nuevo modo de dificultad',
-            'price' => 2500
-        ]);
-
-        $product = Store::create([
-            'name' => 'Memorama - Extremo',
-            'description' => 'Nuevo modo de dificultad',
-            'price' => 3000
-        ]);
-
-        $product = Store::create([
-            'name' => 'Tetris - Extremo',
-            'description' => 'Nuevo modo de dificultad',
-            'price' => 3000
-        ]);
 
         $product = Store::create([
             'name' => 'Memorama - Medieval',
@@ -58,6 +35,32 @@ class StoreSeeder extends Seeder
             'description' => 'Desbloquea el skin Cyber para Tetris',
             'price' => 5000
         ]);
+        
+        $product = Store::create([
+            'name' => 'Memorama - Experto',
+            'description' => 'Nuevo modo de dificultad',
+            'price' => '2500' 
+        ]);
+
+        $product = Store::create([
+            'name' => 'Tetris - Experto',
+            'description' => 'Nuevo modo de dificultad',
+            'price' => 2500
+        ]);
+
+        $product = Store::create([
+            'name' => 'Memorama - Extremo',
+            'description' => 'Nuevo modo de dificultad',
+            'price' => 3000
+        ]);
+
+        $product = Store::create([
+            'name' => 'Tetris - Extremo',
+            'description' => 'Nuevo modo de dificultad',
+            'price' => 3000
+        ]);
+
+       
 
         //Seeders de los tips
     }
