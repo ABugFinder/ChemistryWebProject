@@ -501,7 +501,7 @@ function drop() {
             levelElement.innerHTML = 13;
             currentLVL = 13;
             e6.style.display = "block";
-            send_puntaje()
+            send_puntaje();
             gameAlert();
             gameOver = true;
         }

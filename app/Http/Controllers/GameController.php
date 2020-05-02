@@ -66,7 +66,8 @@ class GameController extends Controller
     }
 
     public function playNewbieTetris(){
-        return view('games.newbieTetris');
+        $user = Auth::user();
+        return view('games.newbieTetris',['user'=> $user]);
     }
 
     public function playEasyTetris(){
@@ -75,23 +76,28 @@ class GameController extends Controller
     }
 
     public function playNormalTetris(){
-        return view('games.normalTetris');
+        $user = Auth::user();
+        return view('games.normalTetris',['user'=> $user]);
     }
 
     public function playAdvanceTetris(){
-        return view('games.advanceTetris');
+        $user = Auth::user();
+        return view('games.advanceTetris',['user'=> $user]);
     }
 
     public function playHardTetris(){
-        return view('games.hardTetris');
+        $user = Auth::user();
+        return view('games.hardTetris',['user'=> $user]);
     }
 
     public function playExpertTetris(){
-        return view('games.expertTetris');
+        $user = Auth::user();
+        return view('games.expertTetris',['user'=> $user]);
     }
 
     public function playExtremeTetris(){
-        return view('games.extremeTetris');
+        $user = Auth::user();
+        return view('games.extremeTetris',['user'=> $user]);
     }
 
     //Memorama

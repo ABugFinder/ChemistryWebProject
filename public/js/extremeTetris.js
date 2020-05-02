@@ -3,6 +3,8 @@ const ctx = cvs.getContext("2d");
 const scoreElement = document.getElementById("score");
 const levelElement = document.getElementById("level");
 const nextPieceElement = document.getElementById("nextPiece");
+var id = document.getElementById("cont-game").getAttribute("value");
+
 
 const cvsScale = 1.5;
 
@@ -38,6 +40,18 @@ const e5 = document.getElementById("e5");
 const e6 = document.getElementById("e6");
 
 let score = 0;
+//post para enviar el puntaje
+function send_puntaje() {
+    
+    axios.post('/extremeTetris/'+id, {
+        points: '2300'
+      })
+      .then((response) => {
+        console.log(response);
+      }, (error) => {
+        console.log(error);
+      });
+}
 
 // draw a square
 function drawSquare(x, y, color) {
@@ -497,6 +511,7 @@ function drop() {
             levelElement.innerHTML = 13;
             currentLVL = 13;
             e6.style.display = "block";
+            send_puntaje();
             gameAlert();
             gameOver = true;
         }
