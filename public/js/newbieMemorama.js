@@ -1,3 +1,18 @@
+//user id
+var id = document.getElementById("cont-game").getAttribute("value");
+
+//post para enviar el puntaje
+function send_puntaje() {
+    
+    axios.post('/getPoints/'+id, {
+        points: '400'
+      })
+      .then((response) => {
+        console.log(response);
+      }, (error) => {
+        console.log(error);
+      });
+}
 
 //Generate the cards on html code
 function cardPrototype(dataFramework, src) {
@@ -229,6 +244,7 @@ function contador() { //Contador de pares
     paresCartasContenedor = document.getElementById('contenedor').innerHTML = "Pares encontrados: " + paresCartas;
     console.log(paresCartas);
     if(paresCartas == 7){
+        send_puntaje();
         gameAlert(); 
      }
 }

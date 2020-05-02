@@ -112,31 +112,39 @@ class GameController extends Controller
     }
 
     public function playNewbieMemorama(){
-        return view('games.newbieMemorama');
+        $user = Auth::user();
+        return view('games.newbieMemorama',['user'=> $user]);
     }
 
-    public function playEasyMemorama(){
-        return view('games.easyMemorama');
+    public function playEasyMemorama()
+    {
+        $user = Auth::user();
+        return view('games.easyMemorama',['user'=> $user]);
     }
 
     public function playNormalMemorama(){
-        return view('games.normalMemorama');
+        $user = Auth::user();
+        return view('games.normalMemorama',['user'=> $user]);
     }
 
     public function playAdvanceMemorama(){
-        return view('games.advanceMemorama');
+        $user = Auth::user();
+        return view('games.advanceMemorama',['user'=> $user]);
     }
 
     public function playHardMemorama(){
-        return view('games.hardMemorama');
+        $user = Auth::user();
+        return view('games.hardMemorama',['user'=> $user]);
     }
 
     public function playExpertMemorama(){
-        return view('games.expertMemorama');
+        $user = Auth::user();
+        return view('games.expertMemorama',['user'=> $user]);
     }
 
     public function playExtremeMemorama(){
-        return view('games.extremeMemorama');
+        $user = Auth::user();
+        return view('games.extremeMemorama',['user'=> $user]);
     }
 
     //Duolingo

@@ -42,19 +42,13 @@ Route::get('/gamesMenu', 'GameController@showGamesMenu')->name('gamesMenu');
 Route::get('/tetrisMenu', 'GameController@showTetrisMenu')->name('tetrisMenu');
 Route::get('/tetrisDifficulty', 'GameController@showTetrisDifficultyMenu')->name('tetrisDifficulty');
 Route::get('/easyTetris', 'GameController@playEasyTetris')->name('easyTetris');
-Route::post('/easyTetris/{id}', 'UserController@update');
 Route::get('/newbieTetris', 'GameController@playNewbieTetris')->name('newbieTetris');
-Route::post('/newbieTetris/{id}', 'UserController@update');
 Route::get('/normalTetris', 'GameController@playNormalTetris')->name('normalTetris');
-Route::post('/normalTetris/{id}', 'UserController@update');
 Route::get('/advanceTetris', 'GameController@playAdvanceTetris')->name('advanceTetris');
-Route::post('/advanceTetris/{id}', 'UserController@update');
 Route::get('/hardTetris', 'GameController@playHardTetris')->name('hardTetris');
-Route::post('/hardTetris/{id}', 'UserController@update');
 Route::get('/expertTetris', 'GameController@playExpertTetris')->name('expertTetris');
-Route::post('/expertTetris/{id}', 'UserController@update');
 Route::get('/extremeTetris', 'GameController@playExtremeTetris')->name('extremeTetris');
-Route::post('/extremeTetris/{id}', 'UserController@update');
+
 
 
 //Memorama
@@ -78,6 +72,9 @@ Route::get('/advanceDuolingo', 'GameController@playAdvanceDuolingo')->name('adva
 Route::get('/hardDuolingo', 'GameController@playHardDuolingo')->name('hardDuolingo');
 Route::get('/expertDuolingo', 'GameController@playExpertDuolingo')->name('expertDuolingo');
 Route::get('/extremeDuolingo', 'GameController@playExtremeDuolingo')->name('extremeDuolingo');
+
+//points
+Route::post('/getPoints/{id}', 'UserController@update');
 
 // Elements
 Route::resource('/elements', 'ElementController', ['except' => ['create', 'store', 'edit', 'update', 'destroy']]);

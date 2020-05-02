@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-    <div id="cont-game">
+    <div id="cont-game" value ="{{$user->id}}">
 
         <!--Aqui aparece el contador-->
         <p id="contenedor" style="font-size:20px; text-decoration: none; color: #636b6f; padding-left: 47%;">

@@ -42,7 +42,7 @@ let score = 0;
 //post para enviar el puntaje
 function send_puntaje() {
     
-    axios.post('/normalTetris/'+id, {
+    axios.post('/getPoints/'+id, {
         points: '1100'
       })
       .then((response) => {
