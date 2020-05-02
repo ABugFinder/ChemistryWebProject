@@ -43,6 +43,10 @@
                         <div class="col">
                             <a class="btn btn-primary" href="{{route('extremeTetris')}}" role="button">Extremo</a>
                         </div>
+
+                        <div class="col">
+                            <a class="btn btn-primary" href="{{route('infiniteTetris')}}" role="button">Infinito</a>
+                        </div>
                     </div>
                     
                     <div class="card-body">

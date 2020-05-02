@@ -35,10 +35,10 @@ Route::post('/myStore/purchase', 'PurchaseController@store')->name('purchaseTest
 Route::get('/myStore/cantbuythis', 'StoreController@showNoBuy')->name('nobuy');
 Route::get('/myStore/canbuythis', 'StoreController@showyesBuy')->name('yesbuy');
 
-//Games
+// Games
 Route::get('/gamesMenu', 'GameController@showGamesMenu')->name('gamesMenu');
 
-//Tetris
+// Tetris
 Route::get('/tetrisMenu', 'GameController@showTetrisMenu')->name('tetrisMenu');
 Route::get('/tetrisDifficulty', 'GameController@showTetrisDifficultyMenu')->name('tetrisDifficulty');
 Route::get('/easyTetris', 'GameController@playEasyTetris')->name('easyTetris');
@@ -49,9 +49,10 @@ Route::get('/hardTetris', 'GameController@playHardTetris')->name('hardTetris');
 Route::get('/expertTetris', 'GameController@playExpertTetris')->name('expertTetris');
 Route::get('/extremeTetris', 'GameController@playExtremeTetris')->name('extremeTetris');
 
+Route::get('/tetrisTest', 'GameController@playTetrisTest')->name('tetrisTest');
+Route::get('/infiniteTetris', 'GameController@playTetrisInfinite')->name('infiniteTetris');
 
-
-//Memorama
+// Memorama
 Route::get('/memoramaMenu', 'GameController@showMemoramaMenu')->name('memoramaMenu');
 Route::get('/memoramaDifficulty', 'GameController@showMemoramaDifficultyMenu')->name('memoramaDifficulty');
 Route::get('/easyMemorama', 'GameController@playEasyMemorama')->name('easyMemorama');
@@ -62,7 +63,10 @@ Route::get('/hardMemorama', 'GameController@playHardMemorama')->name('hardMemora
 Route::get('/expertMemorama', 'GameController@playExpertMemorama')->name('expertMemorama');
 Route::get('/extremeMemorama', 'GameController@playExtremeMemorama')->name('extremeMemorama');
 
-//Duolingo
+Route::get('/memoramaTest', 'GameController@playMemoramaTest')->name('memoramaTest');
+Route::get('/infiniteMemorama', 'GameController@playMemoramaInfinite')->name('infiniteMemorama');
+
+// Duolingo
 Route::get('/duolingoMenu', 'GameController@showDuolingoMenu')->name('duolingoMenu');
 Route::get('/duolingoDifficulty', 'GameController@showDuolingoDifficultyMenu')->name('duolingoDifficulty');
 Route::get('/easyDuolingo', 'GameController@playEasyDuolingo')->name('easyDuolingo');
@@ -73,7 +77,9 @@ Route::get('/hardDuolingo', 'GameController@playHardDuolingo')->name('hardDuolin
 Route::get('/expertDuolingo', 'GameController@playExpertDuolingo')->name('expertDuolingo');
 Route::get('/extremeDuolingo', 'GameController@playExtremeDuolingo')->name('extremeDuolingo');
 
-//points
+Route::get('/infiniteDuolingo', 'GameController@playInfiniteDuolingo')->name('infiniteDuolingo');
+
+// Points
 Route::post('/getPoints/{id}', 'UserController@update');
 
 // Elements

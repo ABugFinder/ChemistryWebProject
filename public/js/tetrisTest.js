@@ -43,7 +43,7 @@ let score = 0;
 function send_puntaje() {
     
     axios.post('/getPoints/'+id, {
-        points: '2000'
+        points: '400'
       })
       .then((response) => {
         console.log(response);
@@ -251,23 +251,23 @@ const gameOverAlert = () => Swal.fire({
     confirmButtonColor: '#3085d6',
     cancelButtonColor: '#d33',
     confirmButtonText: 'Si, otro intento',
-    cancelButtonText: 'No, volver al menú',
+    cancelButtonText: 'No, volver al inicio',
 }).then((result) => {
     if (result.value) {
         window.location.reload();
     } else {
-        window.location.href="/tetrisDifficulty";
+        window.location.href="/";
     }
 });
 
 const gameAlert = () => Swal.fire({
     title: "¡Lo lograste!",
-    text: "¡Encontraste todos los elementos!",
+    text: "¡Crea una cuenta para poder acceder a más juegos, dificultades y premios!",
     icon: "success",
-    confirmButtonText: "Volver al menú"
+    confirmButtonText: "¡De acuerdo!"
 }).then((result) => {
     if (result.value) {
-        window.location.href="/tetrisDifficulty";
+        window.location.href="/register";
     }
 });
 
@@ -383,133 +383,45 @@ function drop() {
     //console.log(delta);
 
     if (score < LVL1) {
-        if (delta > 500) {
+        if (delta > 650) {
             p.moveDown();
             dropStart = Date.now();
             // update the score
             levelElement.innerHTML = 0;
             currentLVL = 0;
             nxtLvl = LVL1;
-            e1.style.display = "block";
         }
     }
     if (score >= LVL1 && score < LVL2) {
-        if (delta > 420) {
+        if (delta > 550) {
             p.moveDown();
             dropStart = Date.now();
             // update the score
             levelElement.innerHTML = 1;
             currentLVL = 1;
             nxtLvl = LVL2;
+            e1.style.display = "block";            
             e2.style.display = "block";
+            e3.style.display = "block";
         }
     } else if (score >= LVL2 && score < LVL3) {
-        if (delta > 400) {
+        if (delta > 450) {
             p.moveDown();
             dropStart = Date.now();
             levelElement.innerHTML = 2;
             currentLVL = 2;
             nxtLvl = LVL3;
-            e3.style.display = "block";
+            e4.style.display = "block";
+            e5.style.display = "block";
+            e6.style.display = "block";
         }
     } else if (score >= LVL3 && score < LVL4) {
-        if (delta > 385) {
+        if (delta > 425) {
             p.moveDown();
             dropStart = Date.now();
             levelElement.innerHTML = 3;
             currentLVL = 3;
-            e4.style.display = "block";
-        }
-    } else if (score >= LVL4 && score < LVL5) {
-        if (delta > 370) {
-            p.moveDown();
-            dropStart = Date.now();
-            levelElement.innerHTML = 4;
-            currentLVL = 4;
-            nxtLvl = LVL5;
-            e5.style.display = "block";
-        }
-    } else if (score >= LVL5 && score < LVL6) {
-        if (delta > 360) {
-            p.moveDown();
-            dropStart = Date.now();
-            levelElement.innerHTML = 5;
-            currentLVL = 5;
-            nxtLvl = LVL6;
-            e6.style.display = "block";
-        }
-    } else if (score >= LVL6 && score < LVL7) {
-        if (delta > 350) {
-            p.moveDown();
-            dropStart = Date.now();
-            levelElement.innerHTML = 6;
-            currentLVL = 6;
-            nxtLvl = LVL7;
             e7.style.display = "block";
-        }
-    } else if (score >= LVL7 && score < LVL8) {
-        if (delta > 340) {
-            p.moveDown();
-            dropStart = Date.now();
-            levelElement.innerHTML = 7;
-            currentLVL = 7;
-            nxtLvl = LVL8;
-            e8.style.display = "block";
-        }
-    } else if (score >= LVL8 && score < LVL9) {
-        if (delta > 330) {
-            p.moveDown();
-            dropStart = Date.now();
-            levelElement.innerHTML = 8;
-            currentLVL = 8;
-            nxtLvl = LVL9;
-            e9.style.display = "block";
-        }
-    } else if (score >= LVL9 && score < LVL10) {
-        if (delta > 320) {
-            p.moveDown();
-            dropStart = Date.now();
-            levelElement.innerHTML = 9;
-            currentLVL = 9;
-            nxtLvl = LVL10;
-            e10.style.display = "block";
-        }
-    } else if (score >= LVL10 && score < LVL11) {
-        if (delta > 310) {
-            p.moveDown();
-            dropStart = Date.now();
-            levelElement.innerHTML = 10;
-            currentLVL = 10;
-            nxtLvl = LVL11;
-            e11.style.display = "block";
-        }
-    } else if (score >= LVL11 && score < LVL12) {
-        if (delta > 300) {
-            p.moveDown();
-            dropStart = Date.now();
-            levelElement.innerHTML = 11;
-            currentLVL = 11;
-            nxtLvl = LVL12;
-            e12.style.display = "block";
-        }
-    } else if (score >= LVL12 && score < LVL13) {
-        if (delta > 290) {
-            p.moveDown();
-            dropStart = Date.now();
-            levelElement.innerHTML = 12;
-            currentLVL = 12;
-            nxtLvl = LVL13;
-            e13.style.display = "block";
-            e14.style.display = "block";
-        }
-    } else if (score >= LVL13) {
-        if (delta > 280) {
-            p.moveDown();
-            dropStart = Date.now();
-            levelElement.innerHTML = 13;
-            currentLVL = 13;
-            e15.style.display = "block";
-            send_puntaje();
             gameAlert();
             gameOver = true;
         }

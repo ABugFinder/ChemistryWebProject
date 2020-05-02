@@ -21,7 +21,7 @@
 
     <!-- TETRIS -->
 
-    @if (Request::path() == 'newbieTetris')
+    @if (Request::path() == 'newbieTetris' || Request::path() == 'tetrisTest')
         <link rel="stylesheet" type="text/css" href="{{ url('/css/newbieTetris.css') }}" />
     @endif
 
@@ -41,7 +41,7 @@
         <link rel="stylesheet" type="text/css" href="{{ url('/css/hardTetris.css') }}" />
     @endif
 
-    @if (Request::path() == 'expertTetris')
+    @if (Request::path() == 'expertTetris' || Request::path() == 'infiniteTetris')
         <link rel="stylesheet" type="text/css" href="{{ url('/css/expertTetris.css') }}" />
     @endif
 
@@ -51,7 +51,7 @@
 
     <!-- MEMORAMA -->
 
-    @if (Request::path() == 'newbieMemorama')
+    @if (Request::path() == 'newbieMemorama' || Request::path() == 'memoramaTest')
         <link rel="stylesheet" type="text/css" href="{{ url('/css/newbieMemorama.css') }}" />
     @endif
 
@@ -79,7 +79,39 @@
         <link rel="stylesheet" type="text/css" href="{{ url('/css/newbieMemorama.css') }}" />
     @endif
 
+    @if (Request::path() == 'infiniteMemorama')
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/newbieMemorama.css') }}" />
+    @endif
+
     <!-- DUOLINGO -->
+
+    @if (Request::path() == 'newbieDuolingo')
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/newbieDuolingo.css') }}" />
+    @endif
+
+    @if (Request::path() == 'easyDuolingo')
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/newbieDuolingo.css') }}" />
+    @endif
+
+    @if (Request::path() == 'normalDuolingo')
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/newbieDuolingo.css') }}" />
+    @endif
+
+    @if (Request::path() == 'advanceDuolingo')
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/newbieDuolingo.css') }}" />
+    @endif
+
+    @if (Request::path() == 'hardDuolingo')
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/newbieDuolingo.css') }}" />
+    @endif
+
+    @if (Request::path() == 'expertDuolingo')
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/newbieDuolingo.css') }}" />
+    @endif
+
+    @if (Request::path() == 'extremeDuolingo')
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/newbieDuolingo.css') }}" />
+    @endif
 
 </head>
 <body>

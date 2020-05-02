@@ -49,19 +49,16 @@ class GameController extends Controller
         //
     }
 
-    public function showGamesMenu()
-    {
+    public function showGamesMenu(){
         return view('games.gamesMenu');
     }
 
     //Tetris
-    public function showTetrisMenu()
-    {
+    public function showTetrisMenu(){
         return view('games.tetrisMenu');
     }
 
-    public function showTetrisDifficultyMenu()
-    {
+    public function showTetrisDifficultyMenu(){
         return view('games.chooseTetrisLevel');
     }
 
@@ -100,14 +97,21 @@ class GameController extends Controller
         return view('games.extremeTetris',['user'=> $user]);
     }
 
+    public function playTetrisTest(){
+        return view('games.tetrisTest');
+    }
+
+    public function playTetrisInfinite(){
+        $user = Auth::user();
+        return view('games.tetrisInfinite', ['user'=> $user]);
+    }
+
     //Memorama
-    public function showMemoramaMenu()
-    {
+    public function showMemoramaMenu(){
         return view('games.memoramaMenu');
     }
 
-    public function showMemoramaDifficultyMenu()
-    {
+    public function showMemoramaDifficultyMenu(){
         return view('games.chooseMemoramaLevel');
     }
 
@@ -116,8 +120,7 @@ class GameController extends Controller
         return view('games.newbieMemorama',['user'=> $user]);
     }
 
-    public function playEasyMemorama()
-    {
+    public function playEasyMemorama(){
         $user = Auth::user();
         return view('games.easyMemorama',['user'=> $user]);
     }
@@ -145,6 +148,15 @@ class GameController extends Controller
     public function playExtremeMemorama(){
         $user = Auth::user();
         return view('games.extremeMemorama',['user'=> $user]);
+    }
+
+    public function playMemoramaTest(){
+        return view('games.memoramaTest');
+    }
+
+    public function playMemoramaInfinite(){
+        $user = Auth::user();
+        return view('games.memoramaInfinite', ['user'=> $user]);
     }
 
     //Duolingo
@@ -179,7 +191,7 @@ class GameController extends Controller
     }
 
     public function playExpertDuolingo(){
-        return view('games.experDuolingo');
+        return view('games.expertDuolingo');
     }
 
     public function playExtremeDuolingo(){

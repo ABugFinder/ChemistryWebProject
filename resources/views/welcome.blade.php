@@ -89,8 +89,8 @@
                     @if (Route::has('register'))
                         
                         <div class="links">
-                            <a href="#">¡Probar Tetris!</a>
-                            <a href="#">¡Probar Memorama!</a>
+                            <a href="{{ route('tetrisTest') }}">¡Probar Tetris!</a>
+                            <a href="{{ route('memoramaTest') }}">¡Probar Memorama!</a>
                         </div>
                     @endif
                 @endauth

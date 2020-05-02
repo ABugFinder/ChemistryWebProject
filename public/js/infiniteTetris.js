@@ -244,7 +244,7 @@ Piece.prototype.rotate = function() {
 };
 
 const gameOverAlert = () => Swal.fire({
-    title: '¡Perdiste!',
+    title: '¡Se acabó!',
     text: "¿Quieres volver a intentarlo?",
     icon: 'error',
     showCancelButton: true,
@@ -256,17 +256,6 @@ const gameOverAlert = () => Swal.fire({
     if (result.value) {
         window.location.reload();
     } else {
-        window.location.href="/tetrisDifficulty";
-    }
-});
-
-const gameAlert = () => Swal.fire({
-    title: "¡Lo lograste!",
-    text: "¡Encontraste todos los elementos!",
-    icon: "success",
-    confirmButtonText: "Volver al menú"
-}).then((result) => {
-    if (result.value) {
         window.location.href="/tetrisDifficulty";
     }
 });
@@ -501,17 +490,21 @@ function drop() {
             nxtLvl = LVL13;
             e13.style.display = "block";
             e14.style.display = "block";
+            e15.style.display = "block";
         }
-    } else if (score >= LVL13) {
+    } else if (score >= LVL13 && score < 14000) {
         if (delta > 280) {
             p.moveDown();
             dropStart = Date.now();
             levelElement.innerHTML = 13;
             currentLVL = 13;
-            e15.style.display = "block";
-            send_puntaje();
-            gameAlert();
-            gameOver = true;
+        }
+    } else if (score >= 14000) {
+        if (delta > 275) {
+            p.moveDown();
+            dropStart = Date.now();
+            levelElement.innerHTML = 'INFINITE';
+            currentLVL = 'X';
         }
     }
 
