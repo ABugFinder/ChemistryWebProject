@@ -3,6 +3,7 @@ const ctx = cvs.getContext("2d");
 const scoreElement = document.getElementById("score");
 const levelElement = document.getElementById("level");
 const nextPieceElement = document.getElementById("nextPiece");
+var id = document.getElementById("cont-game").getAttribute("value");
 
 const cvsScale = 1.5;
 
@@ -15,8 +16,6 @@ const ROW = 17;
 const COL = (COLUMN = 10);
 const SQ = (squareSize = 25);
 const VACANT = "WHITE"; // color of an empty square
-var formPoints = document.createElement("form");
-var points = document.createElement("input");
 
 const LVL1 = 999,
     LVL2 = 1999,
@@ -40,6 +39,18 @@ const e5 = document.getElementById("e5");
 const e6 = document.getElementById("e6");
 
 let score = 0;
+//post para enviar el puntaje
+function send_puntaje() {
+    
+    axios.post('/easyTetris/'+id, {
+        points: '800'
+      })
+      .then((response) => {
+        console.log(response);
+      }, (error) => {
+        console.log(error);
+      });
+}
 
 // draw a square
 function drawSquare(x, y, color) {
@@ -490,13 +501,7 @@ function drop() {
             levelElement.innerHTML = 13;
             currentLVL = 13;
             e6.style.display = "block";
-            $.ajax({
-                headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') },
-                type: "POST",
-                url: "/easyTetris/points",
-                data: "800",
-                dataType: "jso"
-            });
+            send_puntaje()
             gameAlert();
             gameOver = true;
         }

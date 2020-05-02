@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class GameController extends Controller
 {
@@ -69,7 +70,8 @@ class GameController extends Controller
     }
 
     public function playEasyTetris(){
-        return view('games.easyTetris');
+        $user = Auth::user();
+        return view('games.easyTetris',['user'=> $user]);
     }
 
     public function playNormalTetris(){

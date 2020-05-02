@@ -2,8 +2,8 @@
 
 
 @section('content')
-    <div id="cont-game">   
-
+    <div id="cont-game" value ="{{$user->id}}">   
+    
       <ul id="game-distribution">
         <div id="tetris-container" class="row">
 
