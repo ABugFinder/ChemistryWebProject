@@ -2,7 +2,7 @@
 
 
 @section('content')
-    <div id="cont-game">
+    <div id="cont-game" value ="{{$user->id}}">
       <div class="containerPoints">
         <div class="results">
           <li id="game-data" class="col">

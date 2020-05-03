@@ -9,6 +9,23 @@ var shuffledQuestions, currentQuestionIndex;
 var success = 0;
 var wrong = 0;
 
+//user id
+var id = document.getElementById("cont-game").getAttribute("value");
+
+//post para enviar el puntaje
+function send_puntaje() {
+    
+    axios.post('/getPoints/'+id, {
+        points: '50'
+      })
+      .then((response) => {
+        console.log(response);
+      }, (error) => {
+        console.log(error);
+      });
+}
+
+
 startButton.addEventListener('click', startGame)
 
 nextButton.addEventListener('click', () => {
@@ -104,7 +121,7 @@ function selectAnswer(e) {
 
     //Here goes the validation for win duolingo
 
-
+    send_puntaje();
     
 
     gameAlert();

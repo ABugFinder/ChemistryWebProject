@@ -171,31 +171,38 @@ class GameController extends Controller
     }
 
     public function playNewbieDuolingo(){
-        return view('games.newbieDuolingo');
+        $user = Auth::user();
+        return view('games.newbieDuolingo',['user'=> $user]);
     }
 
     public function playEasyDuolingo(){
-        return view('games.easyDuolingo');
+        $user = Auth::user();
+        return view('games.easyDuolingo',['user'=> $user]);
     }
 
     public function playNormalDuolingo(){
-        return view('games.normalDuolingo');
+        $user = Auth::user();
+        return view('games.normalDuolingo',['user'=> $user]);
     }
 
     public function playAdvanceDuolingo(){
-        return view('games.advanceDuolingo');
+        $user = Auth::user();
+        return view('games.advanceDuolingo',['user'=> $user]);
     }
 
     public function playHardDuolingo(){
-        return view('games.hardDuolingo');
+        $user = Auth::user();
+        return view('games.hardDuolingo',['user'=> $user]);
     }
 
     public function playExpertDuolingo(){
-        return view('games.expertDuolingo');
+        $user = Auth::user();
+        return view('games.expertDuolingo',['user'=> $user]);
     }
 
     public function playExtremeDuolingo(){
-        return view('games.extremeDuolingo');
+        $user = Auth::user();
+        return view('games.extremeDuolingo',['user'=> $user]);
     }
 
     /**
