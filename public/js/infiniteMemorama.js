@@ -1,18 +1,7 @@
 //user id
 var id = document.getElementById("cont-game").getAttribute("value");
 
-//post para enviar el puntaje
-function send_puntaje() {
-    
-    axios.post('/getPoints/'+id, {
-        points: '2000'
-      })
-      .then((response) => {
-        console.log(response);
-      }, (error) => {
-        console.log(error);
-      });
-}
+var paresPoints = 0;
 
 //Generate the cards on html code
 function cardPrototype(dataFramework, src) {
@@ -22,6 +11,7 @@ function cardPrototype(dataFramework, src) {
     // Contenedor
     container.setAttribute("class", "memory-card");
     container.setAttribute("data-framework", dataFramework);
+    container.setAttribute("id", "myBoard");
     //Back 
     imgBack.setAttribute("src", "../images/memoramaCards/reverso_1.png");
     imgBack.setAttribute("class", "back-face");
@@ -134,11 +124,15 @@ var cardListAdvance = [ //NormalCards
     },
 ];
 
+function runGame(){
+    cardListAdvance = shuffle(cardListAdvance);
+    cardListAdvance.forEach(card => {
+        cardContainer.appendChild(cardPrototype(card.name, card.img));
+    });
+}
 
-cardListAdvance = shuffle(cardListAdvance);
-cardListAdvance.forEach(card => {
-    cardContainer.appendChild(cardPrototype(card.name, card.img));
-})
+runGame();
+
 
 //Atributtes
 const cards = document.querySelectorAll('.memory-card');
@@ -247,11 +241,34 @@ function contador() { //Contador de pares
     paresCartas++;
     paresCartasContenedor = document.getElementById('contenedor').innerHTML = "Pares encontrados: " + paresCartas;
     console.log(paresCartas);
-    if(paresCartas == 10){
-        
-        // reiniciar página con cartas encontradas
-        window.location.reload();
+    if(paresCartas === 10){
 
+        //cards = document.querySelectorAll('.memory-card');
+        hasFlippedCard = false;
+        firstCard = null;
+        secondCard = null;
+        lockBoard = false;
+        i = Math.round(Math.random()*5)
+        tm = 60;
+        paresCartas = 0;
+        contIntentos = 25;
+
+        let board = document.getElementById('card-container')
+        
+        board.innerHTML='';
+
+        cardListAdvance = shuffle(cardListAdvance);
+        cardListAdvance.forEach(card => {
+            board.appendChild(cardPrototype(card.name, card.img));
+        });
+
+        cards.forEach(card => card.addEventListener('click',flipCard));
+
+
+        //console.log(board);
+
+        // reiniciar página con cartas encontradas
+        // window.location.reload();
     }
 }
 

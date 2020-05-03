@@ -65,6 +65,7 @@ Route::get('/extremeMemorama', 'GameController@playExtremeMemorama')->name('extr
 
 Route::get('/memoramaTest', 'GameController@playMemoramaTest')->name('memoramaTest');
 Route::get('/infiniteMemorama', 'GameController@playMemoramaInfinite')->name('infiniteMemorama');
+Route::get('/infiniteMemorama/reset', 'GameController@resetMemoramaInfinite')->name('resetInfiniteMemorama');
 
 // Duolingo
 Route::get('/duolingoMenu', 'GameController@showDuolingoMenu')->name('duolingoMenu');

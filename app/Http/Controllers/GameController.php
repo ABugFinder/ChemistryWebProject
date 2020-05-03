@@ -302,7 +302,12 @@ class GameController extends Controller
             'user'=> $user,
             'cyber' => $cyber,
             'medieval' => $medieval
-            ]);
+        ]);
+    }
+
+    public function resetMemoramaInfinite(Request $request){
+        //dd($request->points);
+        return($request);
     }
 
     //Duolingo

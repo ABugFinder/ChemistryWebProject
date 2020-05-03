@@ -15,17 +15,17 @@
         <section id="card-container" class="memory-game"></section>
 
         <br>
-       @if($medieval > 0)
-              <div class="btnMedieval-div">
-                <button type="button" class="btn btn-primary">Skin Medieval</button>
-              </div>
-            @endif
-            <br>
-             @if($cyber > 0)
-              <div class="btnCyebr-div">
-                <button type="button" class="btn btn-primary">Skin Cyber</button>
-              </div>
-            @endif
+        @if($medieval > 0)
+          <div class="btnMedieval-div" style="margin-left: 48%">
+            <button type="button" class="btn btn-primary">Skin Medieval</button>
+          </div>
+        @endif
+        <br>
+        @if($cyber > 0)
+          <div class="btnCyebr-div" style="margin-left: 48%">
+            <button type="button" class="btn btn-primary">Skin Cyber</button>
+          </div>
+        @endif
         
     </div>
 
