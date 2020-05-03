@@ -292,24 +292,6 @@ class GameController extends Controller
         return view('games.memoramaTest');
     }
 
-    public function playMemoramaInfinite(){
-        $user = Auth::user();
-
-        $cyber = Auth::user()->store()->where('purchases.id_store', '1')->count();
-        $medieval = Auth::user()->store()->where('purchases.id_store', '3')->count();
-
-        return view('games.memoramaInfinite', [
-            'user'=> $user,
-            'cyber' => $cyber,
-            'medieval' => $medieval
-        ]);
-    }
-
-    public function resetMemoramaInfinite(Request $request){
-        //dd($request->points);
-        return($request);
-    }
-
     //Duolingo
     public function showDuolingoMenu()
     {

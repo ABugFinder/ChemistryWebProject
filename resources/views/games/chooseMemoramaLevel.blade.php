@@ -50,10 +50,6 @@
                             <a class="btn btn-primary" href="{{route('extremeMemorama')}}" role="button">Extremo</a>
                         </div>
                         @endif
-
-                        <div class="col">
-                            <a class="btn btn-primary" href="{{route('infiniteMemorama')}}" role="button">Infinito</a>
-                        </div>
                     </div>
                     
                     <div class="card-body">

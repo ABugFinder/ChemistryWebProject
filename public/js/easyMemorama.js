@@ -148,14 +148,8 @@ var tm = 60;
 var paresCartas = 0;
 var paresCartasContenedor;
 var contIntentos = 20;
-
-//Sounds 
-/*
-var soundCorrect = new Audio();
-soundCorrect.src = "correct-ding.mp3";
-var soundIncorrect = new Audio();
-soundIncorrect.src = "correct-cbt-sound.mp3";*/
-
+var recordPointsElement;
+var recordPoints = 0;
 
 ///////////////////////////////
 
@@ -188,25 +182,16 @@ function flipCard(){
 
 function checkFormatch(){
 
-    /*let isMatch = firstCard.dataset.framework === 
-    secondCard.dataset.framework;
-
-    isMatch ? disableCards() : unFlipcards() ; 
-
-    */
-
     //Option for check, for any trouble!
     if(firstCard.dataset.framework ===  secondCard.dataset.framework) {
         // It's a Match 
         disableCards();
-        //playAudioC();
         contador(); //Contador funcion
 
     } else {
         // Not a Match
         unFlipcards();
         intentos();
-        //playAudioI();  
     }
 
 }
@@ -245,15 +230,6 @@ function resetBoard(){
     });
 })();
 
-//Manage the audio on the match 
-function playAudioC(){
-    soundCorrect.play();
-}
-
-function playAudioI(){
-    soundIncorrect.play();
-}
-
 function timer1(){
     document.form1.time1.value=tm;
     if(tm<=0){clearInterval();window.location.href='ot raweb.htm'}
@@ -263,16 +239,20 @@ function timer1(){
 function contador() { //Contador de pares
     paresCartas++;
     paresCartasContenedor = document.getElementById('contenedor').innerHTML = "Pares encontrados: " + paresCartas;
+    recordPoints += 2500;
+    recordPointsElement = document.getElementById('recordPointsElement').innerHTML = "Puntuación actual: " + recordPoints;
     console.log(paresCartas);
-    if(paresCartas == 10){
+    if(paresCartas == 7){
         send_puntaje();
-        gameAlert();
+        gameAlert(); 
     }
 }
 
 function intentos() { //Contador de intentos
     contIntentos--;
     paresCartasContenedor = document.getElementById('contenedorIntentos').innerHTML = "Intentos restantes: " + contIntentos;
+    recordPoints -= 250;
+    recordPointsElement = document.getElementById('recordPointsElement').innerHTML = "Puntuación actual: " + recordPoints;
     console.log(contIntentos);
     if(contIntentos == 0){
         gameOverAlert(); 

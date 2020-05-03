@@ -1,6 +1,6 @@
 
 #card-container {
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 .position-ref {
@@ -40,7 +40,6 @@ img{
 .memory-card{
     width: 110px;
     height: 220;
-    
     position: relative;
     margin: 5px;
     transform: scale(1);

@@ -32,8 +32,9 @@ Route::get('/myStore', 'StoreController@showStore')->name('myStore');
 Route::post('/myStore/purchase', 'PurchaseController@store')->name('purchaseTest');
 
 // Notifications
-Route::get('/myStore/cantbuythis', 'StoreController@showNoBuy')->name('nobuy');
-Route::get('/myStore/canbuythis', 'StoreController@showyesBuy')->name('yesbuy');
+Route::get('/myStore/cantbuythis', 'PurchaseController@showNoBuy')->name('nobuy');
+Route::get('/myStore/canbuythis', 'PurchaseController@showYesBuy')->name('yesbuy');
+Route::get('/myStore/cantbuythis', 'PurchaseController@showCantBuy')->name('cantbuy');
 
 // Games
 Route::get('/gamesMenu', 'GameController@showGamesMenu')->name('gamesMenu');
@@ -64,8 +65,6 @@ Route::get('/expertMemorama', 'GameController@playExpertMemorama')->name('expert
 Route::get('/extremeMemorama', 'GameController@playExtremeMemorama')->name('extremeMemorama');
 
 Route::get('/memoramaTest', 'GameController@playMemoramaTest')->name('memoramaTest');
-Route::get('/infiniteMemorama', 'GameController@playMemoramaInfinite')->name('infiniteMemorama');
-Route::get('/infiniteMemorama/reset', 'GameController@resetMemoramaInfinite')->name('resetInfiniteMemorama');
 
 // Duolingo
 Route::get('/duolingoMenu', 'GameController@showDuolingoMenu')->name('duolingoMenu');
@@ -85,3 +84,7 @@ Route::post('/getPoints/{id}', 'UserController@update');
 
 // Elements
 Route::resource('/elements', 'ElementController', ['except' => ['create', 'store', 'edit', 'update', 'destroy']]);
+
+// Leaderboards
+Route::get('/show-tetris-lederboar', 'RecordTetrisController@index')->name('tetrisLeaderboard');
+Route::get('/show-memorama-lederboar', 'RecordMemoramaController@index')->name('memoramaLeaderboard');

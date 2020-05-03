@@ -20,7 +20,7 @@
                     </div>
 
                     <div class="card-body" style="margin-left: auto; margin-right: auto;">
-                        <a class="btn btn-primary" href="#" role="button"> Leaderboards</a>
+                        <a class="btn btn-primary" href="{{ route('tetrisLeaderboard') }}" role="button"> Leaderboards</a>
                     </div>
 
                     <div class="card-body" style="margin-left: auto; margin-right: auto;">

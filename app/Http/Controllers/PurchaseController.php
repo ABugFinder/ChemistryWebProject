@@ -52,7 +52,7 @@ class PurchaseController extends Controller
         }else if($user->points < $product->price){
 
             //return dinero insufuciente
-            return 'dinero insufuciente';
+            return view('cantbuy');
         }
 
         $purchase = Purchase::create([
@@ -62,7 +62,6 @@ class PurchaseController extends Controller
         
         //return redirect()->route('myStore');
         return view('yesbuy');
-        
     }
 
     /**

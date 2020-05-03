@@ -10,22 +10,25 @@
         <p id="contenedorIntentos" style="font-size:20px; text-decoration: none; color: #636b6f; padding-left: 47%;">
             Intentos restantes: 15
         </p>
+        <p id="recordPointsElement" style="font-size:20px; text-decoration: none; color: #636b6f; padding-left: 47%;">
+          Puntuación actual: 0
+        </p>
         
         <!--Frame of the cards-->
         <section id="card-container" class="memory-game"></section>
 
         <br>
         @if($medieval > 0)
-              <div class="btnMedieval-div">
-                <button type="button" class="btn btn-primary">Skin Medieval</button>
-              </div>
-            @endif
-            <br>
-             @if($cyber > 0)
-              <div class="btnCyebr-div">
-                <button type="button" class="btn btn-primary">Skin Cyber</button>
-              </div>
-            @endif
+          <div class="btnMedieval-div" style="margin-left: 47%">
+            <button type="button" class="btn btn-primary">Skin Medieval</button>
+          </div>
+        @endif
+        <br>
+          @if($cyber > 0)
+          <div class="btnCyebr-div" style="margin-left: 47%">
+            <button type="button" class="btn btn-primary">Skin Cyber</button>
+          </div>
+        @endif
         
     </div>
 
