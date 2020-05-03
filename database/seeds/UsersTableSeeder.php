@@ -53,7 +53,7 @@ class UsersTableSeeder extends Seeder
             'username' => 'Netroid2000',
             'email' => 'neto@solano.com',
             'password' => Hash::make('password'),
-            'points' => 100,
+            'points' => 1000000000,
         ]);
 
         $user = User::create([

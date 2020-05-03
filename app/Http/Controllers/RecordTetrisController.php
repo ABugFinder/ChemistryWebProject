@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\RecordTetris;
 use Illuminate\Http\Request;
+use App\User;
+use Illuminate\Support\Facades\Auth;
 
 class RecordTetrisController extends Controller
 {
@@ -81,5 +83,41 @@ class RecordTetrisController extends Controller
     public function destroy(RecordTetris $recordTetris)
     {
         //
+    }
+
+       /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function updateRecords(Request $request)
+    {
+        $user = Auth::user();
+
+        $top1 = RecordTetris::find(1)->where('id', 1)->first();
+        $top2 = RecordTetris::find(2)->where('id', 2)->first();
+        $top3 = RecordTetris::find(3)->where('id', 3)->first();
+
+        if($request->points > $top1->record){
+            $top1->record = $request->points;
+            $top1->id_user = $user->id;
+
+            $top1->save();
+        }else if($request->points > $top2->record){
+            $top2->record = $request->points;
+            $top2->id_user = $user->id;
+
+            $top2->save();
+        }else if($request->points > $top3->record){
+            $top3->record = $request->points;
+            $top3->id_user = $user->id;
+
+            $top3->save();
+        }
+
+        
+        return $top3;
     }
 }

@@ -88,3 +88,7 @@ Route::resource('/elements', 'ElementController', ['except' => ['create', 'store
 // Leaderboards
 Route::get('/show-tetris-lederboar', 'RecordTetrisController@index')->name('tetrisLeaderboard');
 Route::get('/show-memorama-lederboar', 'RecordMemoramaController@index')->name('memoramaLeaderboard');
+
+//Records
+Route::post('/infiniteTetris/records', 'RecordTetrisController@updateRecords');
+Route::post('/extremeMemorama/records', 'RecordMemoramaController@updateRecords');

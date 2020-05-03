@@ -6,5 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class RecordMemorama extends Model
 {
-    //
+    protected $fillable = [
+        'top', 'record', 'id_user'
+    ];
+    public $timestamps = false;
 }

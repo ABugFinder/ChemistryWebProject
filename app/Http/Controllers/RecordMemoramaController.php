@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\RecordMemorama;
 use Illuminate\Http\Request;
+use App\User;
+use Illuminate\Support\Facades\Auth;
 
 class RecordMemoramaController extends Controller
 {
@@ -69,7 +71,7 @@ class RecordMemoramaController extends Controller
      */
     public function update(Request $request, RecordMemorama $recordMemorama)
     {
-        //
+        
     }
 
     /**
@@ -81,5 +83,43 @@ class RecordMemoramaController extends Controller
     public function destroy(RecordMemorama $recordMemorama)
     {
         //
+    }
+
+     /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function updateRecords(Request $request)
+    {
+
+        $user = Auth::user();
+
+        $top1 = RecordMemorama::find(1)->where('id', 1)->first();
+        $top2 = RecordMemorama::find(2)->where('id', 2)->first();
+        $top3 = RecordMemorama::find(3)->where('id', 3)->first();
+
+        if($request->points > $top1->record){
+            $top1->record = $request->points;
+            $top1->id_user = $user->id;
+
+            $top1->save();
+        }else if($request->points > $top2->record){
+            $top2->record = $request->points;
+            $top2->id_user = $user->id;
+
+            $top2->save();
+        }else if($request->points > $top3->record){
+            $top3->record = $request->points;
+            $top3->id_user = $user->id;
+
+            $top3->save();
+        }
+
+        
+        return $top3;
+        
     }
 }

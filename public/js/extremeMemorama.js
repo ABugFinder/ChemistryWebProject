@@ -14,6 +14,18 @@ function send_puntaje() {
       });
 }
 
+function send_record() {
+    
+    axios.post('/extremeMemorama/records', {
+        points: recordPoints
+      })
+      .then((response) => {
+        console.log(response);
+      }, (error) => {
+        console.log(error);
+      });
+}
+
 //Generate the cards on html code
 function cardPrototype(dataFramework, src) {
     let container = document.createElement("div");
@@ -285,6 +297,7 @@ function contador() { //Contador de pares
     console.log(paresCartas);
     if(paresCartas == 7){
         send_puntaje();
+        send_record(); 
         gameAlert(); 
     }
 }

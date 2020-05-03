@@ -40,10 +40,10 @@ const e6 = document.getElementById("e6");
 
 let score = 0;
 //post para enviar el puntaje
-function send_puntaje() {
+function send_record() {
     
-    axios.post('/getPoints/'+id, {
-        points: '2000'
+    axios.post('/infiniteTetris/records', {
+        points: score
       })
       .then((response) => {
         console.log(response);
@@ -269,6 +269,7 @@ Piece.prototype.lock = function() {
             }
             // pieces to lock on top = game over
             if (this.y + r < 0) {
+                send_record();
                 //alert("Game Over");
                 gameOverAlert();
                 // stop request animation frame

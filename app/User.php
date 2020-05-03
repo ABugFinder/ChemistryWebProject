@@ -66,4 +66,15 @@ class User extends Authenticatable
         return $this->belongsToMany('App\Store','purchases', 'id_user', 'id_store');
     }
 
+    public function recordTetris()
+    {
+        return $this->hasMany('App\RecordTetris','id_user');
+    }
+
+    public function recordMemorama()
+    {
+        return $this->hasMany('App\RecordMemorama','id_user');
+    }
+
+
 }
