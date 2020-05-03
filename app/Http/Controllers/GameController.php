@@ -75,37 +75,93 @@ class GameController extends Controller
 
     public function playNewbieTetris(){
         $user = Auth::user();
-        return view('games.newbieTetris',['user'=> $user]);
+
+        $cyber = Auth::user()->store()->where('purchases.id_store', '2')->count();
+        $medieval = Auth::user()->store()->where('purchases.id_store', '4')->count();
+
+        return view('games.newbieTetris',[
+            'user'=> $user,
+            'cyber' => $cyber,
+            'medieval' => $medieval
+            ]);
     }
 
     public function playEasyTetris(){
         $user = Auth::user();
-        return view('games.easyTetris',['user'=> $user]);
+
+        $cyber = Auth::user()->store()->where('purchases.id_store', '2')->count();
+        $medieval = Auth::user()->store()->where('purchases.id_store', '4')->count();
+
+        return view('games.easyTetris',[
+            'user'=> $user,
+            'cyber' => $cyber,
+            'medieval' => $medieval
+        ]);
     }
 
     public function playNormalTetris(){
         $user = Auth::user();
-        return view('games.normalTetris',['user'=> $user]);
+
+        $cyber = Auth::user()->store()->where('purchases.id_store', '2')->count();
+        $medieval = Auth::user()->store()->where('purchases.id_store', '4')->count();
+
+        return view('games.normalTetris',[
+            'user'=> $user,
+            'cyber' => $cyber,
+            'medieval' => $medieval
+            ]);
     }
 
     public function playAdvanceTetris(){
         $user = Auth::user();
-        return view('games.advanceTetris',['user'=> $user]);
+
+        $cyber = Auth::user()->store()->where('purchases.id_store', '2')->count();
+        $medieval = Auth::user()->store()->where('purchases.id_store', '4')->count();
+
+        return view('games.advanceTetris',[
+            'user'=> $user,
+            'cyber' => $cyber,
+            'medieval' => $medieval
+            ]);
     }
 
     public function playHardTetris(){
         $user = Auth::user();
-        return view('games.hardTetris',['user'=> $user]);
+
+        $cyber = Auth::user()->store()->where('purchases.id_store', '2')->count();
+        $medieval = Auth::user()->store()->where('purchases.id_store', '4')->count();
+
+        return view('games.hardTetris',[
+            'user'=> $user,
+            'cyber' => $cyber,
+            'medieval' => $medieval
+            ]);
     }
 
     public function playExpertTetris(){
         $user = Auth::user();
-        return view('games.expertTetris',['user'=> $user]);
+
+        $cyber = Auth::user()->store()->where('purchases.id_store', '2')->count();
+        $medieval = Auth::user()->store()->where('purchases.id_store', '4')->count();
+
+        return view('games.expertTetris',[
+            'user'=> $user,
+            'cyber' => $cyber,
+            'medieval' => $medieval
+            ]);
     }
 
     public function playExtremeTetris(){
         $user = Auth::user();
-        return view('games.extremeTetris',['user'=> $user]);
+
+        $cyber = Auth::user()->store()->where('purchases.id_store', '2')->count();
+        $medieval = Auth::user()->store()->where('purchases.id_store', '4')->count();
+
+        return view('games.extremeTetris',[
+            'user'=> $user,
+            'cyber' => $cyber,
+            'medieval' => $medieval
+            ]);
     }
 
     public function playTetrisTest(){
@@ -114,7 +170,15 @@ class GameController extends Controller
 
     public function playTetrisInfinite(){
         $user = Auth::user();
-        return view('games.tetrisInfinite', ['user'=> $user]);
+
+        $cyber = Auth::user()->store()->where('purchases.id_store', '2')->count();
+        $medieval = Auth::user()->store()->where('purchases.id_store', '4')->count();
+
+        return view('games.tetrisInfinite', [
+            'user'=> $user,
+            'cyber' => $cyber,
+            'medieval' => $medieval
+            ]);
     }
 
     //Memorama
@@ -135,37 +199,93 @@ class GameController extends Controller
 
     public function playNewbieMemorama(){
         $user = Auth::user();
-        return view('games.newbieMemorama',['user'=> $user]);
+
+        $cyber = Auth::user()->store()->where('purchases.id_store', '1')->count();
+        $medieval = Auth::user()->store()->where('purchases.id_store', '3')->count();
+
+        return view('games.newbieMemorama',[
+            'user'=> $user,
+            'cyber' => $cyber,
+            'medieval' => $medieval
+            ]);
     }
 
     public function playEasyMemorama(){
         $user = Auth::user();
-        return view('games.easyMemorama',['user'=> $user]);
+
+        $cyber = Auth::user()->store()->where('purchases.id_store', '1')->count();
+        $medieval = Auth::user()->store()->where('purchases.id_store', '3')->count();
+
+        return view('games.easyMemorama',[
+            'user'=> $user,
+            'cyber' => $cyber,
+            'medieval' => $medieval
+            ]);
     }
 
     public function playNormalMemorama(){
         $user = Auth::user();
-        return view('games.normalMemorama',['user'=> $user]);
+
+        $cyber = Auth::user()->store()->where('purchases.id_store', '1')->count();
+        $medieval = Auth::user()->store()->where('purchases.id_store', '3')->count();
+
+        return view('games.normalMemorama',[
+            'user'=> $user,
+            'cyber' => $cyber,
+            'medieval' => $medieval
+            ]);
     }
 
     public function playAdvanceMemorama(){
         $user = Auth::user();
-        return view('games.advanceMemorama',['user'=> $user]);
+
+        $cyber = Auth::user()->store()->where('purchases.id_store', '1')->count();
+        $medieval = Auth::user()->store()->where('purchases.id_store', '3')->count();
+
+        return view('games.advanceMemorama',[
+            'user'=> $user,
+            'cyber' => $cyber,
+            'medieval' => $medieval
+            ]);
     }
 
     public function playHardMemorama(){
         $user = Auth::user();
-        return view('games.hardMemorama',['user'=> $user]);
+
+        $cyber = Auth::user()->store()->where('purchases.id_store', '1')->count();
+        $medieval = Auth::user()->store()->where('purchases.id_store', '3')->count();
+
+        return view('games.hardMemorama',[
+            'user'=> $user,
+            'cyber' => $cyber,
+            'medieval' => $medieval
+            ]);
     }
 
     public function playExpertMemorama(){
         $user = Auth::user();
-        return view('games.expertMemorama',['user'=> $user]);
+
+        $cyber = Auth::user()->store()->where('purchases.id_store', '1')->count();
+        $medieval = Auth::user()->store()->where('purchases.id_store', '3')->count();
+
+        return view('games.expertMemorama',[
+            'user'=> $user,
+            'cyber' => $cyber,
+            'medieval' => $medieval
+            ]);
     }
 
     public function playExtremeMemorama(){
         $user = Auth::user();
-        return view('games.extremeMemorama',['user'=> $user]);
+
+        $cyber = Auth::user()->store()->where('purchases.id_store', '1')->count();
+        $medieval = Auth::user()->store()->where('purchases.id_store', '3')->count();
+
+        return view('games.extremeMemorama',[
+            'user'=> $user,
+            'cyber' => $cyber,
+            'medieval' => $medieval
+            ]);
     }
 
     public function playMemoramaTest(){
@@ -174,7 +294,15 @@ class GameController extends Controller
 
     public function playMemoramaInfinite(){
         $user = Auth::user();
-        return view('games.memoramaInfinite', ['user'=> $user]);
+
+        $cyber = Auth::user()->store()->where('purchases.id_store', '1')->count();
+        $medieval = Auth::user()->store()->where('purchases.id_store', '3')->count();
+
+        return view('games.memoramaInfinite', [
+            'user'=> $user,
+            'cyber' => $cyber,
+            'medieval' => $medieval
+            ]);
     }
 
     //Duolingo

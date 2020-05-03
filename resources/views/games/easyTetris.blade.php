@@ -51,13 +51,17 @@
               Modo de juego: Normal
             </div>
             <br>
-            <div class="btnMedieval-div">
-              <button type="button" class="btn btn-primary">Skin Medieval</button>
-            </div>
+            @if($medieval > 0)
+              <div class="btnMedieval-div">
+                <button type="button" class="btn btn-primary">Skin Medieval</button>
+              </div>
+            @endif
             <br>
-            <div class="btnCyebr-div">
-              <button type="button" class="btn btn-primary">Skin Cyber</button>
-            </div>
+             @if($cyber > 0)
+              <div class="btnCyebr-div">
+                <button type="button" class="btn btn-primary">Skin Cyber</button>
+              </div>
+            @endif
           </li>
         </div>
       </ul>
