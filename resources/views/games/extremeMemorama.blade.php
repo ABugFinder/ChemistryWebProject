@@ -13,6 +13,15 @@
 
         <!--Frame of the cards-->
         <section id="card-container" class="memory-game"></section>
+
+        <br>
+        <div class="btnMedieval-div"  style="padding-left: 49%;">
+          <button type="button" class="btn btn-primary">Skin Medieval</button>
+        </div>
+        <br>
+        <div class="btnCyebr-div"  style="padding-left: 49%;">
+          <button type="button" class="btn btn-primary">Skin Cyber</button>
+        </div>
         
     </div>
 
