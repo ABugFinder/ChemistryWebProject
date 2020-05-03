@@ -40,6 +40,7 @@ class PurchaseController extends Controller
     {
         
         $user = Auth::user();
+        $product = Store::find($request->id)->where('id', $request->id)->first();
         
         if(Purchase::all()->where('id_user', '=', $user->id)
                           ->where('id_store', '=', $request->id)
@@ -48,6 +49,10 @@ class PurchaseController extends Controller
             //return 'ya posee este producto';
             return view('nobuy');
 
+        }else if($user->points < $product->price){
+
+            //return dinero insufuciente
+            return 'dinero insufuciente';
         }
 
         $purchase = Purchase::create([
