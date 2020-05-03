@@ -1,6 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\User;
+use App\Store;
+use App\Purchase;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -55,11 +58,19 @@ class GameController extends Controller
 
     //Tetris
     public function showTetrisMenu(){
+        
         return view('games.tetrisMenu');
     }
 
     public function showTetrisDifficultyMenu(){
-        return view('games.chooseTetrisLevel');
+
+        $expert = Auth::user()->store()->where('purchases.id_store', '6')->count();
+        $extreme = Auth::user()->store()->where('purchases.id_store', '8')->count();
+
+        return view('games.chooseTetrisLevel',[
+            'expert' => $expert,
+            'extreme' => $extreme
+        ]);
     }
 
     public function playNewbieTetris(){
@@ -112,7 +123,14 @@ class GameController extends Controller
     }
 
     public function showMemoramaDifficultyMenu(){
-        return view('games.chooseMemoramaLevel');
+
+        $expert = Auth::user()->store()->where('purchases.id_store', '5')->count();
+        $extreme = Auth::user()->store()->where('purchases.id_store', '7')->count();
+
+        return view('games.chooseMemoramaLevel',[
+            'expert' => $expert,
+            'extreme' => $extreme
+        ]);
     }
 
     public function playNewbieMemorama(){

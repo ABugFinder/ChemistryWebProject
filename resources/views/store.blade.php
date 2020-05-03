@@ -42,7 +42,7 @@
                                   <p>Precio: {{ $store[$i]['price'] }} Chemicoins</p>
                                   <form method="POST" action="{{route('purchaseTest')}}">
                                     @csrf
-                                    <button type="submit" value="{{$i}}" name="id" class="btn btn-danger">Comprar</button>
+                                    <button type="submit" value="{{$i+1}}" name="id" class="btn btn-danger">Comprar</button>
                                   </form>
                               </div>
                             </div>

@@ -34,15 +34,23 @@
                         <div class="col">
                             <a class="btn btn-primary" href="{{route('hardMemorama')}}" role="button">Difícil</a>
                         </div>
+
+                        @if ($expert > 0)
                         <div class="col">
                             <a class="btn btn-primary" href="{{route('expertMemorama')}}" role="button">Experto</a>
                         </div>
+                        @endif
+
                     </div>
 
                     <div class="row" style="margin-left: auto; margin-right: auto;">
+                    
+                        @if ($extreme > 0)
                         <div class="col">
                             <a class="btn btn-primary" href="{{route('extremeMemorama')}}" role="button">Extremo</a>
                         </div>
+                        @endif
+
                         <div class="col">
                             <a class="btn btn-primary" href="{{route('infiniteMemorama')}}" role="button">Infinito</a>
                         </div>

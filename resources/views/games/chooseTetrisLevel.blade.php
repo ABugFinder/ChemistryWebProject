@@ -34,15 +34,21 @@
                         <div class="col">
                             <a class="btn btn-primary" href="{{route('hardTetris')}}" role="button">Difícil</a>
                         </div>
+                        
+                        @if ($expert > 0)
                         <div class="col">
                             <a class="btn btn-primary" href="{{route('expertTetris')}}" role="button">Experto</a>
                         </div>
+                        @endif
+
                     </div>
 
                     <div class="row" style="margin-left: auto; margin-right: auto;">
+                        @if ($extreme > 0)
                         <div class="col">
                             <a class="btn btn-primary" href="{{route('extremeTetris')}}" role="button">Extremo</a>
                         </div>
+                        @endif
 
                         <div class="col">
                             <a class="btn btn-primary" href="{{route('infiniteTetris')}}" role="button">Infinito</a>
