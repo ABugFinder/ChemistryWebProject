@@ -2,7 +2,23 @@
 
 
 @section('content')
-    <div id="cont-game">   
+    <div id="cont-game">
+      <div class="containerPoints">
+        <div class="results">
+          <li id="game-data" class="col">
+            <p>Respuestas</p>
+           <div class="good-div">
+             Correctas:
+             <div id="goodAnswer">0</div>
+             <hr>
+           </div>
+           <div class="bad-div">
+             Incorrectas:
+             <div id="badAnswer">0</div>
+           </div>
+         </li>
+        </div>
+      </div>
 
         <div class="conteeiner">
             <div id="question-container" class="hide">
@@ -19,7 +35,6 @@
               <button id="next-btn" class="next-btn btn hide">Next</button>
             </div>
           </div>
-
     </div>
 
     <script src="{{ asset('/js/easyDuolingo.js')}}"></script>

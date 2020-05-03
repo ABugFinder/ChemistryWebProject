@@ -183,9 +183,6 @@ function checkFormatch(){
         // Not a Match
         unFlipcards();
         intentos();
-
-
-
         //playAudioI();  
     }
 }

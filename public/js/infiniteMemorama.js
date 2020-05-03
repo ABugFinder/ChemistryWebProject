@@ -248,11 +248,11 @@ function contador() { //Contador de pares
     paresCartasContenedor = document.getElementById('contenedor').innerHTML = "Pares encontrados: " + paresCartas;
     console.log(paresCartas);
     if(paresCartas == 10){
-        cardListAdvance = shuffle(cardListAdvance);
-        cardListAdvance.forEach(card => {
-            cardContainer.appendChild(cardPrototype(card.name, card.img));
-        }); 
-     }
+        
+        // reiniciar página con cartas encontradas
+        window.location.reload();
+
+    }
 }
 
 function intentos() { //Contador de intentos
