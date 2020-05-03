@@ -160,40 +160,49 @@ function clearStatusClass(element) {
 const questions = [
 
   {
-    question: '¿Cual de estos elementos, no es un metal?',
+    question: '¿A qué elemento corresponde el síbolo H?',
     answers: [
-      { text: 'Antimonio', correct: true },
-      { text: 'Osmio', correct: false },
-      { text: 'Circonio', correct: false },
-      { text: 'Dubnio', correct: false }
+    { text: 'Helio', correct: false },
+    { text: 'Litio', correct: false },
+    { text: 'Hidrógeno', correct: true },
+    { text: 'Berilio', correct: false }
     ]
-  },
-  {
-    question: '¿Cual de estos elementos, es un "no metal gaseoso"?',
+    },
+    {
+    question: '¿A qué elemento corresponde el síbolo Al?',
     answers: [
-      { text: 'Fluor', correct: true },
-      { text: 'Carbono', correct: false },
-      { text: 'Selenio', correct: false },
-      { text: 'Azufre', correct: false }
+    { text: 'Fósforo', correct: false },
+    { text: 'Silicio', correct: false },
+    { text: 'Aluminio', correct: true },
+    { text: 'Azufre', correct: false }
     ]
-  },
-  {
-    question: '¿A que elemento pertenece este simbolo "Y"?',
+    },
+    {
+    question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Rutherfordio?',
     answers: [
-      { text: 'Yodo', correct: false },
-      { text: 'Itrio', correct: true },
-      { text: 'Livermonio', correct: false },
-      { text: 'Iridio', correct: false }
+    { text: 'Sólido', correct: false },
+    { text: 'Plasma', correct: false },
+    { text: 'Desconocido', correct: true },
+    { text: 'Líquido', correct: false }
     ]
-  },
-  {
-    question: 'El Francio es un alcalino.',
+    },
+    {
+    question: '¿A que simbolo pertenece este el elemento Niobio?',
     answers: [
-      { text: 'Si', correct: false },
-      { text: 'No', correct: true },
-      { text: 'Tal vez', correct: false },
-      { text: 'Todas las anteriores', correct: false },
+    { text: 'Mo', correct: false },
+    { text: 'Md', correct: false },
+    { text: 'Nd', correct: false },
+    { text: 'Nb', correct: true }
     ]
-  }
+    },
+    {
+    question: '¿A qué elemento corresponde el síbolo Cu?',
+    answers: [
+    { text: 'Zinc', correct: false },
+    { text: 'Cobre', correct: true },
+    { text: 'Galio', correct: false },
+    { text: 'Germio', correct: false }
+    ]
+    },
 
 ]

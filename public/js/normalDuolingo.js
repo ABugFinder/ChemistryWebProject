@@ -159,41 +159,149 @@ function clearStatusClass(element) {
 
 const questions = [
 
-  {
-    question: '¿Cual de estos elementos, no es un metal?',
-    answers: [
-      { text: 'Antimonio', correct: true },
-      { text: 'Osmio', correct: false },
-      { text: 'Circonio', correct: false },
-      { text: 'Dubnio', correct: false }
-    ]
-  },
-  {
-    question: '¿Cual de estos elementos, es un "no metal gaseoso"?',
-    answers: [
-      { text: 'Fluor', correct: true },
-      { text: 'Carbono', correct: false },
-      { text: 'Selenio', correct: false },
-      { text: 'Azufre', correct: false }
-    ]
-  },
-  {
-    question: '¿A que elemento pertenece este simbolo "Y"?',
-    answers: [
-      { text: 'Yodo', correct: false },
-      { text: 'Itrio', correct: true },
-      { text: 'Livermonio', correct: false },
-      { text: 'Iridio', correct: false }
-    ]
-  },
-  {
-    question: 'El Francio es un alcalino.',
-    answers: [
-      { text: 'Si', correct: false },
-      { text: 'No', correct: true },
-      { text: 'Tal vez', correct: false },
-      { text: 'Todas las anteriores', correct: false },
-    ]
-  }
+    {
+        question: '¿A qué elemento corresponde el síbolo H?',
+        answers: [
+        { text: 'Helio', correct: false },
+        { text: 'Litio', correct: false },
+        { text: 'Hidrógeno', correct: true },
+        { text: 'Berilio', correct: false }
+        ]
+        },
+        {
+        question: '¿A qué elemento corresponde el síbolo Al?',
+        answers: [
+        { text: 'Fósforo', correct: false },
+        { text: 'Silicio', correct: false },
+        { text: 'Aluminio', correct: true },
+        { text: 'Azufre', correct: false }
+        ]
+        },
+        {
+        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Rutherfordio?',
+        answers: [
+        { text: 'Sólido', correct: false },
+        { text: 'Plasma', correct: false },
+        { text: 'Desconocido', correct: true },
+        { text: 'Líquido', correct: false }
+        ]
+        },
+        {
+        question: '¿A que simbolo pertenece este el elemento Niobio?',
+        answers: [
+        { text: 'Mo', correct: false },
+        { text: 'Md', correct: false },
+        { text: 'Nd', correct: false },
+        { text: 'Nb', correct: true }
+        ]
+        },
+        {
+        question: '¿A qué elemento corresponde el síbolo Cu?',
+        answers: [
+        { text: 'Zinc', correct: false },
+        { text: 'Cobre', correct: true },
+        { text: 'Galio', correct: false },
+        { text: 'Germio', correct: false }
+        ]
+        },
+        {
+        question: '¿A qué elemento corresponde el síbolo Mn?',
+        answers: [
+        { text: 'Níquel', correct: false },
+        { text: 'Cobalto', correct: false },
+        { text: 'Hierro', correct: false },
+        { text: 'Manganeso', correct: true }
+        ]
+        },
+        {
+        question: '¿A qué elemento corresponde el síbolo As?',
+        answers: [
+        { text: 'Selenio', correct: false },
+        { text: 'Bromo', correct: false },
+        { text: 'Kriptón', correct: false },
+        { text: 'Arsénico', correct: true }
+        ]
+        },
+        {
+        question: '¿A qué elemento corresponde el síbolo Nb?',
+        answers: [
+        { text: 'Niobio', correct: true },
+        { text: 'Molibdeno', correct: false },
+        { text: 'Tecnesio', correct: false },
+        { text: 'Rutenio', correct: false }
+        ]
+        },
+        {
+        question: '¿A qué elemento corresponde el síbolo Rb?',
+        answers: [
+        { text: 'Estroncio', correct: false },
+        { text: 'Itrio', correct: false },
+        { text: 'Rubidio', correct: true },
+        { text: 'Circonio', correct: false }
+        ]
+        },
+        {
+        question: '¿A qué elemento corresponde el síbolo Rh?',
+        answers: [
+        { text: 'Paladio', correct: false },
+        { text: 'Plata', correct: false },
+        { text: 'Cadmio', correct: false },
+        { text: 'Rodio', correct: true }
+        ]
+        },
+        {
+        question: '¿A qué elemento corresponde el síbolo I?',
+        answers: [
+        { text: 'Xenón', correct: false },
+        { text: 'Yodo', correct: true },
+        { text: 'Cesio', correct: false },
+        { text: 'Bario', correct: false }
+        ]
+        },
+        {
+        question: '¿A qué elemento corresponde el síbolo La?',
+        answers: [
+        { text: 'Lantano', correct: true },
+        { text: 'Cerio', correct: false },
+        { text: 'Praseodimio', correct: false },
+        { text: 'Neodimio', correct: false }
+        ]
+        },
+        {
+        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Aluminio?',
+        answers: [
+        { text: 'Gaseoso', correct: false },
+        { text: 'Desconocido', correct: false },
+        { text: 'Sólido', correct: true },
+        { text: 'Líquido', correct: false }
+        ]
+        },
+        {
+        question: '¿A que simbolo pertenece este el elemento Plomo?',
+        answers: [
+        { text: 'P', correct: false },
+        { text: 'Pb', correct: true },
+        { text: 'Pt', correct: false },
+        { text: 'Pd', correct: false }
+        ]
+        },
+        {
+        question: '¿A que simbolo pertenece este el elemento Cobalto?',
+        answers: [
+        { text: 'Co', correct: true },
+        { text: 'Cr', correct: false },
+        { text: 'Ca', correct: false },
+        { text: 'C', correct: false }
+        ]
+        },
+        {
+        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Neón?',
+        answers: [
+        { text: 'Líquido', correct: false },
+        { text: 'Desconocido', correct: false },
+        { text: 'Gaseoso', correct: true },
+        { text: 'Plasma', correct: false }
+        ]
+        },
 
 ]
