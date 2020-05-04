@@ -12,13 +12,14 @@
                             <br>
                             <p>Aquí va la imagen de perfil</p>
                             <p>Aquí va la descripación del usuario</p>
+                            <p>Biografía:</p>
+                            <p> {{$user->biografi}} </p>
                         </div>
                         <hr>
                         <div class="card-body">
                             <p>Puntuacion Global:</p>
                             <p>Puntuacion Tetris:</p>
                             <p>Puntuacion Memorama:</p>
-                            <p>Puntuacion Duolingo:</p>
                         </div>
                     </div>
 

@@ -14,19 +14,14 @@
                         <p>Nombre: {{$user->name}} {{$user->surname}}</p>
                         <p>Email: {{$user->email}}</p>
                         <p>Chemicoins: {{$user->points}} </p>
-                        <p>Artículos comprados:</p>
-                        @if($userStore)
-                            @foreach($userStore as $article)
-                                <li>{{$article->name}}</li>
-                            @endforeach
-                        @endif
+                        <p>Biografía:</p>
+                        <p>{{ $user->biografi }}</p>
                     </div>
                     <hr>
                     <div class="card-body">
                         <p>Puntuacion Global:</p>
                         <p>Puntuacion Tetris:</p>
-                        <p>Puntuacion Memorama:</p>
-                        <p>Puntuacion Duolingo:</p>
+                        <p>Puntuacion Memorama: {{}}</p>
 
                         <a class="btn btn-primary" href="/home" role="button">Regresar</a>
                     </div>

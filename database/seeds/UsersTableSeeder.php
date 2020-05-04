@@ -35,7 +35,7 @@ class UsersTableSeeder extends Seeder
             'username' => 'BugMaster',
             'email' => 'bicho_suarez@hotmail.com',
             'password' => Hash::make('password'),
-            'points' => 100,
+            'points' => 10000,
         ]);
 
         $admin2 = User::create([
@@ -44,7 +44,7 @@ class UsersTableSeeder extends Seeder
             'username' => 'Phobosentured',
             'email' => 'jan@palacios.com',
             'password' => Hash::make('password'),
-            'points' => 100,
+            'points' => 10000,
         ]);
 
         $admin3 = User::create([
@@ -53,7 +53,7 @@ class UsersTableSeeder extends Seeder
             'username' => 'Netroid2000',
             'email' => 'neto@solano.com',
             'password' => Hash::make('password'),
-            'points' => 1000000000,
+            'points' => 10000,
         ]);
 
         $user = User::create([

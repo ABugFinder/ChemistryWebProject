@@ -14,20 +14,20 @@ class RecordMemoramaSeeder extends Seeder
     {
         $record = RecordMemorama::create([
             'top' => 1,
-            'record' => 0,
-            'id_user' => '1'
+            'record' => 117000,
+            'id_user' => '2'
         ]);
 
         $record = RecordMemorama::create([
-            'top' => 1,
-            'record' => 0,
-            'id_user' => '1'
+            'top' => 2,
+            'record' => 69000,
+            'id_user' => '4'
         ]);
 
         $record = RecordMemorama::create([
-            'top' => 1,
-            'record' => 0,
-            'id_user' => '1'
+            'top' => 3,
+            'record' => 33000,
+            'id_user' => '3'
         ]);
     }
 }

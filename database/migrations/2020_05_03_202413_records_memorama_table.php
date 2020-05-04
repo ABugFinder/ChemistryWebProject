@@ -29,6 +29,6 @@ class RecordsMemoramaTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('record_memoramas');
     }
 }

@@ -29,6 +29,6 @@ class RecordTetrisTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('recordTetris');
+        Schema::dropIfExists('record_Tetris');
     }
 }
