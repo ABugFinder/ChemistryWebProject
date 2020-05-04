@@ -28,6 +28,7 @@
                                     <label for="biotextarea">Escribe tu biografía</label>
                                     <textarea class="form-control" id="bio" name = "bio" rows="3"></textarea>
                                 </div>
+                            </div>
                             <div class="card-body">
                                 <button class="btn btn-primary" type="submit" >Guardar cambios</button>
                             </div>

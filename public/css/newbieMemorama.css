@@ -72,3 +72,17 @@ img{
 .front-face{
     transform: rotateY(180deg);
 }
+
+body{
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+/*
+background-image: url('Backgrounds/music-notes-abstract-png.png');
+background-position: center;
+background-size: % %;
+background-repeat: no-repeat;
+*/

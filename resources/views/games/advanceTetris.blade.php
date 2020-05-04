@@ -11,7 +11,9 @@
             <div id="contElementos">
               
               <ul id="flex-container">
-                <p> Elementos descubiertos</p>
+                <div id="elements">
+                  <p> Elementos descubiertos</p>
+                </div>
                 <li id ="e1" style="display: none;"> Escandio - Sc <br> 44.955910  </li> <!-- display: none; para que no aparezcan -->
                 <li id ="e2" style="display: none;"> Titanio - Ti <br> 47.867 </li>
                 <li id ="e3" style="display: none;"> Cromo - Cr <br> 51.9961 </li>
@@ -31,7 +33,7 @@
           </li>
           <!---------------------------------->
           <li id="next-piece" class="col-sm">
-              <div style="font-size:20px">
+              <div style="font-size:20px" id="nextPz">
                 Siguiente pieza:
               <div id="nextPiece" class="width: 80%;">
                 <img style="width: 100%;">
@@ -39,31 +41,32 @@
           </li>
           <!---------------------------------->
           <li id="game-data" class="col">
-             <p>Datos</p>
-            <div class="score-div">
+            
+            <div class="score-div" id="score-div">
+              <p>Datos</p>
               Puntuanción:
               <div id="score">0</div>
             </div>
-            <div class="level-div">
+            <div class="level-div" id="level-div">
               Nivel:
               <div id="level">0</div>
             </div>
-            <div class="diffculty-div">
+            <div class="diffculty-div" id="diffculty-div">
               Dificultad: Avanzado
             </div>
-            <div class="game-div">
+            <div class="game-div" id="game-div">
               Modo de juego: Normal
             </div>
             <br>
             @if($medieval > 0)
               <div class="btnMedieval-div">
-                <button type="button" class="btn btn-primary">Skin Medieval</button>
+                <button onclick="replaceMedieval()" type="button" class="btn btn-primary">Skin Medieval</button>
               </div>
             @endif
             <br>
-             @if($cyber > 0)
+              @if($cyber > 0)
               <div class="btnCyebr-div">
-                <button type="button" class="btn btn-primary">Skin Cyber</button>
+                <button onclick="replaceCyber()" type="button" class="btn btn-primary">Skin Cyber</button>
               </div>
             @endif
           </li>
@@ -71,6 +74,32 @@
       </ul>
 
     </div>
+
+    <script>
+
+      function replaceMedieval() {
+        document.body.style.backgroundImage = 'url(../images/medievalBG.png)';
+        document.getElementById('score-div').style.color = 'white';
+        document.getElementById('level-div').style.color = 'white';
+        document.getElementById('diffculty-div').style.color = 'white';
+        document.getElementById('game-div').style.color = 'white';
+        document.getElementById('game-div').style.color = 'white';
+        document.getElementById('nextPz').style.color = 'white';
+        document.getElementById('elements').style.color = 'white';
+      }
+
+      function replaceCyber() {
+        document.body.style.backgroundImage = 'url(../images/cyberBG.jpg)';
+        document.getElementById('score-div').style.color = 'white';
+        document.getElementById('level-div').style.color = 'white';
+        document.getElementById('diffculty-div').style.color = 'white';
+        document.getElementById('game-div').style.color = 'white';
+        document.getElementById('game-div').style.color = 'white';
+        document.getElementById('nextPz').style.color = 'white';
+        document.getElementById('elements').style.color = 'white';
+      }
+
+    </script>
 
     <script src="{{ asset('/js/tetrominoes.js')}}"></script>
     <script src="{{ asset('/js/advanceTetris.js')}}"></script>

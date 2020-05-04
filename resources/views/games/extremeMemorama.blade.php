@@ -19,18 +19,37 @@
 
         <br>
         @if($medieval > 0)
-              <div class="btnMedieval-div" style="margin-left: 47%">
-                <button type="button" class="btn btn-primary">Skin Medieval</button>
-              </div>
-            @endif
-            <br>
-             @if($cyber > 0)
-              <div class="btnCyebr-div" style="margin-left: 47%">
-                <button type="button" class="btn btn-primary">Skin Cyber</button>
-              </div>
-            @endif
+          <div class="btnMedieval-div" style="margin-left: 47%">
+            <button onclick="replaceMedieval()" type="button" class="btn btn-primary">Skin Medieval</button>
+          </div>
+        @endif
+        <br>
+          @if($cyber > 0)
+          <div class="btnCyebr-div" style="margin-left: 47%">
+            <button onclick="replaceCyber()" type="button" class="btn btn-primary">Skin Cyber</button>
+          </div>
+        @endif
         
     </div>
+
+    <script>
+
+      function replaceMedieval() {
+        document.body.style.backgroundImage = 'url(../images/medievalBG.png)';
+        document.getElementById('contenedor').style.color = 'white';
+        document.getElementById('contenedorIntentos').style.color = 'white';
+        document.getElementById('recordPointsElement').style.color = 'white';
+      }
+
+      function replaceCyber() {
+        document.body.style.backgroundImage = 'url(../images/cyberBG.jpg)';
+        document.getElementById('contenedor').style.color = 'white';
+        document.getElementById('contenedorIntentos').style.color = 'white';
+        document.getElementById('recordPointsElement').style.color = 'white';
+      }
+
+    </script>
+
 
     <script src="{{ asset('/js/extremeMemorama.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
