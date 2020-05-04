@@ -25,7 +25,8 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:mana
 
 // Profiles
 Route::get('/myProfile', 'UserController@showMyProfile')->name('myProfile');
-Route::get('/userProfile/{id}', 'UserController@showUserProfile');
+Route::get('/userProfile', 'UserController@showUserProfile');
+Route::get('/editMyProfile', 'UserController@showEditProfile')->name('editProfile');
 
 // Store
 Route::get('/myStore', 'StoreController@showStore')->name('myStore');
@@ -89,6 +90,9 @@ Route::resource('/elements', 'ElementController', ['except' => ['create', 'store
 Route::get('/show-tetris-lederboar', 'RecordTetrisController@index')->name('tetrisLeaderboard');
 Route::get('/show-memorama-lederboar', 'RecordMemoramaController@index')->name('memoramaLeaderboard');
 
-//Records
+// Records
 Route::post('/infiniteTetris/records', 'RecordTetrisController@updateRecords');
 Route::post('/extremeMemorama/records', 'RecordMemoramaController@updateRecords');
+
+// Dashboard tats
+Route::get('/stats', 'DashboardController@index')->name('stats');

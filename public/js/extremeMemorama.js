@@ -295,7 +295,7 @@ function contador() { //Contador de pares
     recordPoints += 10500;
     recordPointsElement = document.getElementById('recordPointsElement').innerHTML = "Puntuación actual: " + recordPoints;
     console.log(paresCartas);
-    if(paresCartas == 7){
+    if(paresCartas == 15){
         send_puntaje();
         send_record(); 
         gameAlert(); 
@@ -309,6 +309,7 @@ function intentos() { //Contador de intentos
     recordPointsElement = document.getElementById('recordPointsElement').innerHTML = "Puntuación actual: " + recordPoints;
     console.log(contIntentos);
     if(contIntentos == 0){
+        send_record(); 
         gameOverAlert(); 
     }
 }

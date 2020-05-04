@@ -3,10 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
-use Illuminate\Support\Facades\Auth;
 
-class UserController extends Controller
+class DashboardController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +13,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        return view('stats');
     }
 
     /**
@@ -50,36 +48,6 @@ class UserController extends Controller
         //
     }
 
-    public function showMyProfile()
-    {
-        $user = Auth::user();
-
-        $userStore = $user->store()->where('id_user', '=', $user->id)->get();
-        
-        return view('users.myProfile', [
-            'user' => $user,
-            'userStore' => $userStore
-        ]);
-
-    }
-
-    public function showUserProfile($id)
-    {
-        $user = User::find($id);
-
-        return view('users.userProfile', [
-            'user' => $user,
-        ]);
-
-    }
-
-    public function showEditProfile(){
-        $user = Auth::user();
-        return view('users.editMyProfile',[
-            'user' => $user,
-        ]);
-    }
-
     /**
      * Show the form for editing the specified resource.
      *
@@ -100,13 +68,7 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $user = User::find($id);
-        
-        $user->points += $request->points;
-
-        $user->save();
-        
-        return $user->points;
+        //
     }
 
     /**
@@ -119,5 +81,4 @@ class UserController extends Controller
     {
         //
     }
-
 }

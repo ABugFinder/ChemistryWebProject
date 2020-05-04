@@ -283,7 +283,7 @@ function contador() { //Contador de pares
     recordPoints += 10000;
     recordPointsElement = document.getElementById('recordPointsElement').innerHTML = "Puntuación actual: " + recordPoints;
     console.log(paresCartas);
-    if(paresCartas == 7){
+    if(paresCartas == 15){
         send_puntaje();
         gameAlert(); 
     }

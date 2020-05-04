@@ -7,7 +7,7 @@
                 <div class="card" style="width: 100%">
                     <div class="card-header">Mi Perfil</div>
                     <div class="card-body">
-                        <a class="btn btn-primary" href="#" role="button">Editar mi perfil</a>
+                        <a class="btn btn-primary" href="{{ route('editProfile') }}" role="button">Editar mi perfil</a>
                     </div>
                     <div class="card-body">
                         <p>Usuario: {{$user->username}}</p>

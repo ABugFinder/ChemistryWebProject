@@ -160,6 +160,9 @@
                                     <a class="dropdown-item" href="{{ route('admin.users.index') }}">
                                         Administrar Usuarios
                                     </a>
+                                    <a class="dropdown-item" href="{{ route('stats') }}">
+                                        Estadísticas
+                                    </a>
                                     @endcan
 
                                     <a class="dropdown-item" href="{{route('myProfile')}}">

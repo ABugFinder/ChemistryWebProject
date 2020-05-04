@@ -16,7 +16,14 @@ class RecordMemoramaController extends Controller
      */
     public function index()
     {
-        return view('memoramaLeaderboard');
+        $records = RecordMemorama::all();
+        $users = User::all();
+
+        //return view('memoramaLeaderboard')->with('records', $records)->with('users', $users);
+        return view('memoramaLeaderboard')->with([
+            'records' => $records,
+            'user' => $users,
+        ]);
     }
 
     /**
@@ -118,8 +125,9 @@ class RecordMemoramaController extends Controller
             $top3->save();
         }
 
+        $tops = [$top1, $top2, $top3];
         
-        return $top3;
+        return $tops;
         
     }
 }

@@ -16,7 +16,13 @@ class RecordTetrisController extends Controller
      */
     public function index()
     {
-        return view('tetrisLeaderboard');
+        $records = RecordTetris::all();
+        $users = User::all();
+
+        return view('tetrisLeaderboard')->with([
+            'records' => $records,
+            'user' => $users,
+        ]);
     }
 
     /**
@@ -117,7 +123,8 @@ class RecordTetrisController extends Controller
             $top3->save();
         }
 
+        $tops = [$top1, $top2, $top3];
         
-        return $top3;
+        return $tops;
     }
 }
