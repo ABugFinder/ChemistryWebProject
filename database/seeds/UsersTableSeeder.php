@@ -37,7 +37,7 @@ class UsersTableSeeder extends Seeder
             'username' => 'BugMaster',
             'email' => 'bicho_suarez@hotmail.com',
             'password' => Hash::make('password'),
-            'points' => 10000,
+            'points' => 15000,
             'tetrisrecord' => 0,
             'memoramarecord' => 0
         ]);
@@ -81,6 +81,8 @@ class UsersTableSeeder extends Seeder
         $admin2->roles()->attach($adminRole);
         $admin3->roles()->attach($adminRole);
         $user->roles()->attach($userRole);
+
+        $users = factory(App\User::class, 250)->create();
 
     }
 }

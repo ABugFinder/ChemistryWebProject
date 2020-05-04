@@ -59,6 +59,9 @@ class PurchaseController extends Controller
             'id_user' => $user->id,
             'id_store' => $request->id
         ]);
+
+        $user->points -= $request->price;
+        $user->save();
         
         //return redirect()->route('myStore');
         return view('yesbuy');

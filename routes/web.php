@@ -25,7 +25,7 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:mana
 
 // Profiles
 Route::get('/myProfile', 'UserController@showMyProfile')->name('myProfile');
-Route::get('/userProfile', 'UserController@showUserProfile');
+Route::get('/userProfile/{id}', 'UserController@showUserProfile');
 Route::get('/editMyProfile', 'UserController@showEditProfile')->name('editProfile');
 Route::post('/editMyProfile', 'UserController@updateUser')->name('updateUser');
 

@@ -19,9 +19,9 @@
                     </div>
                     <hr>
                     <div class="card-body">
-                        <p>Puntuacion Global:</p>
-                        <p>Puntuacion Tetris:</p>
-                        <p>Puntuacion Memorama: {{}}</p>
+                        <p>Puntuacion Global: {{ ($user->tetrisrecord + $user->memoramarecord) / 2}}</p>
+                        <p>Puntuacion Tetris: {{$user->tetrisrecord}}</p>
+                        <p>Puntuacion Memorama: {{$user->memoramarecord}}</p>
 
                         <a class="btn btn-primary" href="/home" role="button">Regresar</a>
                     </div>

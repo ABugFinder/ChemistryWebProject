@@ -10,7 +10,7 @@
                     <div class="card-body">
 
                       <!-- Skin items -->
-                      <h3>Diseños</h3>
+                    <h4>Arículos - Dinero disponible: $ {{$user->points}}</h4>
                       <div class="row row-cols-4">
 
                         @for ($i = 0; $i < 4; $i++)
@@ -23,6 +23,7 @@
                                 <p>Precio: {{ $store[$i]['price'] }} Chemicoins</p>
                                 <form method="POST" action="{{route('purchaseTest')}}">
                                   @csrf
+                                  <input type="hidden" id="price" name="price" value="{{$store[$i]['price']}}">
                                   <button type="submit" value="{{$i+1}}" name="id" class="btn btn-success">Comprar</button>
                                 </form>
                                 

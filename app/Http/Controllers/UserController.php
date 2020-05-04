@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\RecordMemorama;
+use App\RecordTetris;
 use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
@@ -55,10 +57,10 @@ class UserController extends Controller
         $user = Auth::user();
 
         $userStore = $user->store()->where('id_user', '=', $user->id)->get();
-        
+
         return view('users.myProfile', [
             'user' => $user,
-            'userStore' => $userStore
+            'userStore' => $userStore,
         ]);
 
     }
