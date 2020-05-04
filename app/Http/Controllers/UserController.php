@@ -121,6 +121,7 @@ class UserController extends Controller
         $user = Auth::user();
         $data = request()->all();
         
+
         if($data['name']){
             $user->name = $data['name'];
             

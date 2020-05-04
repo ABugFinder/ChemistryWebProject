@@ -108,6 +108,12 @@ class RecordMemoramaController extends Controller
         $top2 = RecordMemorama::find(2)->where('id', 2)->first();
         $top3 = RecordMemorama::find(3)->where('id', 3)->first();
 
+        if($request->points > $user->memoramarecord){
+            $user->memoramarecord = $request->points;
+
+            $user->save();
+        }
+
         if($request->points > $top1->record){
             $top1->record = $request->points;
             $top1->id_user = $user->id;
@@ -127,7 +133,7 @@ class RecordMemoramaController extends Controller
 
         $tops = [$top1, $top2, $top3];
         
-        return $tops;
+        return $user;
         
     }
 }

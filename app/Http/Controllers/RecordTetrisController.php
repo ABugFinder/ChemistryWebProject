@@ -106,6 +106,12 @@ class RecordTetrisController extends Controller
         $top2 = RecordTetris::find(2)->where('id', 2)->first();
         $top3 = RecordTetris::find(3)->where('id', 3)->first();
 
+        if($request->points > $user->tetrisrecord){
+            $user->tetrisrecord = $request->points;
+
+            $user->save();
+        }
+
         if($request->points > $top1->record){
             $top1->record = $request->points;
             $top1->id_user = $user->id;
@@ -125,6 +131,6 @@ class RecordTetrisController extends Controller
 
         $tops = [$top1, $top2, $top3];
         
-        return $tops;
+        return $user;
     }
 }
