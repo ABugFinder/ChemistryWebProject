@@ -13,26 +13,28 @@
                     </div>
                     <div class="card-body">
                         Nuevos datos:
-                        <form>
+                        <form method="POST" action="{{route('updateUser')}}">
+                            @csrf
                             <div class="row">
                               <div class="col">
-                                <input type="text" class="form-control" placeholder="Nuevo(s) nombre(s)">
+                                <input type="text" id = "name" name = "name" class="form-control" placeholder="Nuevo(s) nombre(s)">
                               </div>
                               <div class="col">
-                                <input type="text" class="form-control" placeholder="Nuevo(s) apellido(s)">
+                                <input type="text" id = "last" name = "last" class="form-control" placeholder="Nuevo(s) apellido(s)">
                               </div>
                             </div>
                             <div class="row">
                                 <div class="col">
                                     <label for="biotextarea">Escribe tu biografía</label>
-                                    <textarea class="form-control" id="biotextarea" rows="3"></textarea>
+                                    <textarea class="form-control" id="bio" name = "bio" rows="3"></textarea>
                                 </div>
+                            <div class="card-body">
+                                <button class="btn btn-primary" type="submit" >Guardar cambios</button>
+                            </div>
                           </form>
                     </div>
-                    
                     <div class="card-body">
-                        <a class="btn btn-primary" href="{{ route('myProfile') }}" role="button">Cancelar</a>
-                        <a class="btn btn-primary" href="#" role="button">Guardar cambios</a>
+                         <a class="btn btn-primary" href="{{ route('myProfile') }}" role="button">Cancelar</a>
                     </div>
                 </div>
             </div>

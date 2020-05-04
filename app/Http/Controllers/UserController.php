@@ -110,6 +110,34 @@ class UserController extends Controller
     }
 
     /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * 
+     * @return \Illuminate\Http\Response
+     */
+    public function updateUser()
+    {
+        $user = Auth::user();
+        $data = request()->all();
+        
+        if($data['name']){
+            $user->name = $data['name'];
+            
+        }
+        if($data['last']){
+            $user->surname = $data['last'];
+        }
+        if($data['bio']){
+            $user->biografi = $data['bio'];
+        }
+
+        $user->save();
+
+        return redirect()->route('editProfile');
+    }
+
+    /**
      * Remove the specified resource from storage.
      *
      * @param  int  $id
