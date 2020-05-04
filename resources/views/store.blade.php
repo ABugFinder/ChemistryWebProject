@@ -23,7 +23,7 @@
                                 <p>Precio: {{ $store[$i]['price'] }} Chemicoins</p>
                                 <form method="POST" action="{{route('purchaseTest')}}">
                                   @csrf
-                                  <input type="hidden " id="price" name="price" value="{{$store[$i]['price']}}">
+                                  <input type="hidden" id="price" name="price" value="{{$store[$i]['price']}}">
                                   <button type="submit" value="{{$i+1}}" name="id" class="btn btn-success">Comprar</button>
                                 </form>
                                 
@@ -43,6 +43,7 @@
                                   <p>Precio: {{ $store[$i]['price'] }} Chemicoins</p>
                                   <form method="POST" action="{{route('purchaseTest')}}">
                                     @csrf
+                                    <input type="hidden" id="price" name="price" value="{{$store[$i]['price']}}">
                                     <button type="submit" value="{{$i+1}}" name="id" class="btn btn-danger">Comprar</button>
                                   </form>
                               </div>
