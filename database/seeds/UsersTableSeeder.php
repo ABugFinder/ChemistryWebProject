@@ -82,7 +82,7 @@ class UsersTableSeeder extends Seeder
         $admin3->roles()->attach($adminRole);
         $user->roles()->attach($userRole);
 
-        $users = factory(App\User::class, 250)->create();
+        //$users = factory(App\User::class, 250)->create();
 
     }
 }
