@@ -60,6 +60,9 @@ class PurchaseController extends Controller
             'id_store' => $request->id
         ]);
 
+        $product->ventas++;
+        $product->save();
+
         $user->points -= $request->price;
         $user->save();
         

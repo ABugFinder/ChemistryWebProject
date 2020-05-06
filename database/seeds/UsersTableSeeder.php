@@ -27,8 +27,8 @@ class UsersTableSeeder extends Seeder
             'email' => 'admin@admin.com',
             'password' => Hash::make('password'),
             'points' => 100,
-            'tetrisrecord' => 0,
-            'memoramarecord' => 0
+            'tetrisrecord' => 1000,
+            'memoramarecord' => 1500
         ]);
 
         $admin1 = User::create([
@@ -38,7 +38,7 @@ class UsersTableSeeder extends Seeder
             'email' => 'bicho_suarez@hotmail.com',
             'password' => Hash::make('password'),
             'points' => 15000,
-            'tetrisrecord' => 0,
+            'tetrisrecord' => 10,
             'memoramarecord' => 0
         ]);
 

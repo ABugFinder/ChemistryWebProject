@@ -20,6 +20,7 @@ class CreateStoresTable extends Migration
             $table->string('tip')->nullable();
             $table->integer('price')->nullable();
             $table->string('image')->nullable();
+            $table->integer('ventas')->nullable();
             $table->timestamps();
         });
     }

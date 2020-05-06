@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\User;
+use App\Store;
+
 class DashboardController extends Controller
 {
     /**
@@ -13,7 +16,25 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('stats');
+        
+        $pointsTop = User::select('*')->orderBy('points','desc')->paginate(10);
+        $purchases = Store::select('name','ventas')->get();
+        $tetrisRecord = User::select('tetrisrecord')->sum('tetrisrecord');
+        $memoramaRecord = User::select('memoramarecord')->sum('memoramarecord');
+
+        $gamesPoints = [
+            'tetrisRecord' => $tetrisRecord,
+            'memoramaRecord' => $memoramaRecord
+        ];
+
+
+        
+
+        return view('stats',[
+            'pointsTop' => $pointsTop,
+            'purchases' => $purchases,
+            'gamesPoints' => $gamesPoints
+        ]);
     }
 
     /**
