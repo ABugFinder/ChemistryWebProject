@@ -415,7 +415,7 @@ function drop() {
             e5.style.display = "block";
             e6.style.display = "block";
         }
-    } else if (score >= LVL3 && score < LVL4) {
+    } else if (score >= LVL3) {
         if (delta > 425) {
             p.moveDown();
             dropStart = Date.now();

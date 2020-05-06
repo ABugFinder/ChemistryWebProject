@@ -38,6 +38,7 @@
             <div id="nextPiece" class="width: 80%;">
               <img style="width: 100%;">
             </div>
+            <img src="/images/tetristuto.png" alt="controles-image" style="width: 85%; margin-top: 10px;">
         </li>
         <!---------------------------------->
         <li id="game-data" class="col">

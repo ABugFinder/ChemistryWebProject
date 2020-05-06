@@ -159,7 +159,7 @@ function clearStatusClass(element) {
 const questions = [
 
     {
-        question: '¿A qué elemento corresponde el síbolo H?',
+        question: '¿A qué elemento corresponde el símbolo H?',
         answers: [
         { text: 'Helio', correct: false },
         { text: 'Litio', correct: false },
@@ -168,7 +168,7 @@ const questions = [
         ]
         },
         {
-        question: '¿A qué elemento corresponde el síbolo Al?',
+        question: '¿A qué elemento corresponde el símbolo Al?',
         answers: [
         { text: 'Fósforo', correct: false },
         { text: 'Silicio', correct: false },
@@ -186,7 +186,7 @@ const questions = [
         ]
         },
         {
-        question: '¿A que simbolo pertenece este el elemento Niobio?',
+        question: '¿A que símbolo pertenece este el elemento Niobio?',
         answers: [
         { text: 'Mo', correct: false },
         { text: 'Md', correct: false },
@@ -195,7 +195,7 @@ const questions = [
         ]
         },
         {
-        question: '¿A qué elemento corresponde el síbolo Cu?',
+        question: '¿A qué elemento corresponde el símbolo Cu?',
         answers: [
         { text: 'Zinc', correct: false },
         { text: 'Cobre', correct: true },
@@ -204,7 +204,7 @@ const questions = [
         ]
         },
         {
-        question: '¿A qué elemento corresponde el síbolo Mn?',
+        question: '¿A qué elemento corresponde el símbolo Mn?',
         answers: [
         { text: 'Níquel', correct: false },
         { text: 'Cobalto', correct: false },
@@ -213,7 +213,7 @@ const questions = [
         ]
         },
         {
-        question: '¿A qué elemento corresponde el síbolo As?',
+        question: '¿A qué elemento corresponde el símbolo As?',
         answers: [
         { text: 'Selenio', correct: false },
         { text: 'Bromo', correct: false },
@@ -222,7 +222,7 @@ const questions = [
         ]
         },
         {
-        question: '¿A qué elemento corresponde el síbolo Nb?',
+        question: '¿A qué elemento corresponde el símbolo Nb?',
         answers: [
         { text: 'Niobio', correct: true },
         { text: 'Molibdeno', correct: false },
@@ -231,7 +231,7 @@ const questions = [
         ]
         },
         {
-        question: '¿A qué elemento corresponde el síbolo Rb?',
+        question: '¿A qué elemento corresponde el símbolo Rb?',
         answers: [
         { text: 'Estroncio', correct: false },
         { text: 'Itrio', correct: false },
@@ -240,7 +240,7 @@ const questions = [
         ]
         },
         {
-        question: '¿A qué elemento corresponde el síbolo Rh?',
+        question: '¿A qué elemento corresponde el símbolo Rh?',
         answers: [
         { text: 'Paladio', correct: false },
         { text: 'Plata', correct: false },
@@ -249,7 +249,7 @@ const questions = [
         ]
         },
         {
-        question: '¿A qué elemento corresponde el síbolo I?',
+        question: '¿A qué elemento corresponde el símbolo I?',
         answers: [
         { text: 'Xenón', correct: false },
         { text: 'Yodo', correct: true },
@@ -258,7 +258,7 @@ const questions = [
         ]
         },
         {
-        question: '¿A qué elemento corresponde el síbolo La?',
+        question: '¿A qué elemento corresponde el símbolo La?',
         answers: [
         { text: 'Lantano', correct: true },
         { text: 'Cerio', correct: false },
@@ -276,7 +276,7 @@ const questions = [
         ]
         },
         {
-        question: '¿A que simbolo pertenece este el elemento Plomo?',
+        question: '¿A que símbolo pertenece este el elemento Plomo?',
         answers: [
         { text: 'P', correct: false },
         { text: 'Pb', correct: true },
@@ -285,7 +285,7 @@ const questions = [
         ]
         },
         {
-        question: '¿A que simbolo pertenece este el elemento Cobalto?',
+        question: '¿A que símbolo pertenece este el elemento Cobalto?',
         answers: [
         { text: 'Co', correct: true },
         { text: 'Cr', correct: false },
@@ -303,7 +303,7 @@ const questions = [
         ]
         },
         {
-        question: '¿A qué elemento corresponde el síbolo C?',
+        question: '¿A qué elemento corresponde el símbolo C?',
         answers: [
         { text: 'Carbono', correct: true },
         { text: 'Boro', correct: false },
@@ -312,7 +312,7 @@ const questions = [
         ]
         },
         {
-        question: '¿A que simbolo pertenece este el elemento Talio?',
+        question: '¿A que símbolo pertenece este el elemento Talio?',
         answers: [
         { text: 'Ti', correct: false },
         { text: 'Ta', correct: false },
@@ -321,7 +321,7 @@ const questions = [
         ]
         },
         {
-        question: '¿A que simbolo pertenece este el elemento Arsenico?',
+        question: '¿A que símbolo pertenece este el elemento Arsenico?',
         answers: [
         { text: 'Ac', correct: false },
         { text: 'As', correct: true },
@@ -330,7 +330,7 @@ const questions = [
         ]
         },
         {
-        question: '¿A que simbolo pertenece este el elemento Meitnerio?',
+        question: '¿A que símbolo pertenece este el elemento Meitnerio?',
         answers: [
         { text: 'Mt', correct: true },
         { text: 'Mg', correct: false },

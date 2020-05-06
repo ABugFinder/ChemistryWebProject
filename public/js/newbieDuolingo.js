@@ -160,7 +160,7 @@ function clearStatusClass(element) {
 const questions = [
 
   {
-    question: '¿A qué elemento corresponde el síbolo H?',
+    question: '¿A qué elemento corresponde el símbolo H?',
     answers: [
     { text: 'Helio', correct: false },
     { text: 'Litio', correct: false },
@@ -169,7 +169,7 @@ const questions = [
     ]
     },
     {
-    question: '¿A qué elemento corresponde el síbolo Al?',
+    question: '¿A qué elemento corresponde el símbolo Al?',
     answers: [
     { text: 'Fósforo', correct: false },
     { text: 'Silicio', correct: false },
@@ -187,7 +187,7 @@ const questions = [
     ]
     },
     {
-    question: '¿A que simbolo pertenece este el elemento Niobio?',
+    question: '¿A que símbolo pertenece este el elemento Niobio?',
     answers: [
     { text: 'Mo', correct: false },
     { text: 'Md', correct: false },
@@ -196,7 +196,7 @@ const questions = [
     ]
     },
     {
-    question: '¿A qué elemento corresponde el síbolo Cu?',
+    question: '¿A qué elemento corresponde el símbolo Cu?',
     answers: [
     { text: 'Zinc', correct: false },
     { text: 'Cobre', correct: true },

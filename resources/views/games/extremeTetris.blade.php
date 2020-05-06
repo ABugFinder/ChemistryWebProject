@@ -36,6 +36,7 @@
           <li id="the-cvs" class="col-md">
             <canvas class="box" id="tetris" width="380" height="700"></canvas>
           </li>
+          <img src="/images/tetristuto.png" alt="controles-image" style="width: 85%; margin-top: 10px;">
           <!---------------------------------->
           <li id="next-piece" class="col-sm">
             <div style="font-size:20px" id="nextPz">

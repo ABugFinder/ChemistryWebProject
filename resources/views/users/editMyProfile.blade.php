@@ -5,11 +5,12 @@
         <div class="row justify-content-center">
             <div class="" style="width: 80%">
                 <div class="card" style="width: 100%">
-                    <div class="card-header">Mi Perfil</div>
+                    <div class="card-header">Editar Mi Perfil</div>
                     <div class="card-body">
                         <p>Información actual</p>
                         <p>Usuario: {{$user->username}}</p>
                         <p>Nombre: {{$user->name}} {{$user->surname}}</p>
+                        <p>Biografía: {{$user->biografi}}</p>
                     </div>
                     <div class="card-body">
                         Nuevos datos:
@@ -35,7 +36,7 @@
                           </form>
                     </div>
                     <div class="card-body">
-                         <a class="btn btn-primary" href="{{ route('myProfile') }}" role="button">Cancelar</a>
+                         <a class="btn btn-primary" href="{{ route('myProfile') }}" role="button">Regresar</a>
                     </div>
                 </div>
             </div>

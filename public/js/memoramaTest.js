@@ -243,7 +243,7 @@ function contador() { //Contador de pares
     if(paresCartas == 7){
         send_puntaje();
         gameAlert(); 
-     }
+    }
 }
 
 function intentos() { //Contador de intentos
