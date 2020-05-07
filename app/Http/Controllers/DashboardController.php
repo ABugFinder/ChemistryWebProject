@@ -17,21 +17,22 @@ class DashboardController extends Controller
     public function index()
     {
         
-        $pointsTop = User::select('*')->orderBy('points','desc')->paginate(10);
+        $pointsTop = User::select('username','points')->orderBy('points','desc')->paginate(7);
         $purchases = Store::select('name','ventas')->get();
         $tetrisRecord = User::select('tetrisrecord')->sum('tetrisrecord');
         $memoramaRecord = User::select('memoramarecord')->sum('memoramarecord');
+
+        
 
         $gamesPoints = [
             'tetrisRecord' => $tetrisRecord,
             'memoramaRecord' => $memoramaRecord
         ];
 
-
         
-
+        
         return view('stats',[
-            'pointsTop' => $pointsTop,
+            'pointsTop' => $pointsTop->toJson(),
             'purchases' => $purchases,
             'gamesPoints' => $gamesPoints
         ]);

@@ -103,45 +103,45 @@ Morris.Line({
  *
  * Why not try some of the options above?
  */
- var gamesPoints =  <?= json_encode($gamePoints)?>;
+ var gamesPoints =  <?= json_encode($gamesPoints)?>;
 
 Morris.Donut({
   element: 'donut-example',
   data: [
-    {label: "Memorama", value: gamePoints.memoramaRecord},
-    {label: "Tetris", value: gamePoints.tetrisRecord}
+    {label: "Memorama", value: gamesPoints.memoramaRecord},
+    {label: "Tetris", value: gamesPoints.tetrisRecord}
   ]
 });
 
 </script>
 
-<script type="text/javascript">
+<script >
     /*
  * Play with this code and it'll update in the panel opposite.
  *
  * Why not try some of the options above?
  */
-var pointsTop = <?= json_encode($pointsTop)?>;
-console.log(pointsTop['data'][0].username);
 
-Morris.Bar({
-  element: 'bar-example',
-  data: [
-    {username: pointsTop['data'][0].username, points: pointsTop['data'][0].points },
-    {username: pointsTop['data'][1].username, points: pointsTop['data'][1].points },
-    {username: pointsTop['data'][2].username, points: pointsTop['data'][2].points },
-    {username: pointsTop['data'][3].username, points: pointsTop['data'][3].points },
-    {username: pointsTop['data'][4].username, points: pointsTop['data'][4].points },
-    {username: pointsTop['data'][5].username, points: pointsTop['data'][5].points },
-    {username: pointsTop['data'][6].username, points: pointsTop['data'][6].points },
-    {username: pointsTop['data'][7].username, points: pointsTop['data'][7].points },
-    {username: pointsTop['data'][8].username, points: pointsTop['data'][8].points },
-    {username: pointsTop['data'][9].username, points: pointsTop['data'][9].points },
-  ],
-  xkey: 'username',
-  ykeys: ['points'],
-  labels: ['points']
-});
+      var data = <?= json_encode($pointsTop);?>;
+      
+      var morrisData = [];
+      data = JSON.parse(data).data;
+      
+      for (var i = 0; i < data.length; i++) {
+          morrisData[i]={username: data[i]['username'], points: data[i]['points']};
+      }
+      
+      console.log(morrisData);
+
+      Morris.Bar({
+        element: 'bar-example',
+        data: morrisData,
+        xkey: 'username',
+        ykeys: ['points'],
+        labels: ['points']
+      });
+
+
 </script>
 
 @endsection
