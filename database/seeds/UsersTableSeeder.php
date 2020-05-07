@@ -74,16 +74,6 @@ class UsersTableSeeder extends Seeder
             'tetrisrecord' => 0,
             'memoramarecord' => 0
         ]);
-        $user = User::create([
-            'name' => 'Normal',
-            'surname' => 'Userjaja',
-            'username' => 'NorSer',
-            'email' => 'user@useeer.com',
-            'password' => Hash::make('password'),
-            'points' => 1900,
-            'tetrisrecord' => 0,
-            'memoramarecord' => 0
-        ]);
 
         $admin->roles()->attach($adminRole);
         $admin->roles()->attach($userRole);
@@ -92,7 +82,7 @@ class UsersTableSeeder extends Seeder
         $admin3->roles()->attach($adminRole);
         $user->roles()->attach($userRole);
 
-        $users = factory(App\User::class, 250)->create();
+        $users = factory(App\User::class, 95)->create();
 
     }
 }

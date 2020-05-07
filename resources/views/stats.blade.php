@@ -25,25 +25,25 @@
             </div>
         </div>
         <div class="card" style="width: 50%">
-            <div class="card-header">
-              Juego más usado
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">¿Qué juego es el más usado por los usuarios?</h5>
-              <p class="card-text">Los números mostrados son el porcentaje (%) de veces que se ha jugado un tipo de juego. Estos datos han sido rescatados desde el inicio de los tiempos.</p>
-              <div id="donut-example"></div>
-            </div>
-        </div>
-        <div class="card" style="width: 100%">
-            <div class="card-header">
-              Juego de la semana
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Muestra las partidas mas jugadas</h5>
-              <p class="card-text">Comparativa entre partidas jugadas de tetris, duolingo y memorama.</p>
-              <div id="bar-example"></div>
-            </div>
-        </div>
+          <div class="card-header">
+            Juego con más puntos de record
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Esta gráfica muestra el juego más jugado.</h5>
+            <p class="card-text">Se basa en el juego con más puntos acumuados entre todos los usuarios.</p>
+            <div id="donut-example"></div>
+          </div>
+      </div>
+      <div class="card" style="width: 100%">
+          <div class="card-header">
+            Top usuarios con más dinero
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Muestra los 7 usuarios con saldos más perturbadores</h5>
+            <p class="card-text">Comparativa entre chemicoins de los usuarios más ricos.</p>
+            <div id="bar-example"></div>
+          </div>
+      </div>
 
     </div>
 </div>
@@ -103,7 +103,7 @@ Morris.Line({
  *
  * Why not try some of the options above?
  */
- var gamesPoints =  <?= json_encode($gamesPoints)?>;
+var gamesPoints =  <?= json_encode($gamesPoints)?>;
 
 Morris.Donut({
   element: 'donut-example',
@@ -115,31 +115,31 @@ Morris.Donut({
 
 </script>
 
-<script >
+<script>
     /*
  * Play with this code and it'll update in the panel opposite.
  *
  * Why not try some of the options above?
  */
 
-      var data = <?= json_encode($pointsTop);?>;
-      
-      var morrisData = [];
-      data = JSON.parse(data).data;
-      
-      for (var i = 0; i < data.length; i++) {
-          morrisData[i]={username: data[i]['username'], points: data[i]['points']};
-      }
-      
-      console.log(morrisData);
+  var data = <?= json_encode($pointsTop);?>;
+  
+  var morrisData = [];
+  data = JSON.parse(data).data;
+  
+  for (var i = 0; i < data.length; i++) {
+      morrisData[i]={username: data[i]['username'], points: data[i]['points']};
+  }
+  
+  console.log(morrisData);
 
-      Morris.Bar({
-        element: 'bar-example',
-        data: morrisData,
-        xkey: 'username',
-        ykeys: ['points'],
-        labels: ['points']
-      });
+  Morris.Bar({
+    element: 'bar-example',
+    data: morrisData,
+    xkey: 'username',
+    ykeys: ['points'],
+    labels: ['Chemicoins']
+  });
 
 
 </script>
