@@ -122,17 +122,22 @@ Morris.Donut({
 Morris.Bar({
   element: 'bar-example',
   data: [
-    { y: 'Lunes', a: 2000,  b: 7500, c: 200 },
-    { y: 'Martes', a: 500,  b: 3500, c: 50 },
-    { y: 'Miércoles', a: 120,  b: 500, c: 12 },
-    { y: 'Jueves', a: 600,  b: 800, c: 60 },
-    { y: 'Viernes', a: 300, b: 12000, c: 30 },
-    { y: 'Sábado', a: 5000,  b: 8000, c: 5000 },
-    { y: 'Domingo', a: 9000,  b: 15000, c: 900 }
+    { y: $pointsTop[0], a: $pointsTop[0]->points},
+    { y: $pointsTop[1], a: $pointsTop[1]->points},
+    { y: $pointsTop[2], a: $pointsTop[2]->points},
+    { y: $pointsTop[3], a: $pointsTop[3]->points},
+    { y: $pointsTop[4], a: $pointsTop[4]->points},
+    { y: $pointsTop[5], a: $pointsTop[5]->points},
+    { y: $pointsTop[6], a: $pointsTop[6]->points},
+    { y: $pointsTop[7], a: $pointsTop[7]->points},
+    { y: $pointsTop[8], a: $pointsTop[8]->points},
+    { y: $pointsTop[9], a: $pointsTop[9]->points},
   ],
   xkey: 'y',
-  ykeys: ['a', 'b', 'c'],
-  labels: ['Duolingo', 'Tetris', 'Memorama']
+  ykeys: ['a'],
+  labels: [$pointsTop[0]->username, $pointsTop[1]->username, $pointsTop[2]->username,
+  $pointsTop[3]->username, $pointsTop[4]->username,$pointsTop[5]->username,$pointsTop[6]->username,
+  $pointsTop[7]->username,$pointsTop[8]->username,$pointsTop[9]->username]
 });
 </script>
 
