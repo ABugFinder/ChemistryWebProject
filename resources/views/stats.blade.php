@@ -49,6 +49,7 @@
 </div>
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
@@ -102,6 +103,7 @@ Morris.Line({
  *
  * Why not try some of the options above?
  */
+
 Morris.Donut({
   element: 'donut-example',
   data: [
@@ -113,31 +115,24 @@ Morris.Donut({
 
 </script>
 
-<script>
+<script type="text/javascript">
     /*
  * Play with this code and it'll update in the panel opposite.
  *
  * Why not try some of the options above?
  */
+var pointsTop = <?= json_encode($pointsTop)?>;
+console.log(pointsTop['data'][0].username);
+
 Morris.Bar({
   element: 'bar-example',
   data: [
-    { y: $pointsTop[0], a: $pointsTop[0]->points},
-    { y: $pointsTop[1], a: $pointsTop[1]->points},
-    { y: $pointsTop[2], a: $pointsTop[2]->points},
-    { y: $pointsTop[3], a: $pointsTop[3]->points},
-    { y: $pointsTop[4], a: $pointsTop[4]->points},
-    { y: $pointsTop[5], a: $pointsTop[5]->points},
-    { y: $pointsTop[6], a: $pointsTop[6]->points},
-    { y: $pointsTop[7], a: $pointsTop[7]->points},
-    { y: $pointsTop[8], a: $pointsTop[8]->points},
-    { y: $pointsTop[9], a: $pointsTop[9]->points},
+    {username: pointsTop['data'][0].username, points: pointsTop['data'][0].points },
+    {username: pointsTop['data'][1].username, points: pointsTop['data'][1].points }
   ],
-  xkey: 'y',
-  ykeys: ['a'],
-  labels: [$pointsTop[0]->username, $pointsTop[1]->username, $pointsTop[2]->username,
-  $pointsTop[3]->username, $pointsTop[4]->username,$pointsTop[5]->username,$pointsTop[6]->username,
-  $pointsTop[7]->username,$pointsTop[8]->username,$pointsTop[9]->username]
+  xkey: 'username',
+  ykeys: ['points'],
+  labels: ['points']
 });
 </script>
 
