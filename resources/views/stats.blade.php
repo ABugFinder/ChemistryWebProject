@@ -103,13 +103,13 @@ Morris.Line({
  *
  * Why not try some of the options above?
  */
+ var gamesPoints =  <?= json_encode($gamePoints)?>;
 
 Morris.Donut({
   element: 'donut-example',
   data: [
-    {label: "Memorama", value: 10},
-    {label: "Tetris", value: 65},
-    {label: "Quiz", value: 25}
+    {label: "Memorama", value: gamePoints.memoramaRecord},
+    {label: "Tetris", value: gamePoints.tetrisRecord}
   ]
 });
 
@@ -128,7 +128,15 @@ Morris.Bar({
   element: 'bar-example',
   data: [
     {username: pointsTop['data'][0].username, points: pointsTop['data'][0].points },
-    {username: pointsTop['data'][1].username, points: pointsTop['data'][1].points }
+    {username: pointsTop['data'][1].username, points: pointsTop['data'][1].points },
+    {username: pointsTop['data'][2].username, points: pointsTop['data'][2].points },
+    {username: pointsTop['data'][3].username, points: pointsTop['data'][3].points },
+    {username: pointsTop['data'][4].username, points: pointsTop['data'][4].points },
+    {username: pointsTop['data'][5].username, points: pointsTop['data'][5].points },
+    {username: pointsTop['data'][6].username, points: pointsTop['data'][6].points },
+    {username: pointsTop['data'][7].username, points: pointsTop['data'][7].points },
+    {username: pointsTop['data'][8].username, points: pointsTop['data'][8].points },
+    {username: pointsTop['data'][9].username, points: pointsTop['data'][9].points },
   ],
   xkey: 'username',
   ykeys: ['points'],
