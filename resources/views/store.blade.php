@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md">
                 <div class="card">
-                    <div class="card-header">Tienda</div>
+                    <div class="card-header text-primary" style="font-size:22px;">Tienda</div>
                         
                     <div class="card-body">
 
@@ -24,7 +24,7 @@
                                 <form method="POST" action="{{route('purchaseTest')}}">
                                   @csrf
                                   <input type="hidden" id="price" name="price" value="{{$store[$i]['price']}}">
-                                  <button type="submit" value="{{$i+1}}" name="id" class="btn btn-success">Comprar</button>
+                                  <button type="submit" style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-success" value="{{$i+1}}" name="id"><i class="fab fa-bitcoin"></i> Comprar</button>
                                 </form>
                                 
                               </div>
@@ -44,7 +44,7 @@
                                   <form method="POST" action="{{route('purchaseTest')}}">
                                     @csrf
                                     <input type="hidden" id="price" name="price" value="{{$store[$i]['price']}}">
-                                    <button type="submit" value="{{$i+1}}" name="id" class="btn btn-danger">Comprar</button>
+                                    <button type="submit" value="{{$i+1}}" name="id" style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-danger"><i class="fab fa-bitcoin"></i> Comprar</button>
                                   </form>
                               </div>
                             </div>

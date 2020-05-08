@@ -3,10 +3,10 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
-            <div class="" style="width: 50%; margin-top: 13px;">
+            <div class="card-header" style="font-size:22px; width: 70%; margin-top: 13px;">
                 <div class="card" style="width: 100%">
                     <div class="card-header">Mi Perfil</div>
-                    <div class="card-body">
+                    <div class="card-header text-primary">
                         <a class="btn btn-primary" href="{{ route('editProfile') }}" role="button"><i class="fas fa-user-edit"></i> Editar</a>
                     </div>
                     <div class="card-body" style="text-align:center; font-size: 18px;">

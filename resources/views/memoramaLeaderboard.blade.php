@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="">
             <div class="card">
-                <div class="card-header">Memorama - Leaderboards</div>
+                <div class="card-header text-primary" style="font-size:22px;">Memorama - Leaderboards</div>
 
                 <div class="card-body" style="width: 50em">
                     <table class="table">

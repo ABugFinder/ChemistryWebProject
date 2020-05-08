@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="">
             <div class="card">
-                <div class="card-header">Usuarios</div>
+                <div class="card-header text-primary" style="font-size:22px;">Usuarios</div>
 
                 <div class="card-body">
                     <table class="table">

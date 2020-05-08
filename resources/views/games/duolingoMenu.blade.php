@@ -5,7 +5,7 @@
         <div class="row justify-content-center" style="margin-top: 160px;">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Duolingo - Menú principal</div>
+                    <div class="card-header text-primary" style="font-size:22px;">Duolingo - Menú principal</div>
 
                     <div class="card-body">
                         @if (session('status'))

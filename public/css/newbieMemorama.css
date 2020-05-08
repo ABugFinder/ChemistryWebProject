@@ -1,3 +1,7 @@
+body {
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,75,121,1) 0%, rgba(0,212,255,1) 100%);
+}
 
 #card-container {
     margin-top: 20px;
@@ -53,7 +57,7 @@ img{
 }
 
 
-.memory-card.flip{  /* Relacionado con JS para el flip de la carta*/
+.memory-card.flip{  /*Relacionado con JS para el flip de la carta*/
     transform: rotateY(180deg);
 }
 
@@ -76,7 +80,7 @@ img{
 body{
     background-image: none;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center;
 }
 

@@ -5,7 +5,7 @@
         <div class="row justify-content-center" style="margin-top: 150px;">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Tetris - Seleccionar Nivel</div>
+                    <div class="card-header text-primary" style="font-size:22px;">Tetris - Seleccionar Nivel</div>
 
                     <div class="card-body">
                         @if (session('status'))
@@ -46,7 +46,7 @@
                     <div class="row" style="margin-left: auto; margin-right: auto;">
                         @if ($extreme > 0)
                         <div class="col">
-                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary"  href="{{route('extremeTetris')}}" role="button"><i class="fas fa-skull-crossbones"></i>Extremo</a>
+                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary"  href="{{route('extremeTetris')}}" role="button"><i class="fas fa-skull-crossbones"></i> Extremo</a>
                         </div>
                         @endif
 

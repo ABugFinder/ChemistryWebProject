@@ -5,7 +5,7 @@
         <div class="row justify-content-center" style="margin-top: 150px;">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Memorama - Seleccionar Nivel</div>
+                    <div class="card-header text-primary" style="font-size:22px;"> Memorama - Seleccionar Nivel</div>
 
                     <div class="card-body">
                         @if (session('status'))
@@ -29,7 +29,7 @@
 
                     <div class="row" style="margin-left: auto; margin-right: auto; margin-bottom: 8px;">
                         <div class="col">
-                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{route('advanceMemorama')}}" role="button"><i class="fas fa-flushed"></i> <i class="fas fa-dizzy"></i> Avanzado</a>
+                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{route('advanceMemorama')}}" role="button"><i class="fas fa-flushed"></i> Avanzado</a>
                         </div>
                         <div class="col">
                             <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{route('hardMemorama')}}" role="button"><i class="fas fa-dizzy"></i> Difícil</a>

@@ -36,45 +36,45 @@
           <li id="the-cvs" class="col-md">
             <canvas class="box" id="tetris" width="380" height="700"></canvas>
           </li>
-          <img src="/images/tetristuto.png" alt="controles-image" style="width: 85%; margin-top: 10px;">
           <!---------------------------------->
-          <li id="next-piece" class="col-sm">
-            <div style="font-size:20px" id="nextPz">
-              Siguiente pieza:
-            <div id="nextPiece" class="width: 80%;">
-              <img style="width: 100%;">
-            </div>
-        </li>
-        <!---------------------------------->
-        <li id="game-data" class="col">
-          
-          <div class="score-div" id="score-div">
-            <p>Datos</p>
-            Puntuanción:
-            <div id="score">0</div>
+         <li id="next-piece" class="col-sm">
+          <div style="font-size:20px" id="nextPz">
+            Siguiente pieza:
+          <div id="nextPiece" class="width: 80%;">
+            <img style="width: 100%;">
           </div>
-          <div class="level-div" id="level-div">
-            Nivel:
-            <div id="level">0</div>
+          <img src="/images/tetristuto.png" alt="controles-image" style="width: 85%; margin-top: 10px;">
+      </li>
+      <!---------------------------------->
+      <li id="game-data" class="col">
+        
+        <div class="score-div" id="score-div">
+          <p>Datos</p>
+          Puntuanción:
+          <div id="score">0</div>
+        </div>
+        <div class="level-div" id="level-div">
+          Nivel:
+          <div id="level">0</div>
+        </div>
+        <div class="diffculty-div" id="diffculty-div">
+          Dificultad: Avanzado
+        </div>
+        <div class="game-div" id="game-div">
+          Modo de juego: Normal
+        </div>
+        <br>
+        @if($medieval > 0)
+          <div class="btnMedieval-div">
+            <button onclick="replaceMedieval()" type="button" class="btn btn-primary">Skin Medieval</button>
           </div>
-          <div class="diffculty-div" id="diffculty-div">
-            Dificultad: Avanzado
+        @endif
+        <br>
+          @if($cyber > 0)
+          <div class="btnCyebr-div">
+            <button onclick="replaceCyber()" type="button" class="btn btn-primary">Skin Cyber</button>
           </div>
-          <div class="game-div" id="game-div">
-            Modo de juego: Normal
-          </div>
-          <br>
-          @if($medieval > 0)
-            <div class="btnMedieval-div">
-              <button onclick="replaceMedieval()" type="button" class="btn btn-primary">Skin Medieval</button>
-            </div>
-          @endif
-          <br>
-            @if($cyber > 0)
-            <div class="btnCyebr-div">
-              <button onclick="replaceCyber()" type="button" class="btn btn-primary">Skin Cyber</button>
-            </div>
-          @endif
+        @endif
           </li>
         </div>
       </ul>
