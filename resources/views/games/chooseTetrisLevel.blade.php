@@ -17,27 +17,27 @@
 
                     <div class="row" style="margin-left: auto; margin-right: auto; margin-bottom: 8px;">
                         <div class="col">
-                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary"  href="{{route('newbieTetris')}}" role="button">Novato</a>
+                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary"  href="{{route('newbieTetris')}}" role="button"><i class="fas fa-smile"></i> Novato</a>
                         </div>
                         <div class="col">
-                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary"  href="{{route('easyTetris')}}" role="button">Fácil</a>
+                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary"  href="{{route('easyTetris')}}" role="button"><i class="fas fa-laugh-squint"></i> Fácil</a>
                         </div>
                         <div class="col">
-                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary"  href="{{route('normalTetris')}}" role="button">Normal</a>
+                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary"  href="{{route('normalTetris')}}" role="button"><i class="fas fa-meh"></i> Normal</a>
                         </div>
                     </div>
-                        
+
                     <div class="row" style="margin-left: auto; margin-right: auto; margin-bottom: 8px;">
                         <div class="col">
-                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary"  href="{{route('advanceTetris')}}" role="button">Avanzado</a>
+                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary"  href="{{route('advanceTetris')}}" role="button"><i class="fas fa-flushed"></i> Avanzado</a>
                         </div>
                         <div class="col">
-                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary"  href="{{route('hardTetris')}}" role="button">Difícil</a>
+                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary"  href="{{route('hardTetris')}}" role="button"><i class="fas fa-dizzy"></i> Difícil</a>
                         </div>
-                        
+
                         @if ($expert > 0)
                         <div class="col">
-                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary"  href="{{route('expertTetris')}}" role="button">Experto</a>
+                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary"  href="{{route('expertTetris')}}" role="button"><i class="fas fa-angry"></i> Experto</a>
                         </div>
                         @endif
 
@@ -46,15 +46,15 @@
                     <div class="row" style="margin-left: auto; margin-right: auto;">
                         @if ($extreme > 0)
                         <div class="col">
-                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary"  href="{{route('extremeTetris')}}" role="button">Extremo</a>
+                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary"  href="{{route('extremeTetris')}}" role="button"><i class="fas fa-skull-crossbones"></i>Extremo</a>
                         </div>
                         @endif
 
                         <div class="col">
-                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary"  href="{{route('infiniteTetris')}}" role="button">Infinito</a>
+                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary"  href="{{route('infiniteTetris')}}" role="button"><i class="fas fa-infinity"></i> Infinito</a>
                         </div>
                     </div>
-                    
+
                     <div class="card-body">
                         <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary"  href="{{route('tetrisMenu')}}" role="button"><i class="fas fa-angle-left"></i> Regresar</a>
                     </div>
