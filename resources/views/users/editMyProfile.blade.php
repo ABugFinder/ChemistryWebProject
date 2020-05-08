@@ -6,11 +6,13 @@
             <div class="" style="width: 80%">
                 <div class="card" style="width: 100%">
                     <div class="card-header">Editar Mi Perfil</div>
-                    <div class="card-body">
+                    <div class="card-body" style="text-align:center; font-size: 18px;">
                         <p>Información actual</p>
-                        <p>Usuario: {{$user->username}}</p>
-                        <p>Nombre: {{$user->name}} {{$user->surname}}</p>
-                        <p>Biografía: {{$user->biografi}}</p>
+                        <p><i class="fas fa-user"></i> Nombre: {{$user->name}} {{$user->surname}}</p>
+                        <p><i class="fas fa-user-tag"></i> Usuario: {{$user->username}}</p>
+                        <p><i class="fas fa-envelope"></i> Email: {{$user->email}}</p>
+                        <p><i class="fas fa-key"></i> Password: ***********</p>
+                        <p><i class="far fa-id-card"></i> Biografía: {{$user->biografi}}</p>
                     </div>
                     <div class="card-body">
                         Nuevos datos:
@@ -31,12 +33,12 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <button class="btn btn-primary" type="submit" >Guardar cambios</button>
+                                <button class="btn btn-primary" type="submit"><i class="fas fa-save"></i> Guardar</button>
                             </div>
                           </form>
                     </div>
                     <div class="card-body">
-                         <a class="btn btn-primary" href="{{ route('myProfile') }}" role="button">Regresar</a>
+                         <a class="btn btn-primary" href="{{ route('myProfile') }}" role="button"><i class="fas fa-angle-left"></i> Regresar</a>
                     </div>
                 </div>
             </div>

@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" style="margin-top: 80px;">
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">Duolingo - Seleccionar Nivel</div>
@@ -17,36 +17,36 @@
 
                     <div class="row" style="margin-left: auto; margin-right: auto; margin-bottom: 8px;">
                         <div class="col">
-                            <a class="btn btn-primary" href="{{route('newbieDuolingo')}}" role="button">Novato</a>
+                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{route('newbieDuolingo')}}" role="button">Novato</a>
                         </div>
                         <div class="col">
-                            <a class="btn btn-primary" href="{{route('easyDuolingo')}}" role="button">Fácil</a>
+                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{route('easyDuolingo')}}" role="button">Fácil</a>
                         </div>
                         <div class="col">
-                            <a class="btn btn-primary" href="{{route('normalDuolingo')}}" role="button">Normal</a>
+                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{route('normalDuolingo')}}" role="button">Normal</a>
                         </div>
                     </div>
                         
                     <div class="row" style="margin-left: auto; margin-right: auto; margin-bottom: 8px;">
                         <div class="col">
-                            <a class="btn btn-primary" href="{{route('advanceDuolingo')}}" role="button">Avanzado</a>
+                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{route('advanceDuolingo')}}" role="button">Avanzado</a>
                         </div>
                         <div class="col">
-                            <a class="btn btn-primary" href="{{route('hardDuolingo')}}" role="button">Difícil</a>
+                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{route('hardDuolingo')}}" role="button">Difícil</a>
                         </div>
                         <div class="col">
-                            <a class="btn btn-primary" href="{{route('expertDuolingo')}}" role="button">Experto</a>
+                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{route('expertDuolingo')}}" role="button">Experto</a>
                         </div>
                     </div>
 
                     <div class="row" style="margin-left: auto; margin-right: auto;">
                         <div class="col">
-                            <a class="btn btn-primary" href="{{route('extremeDuolingo')}}" role="button">Extremo</a>
+                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{route('extremeDuolingo')}}" role="button">Extremo</a>
                         </div>
                     </div>
                     
                     <div class="card-body">
-                        <a class="btn btn-primary" href="{{route('duolingoMenu')}}" role="button">Regresar</a>
+                        <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{route('duolingoMenu')}}" role="button"><i class="fas fa-angle-left"></i> Regresar</a>
                     </div>
 
                 </div>

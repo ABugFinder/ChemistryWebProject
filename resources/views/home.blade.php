@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" style="margin-top: 80px;">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">Menú principal</div>
@@ -16,23 +16,23 @@
                 </div>
 
                 <div class="card-body" style="margin-left: auto; margin-right: auto;">
-                    <a class="btn btn-primary" href="{{route('myProfile')}}" role="button"> Mi Perfil</a>
+                    <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{route('myProfile')}}" role="button"> <i class="fas fa-user"></i> Mi Perfil</a>
                 </div>
 
                 <div class="card-body" style="margin-left: auto; margin-right: auto;">
-                    <a class="btn btn-primary" href="{{route('gamesMenu')}}" role="button"> Minijuegos</a>
+                    <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{route('gamesMenu')}}" role="button"><i class="fas fa-gamepad"></i> Minijuegos</a>
+                </div>
+
+                <div class="card-body" style=" margin-left: auto; margin-right: auto;">
+                    <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{route('duolingoMenu')}}" role="button"><i class="fas fa-gamepad"></i> Duolingo</a>
                 </div>
 
                 <div class="card-body" style="margin-left: auto; margin-right: auto;">
-                    <a class="btn btn-primary" href="{{route('duolingoMenu')}}" role="button"> Duolingo</a>
+                    <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{route('myStore')}}" role="button"><i class="fas fa-store"></i> Tienda</a>
                 </div>
 
                 <div class="card-body" style="margin-left: auto; margin-right: auto;">
-                    <a class="btn btn-primary" href="{{route('myStore')}}" role="button"> Tienda</a>
-                </div>
-
-                <div class="card-body" style="margin-left: auto; margin-right: auto;">
-                    <a class="btn btn-primary" href="{{route('elements.index')}}" role="button"> Elementos</a>
+                    <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{route('elements.index')}}" role="button"><i class="fas fa-atom"></i> Elementos</a>
                 </div>
 
             </div>

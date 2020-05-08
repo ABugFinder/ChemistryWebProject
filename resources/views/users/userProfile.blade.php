@@ -18,7 +18,7 @@
                             <p>Puntuacion Global: {{ ($user->tetrisrecord + $user->memoramarecord) / 2}}</p>
                             <p>Puntuacion Tetris: {{$user->tetrisrecord}}</p>
                             <p>Puntuacion Memorama: {{$user->memoramarecord}}</p>
-                            <a class="btn btn-primary" href="/home" role="button">Regresar</a>
+                            <a class="btn btn-primary" href="/home" role="button"><i class="fas fa-angle-left"></i> Regresar</a>
                         </div>
                     </div>
 

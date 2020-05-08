@@ -13,11 +13,12 @@
         <style>
             html, body {
                 background-color: #fff;
-                color: #636b6f;
+                color: #fbfbfb;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
+                background: radial-gradient(circle, rgba(2,0,36,1) 10%, rgba(9,75,121,1) 30%, rgba(0,212,255,1) 100%);
             }
 
             .full-height {
@@ -49,7 +50,7 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: #FFF;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -81,7 +82,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <a href="/home" style="text-decoration: none; color: #636b6f;"> ChemistryWeb - Project </a>
+                    <a href="/home" style="text-decoration: none; color: #FFF;"> ChemistryWeb - Project </a>
                 </div>
 
                 @auth

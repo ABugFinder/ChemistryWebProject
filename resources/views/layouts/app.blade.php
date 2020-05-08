@@ -19,6 +19,12 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
+    <!-- AwesomeFonts icons -->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-replace-svg="nest"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <!-- TETRIS -->
 
     @if (Request::path() == 'newbieTetris' || Request::path() == 'tetrisTest')
@@ -122,7 +128,7 @@
                 <a class="navbar-brand" href="{{ url('/home') }}">
                 @endcan
                     <!--{{ config('app.name', 'Laravel') }} -->
-                    ChemistryWeb - Project
+                    <img src="/images/logo.png" alt="logo página"> ChemistryWeb - Project
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -153,26 +159,27 @@
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="/home">
-                                        Inicio
+                                        <i class="fas fa-home"></i> Inicio
                                     </a>
 
                                     @can('manage-users')
                                     <a class="dropdown-item" href="{{ route('admin.users.index') }}">
-                                        Administrar Usuarios
+                                        <i class="fas fa-tasks"></i> Administrar Usuarios
                                     </a>
                                     <a class="dropdown-item" href="{{ route('stats') }}">
-                                        Estadísticas
+                                        <i class="fas fa-chart-pie"></i> Estadísticas
                                     </a>
                                     @endcan
 
                                     <a class="dropdown-item" href="{{route('myProfile')}}">
-                                        Mi Perfil
+                                        <i class="fas fa-user"></i> Mi Perfil
                                     </a>
 
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
+                                        <i class="fas fa-sign-out-alt"></i>
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

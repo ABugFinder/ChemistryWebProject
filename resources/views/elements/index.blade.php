@@ -38,8 +38,9 @@
                         @endforeach
                         </tbody>
                       </table>
+                      <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="/home" role="button"> <i class="fas fa-angle-left"></i> Regresar</a>
 
-                    <a class="btn btn-primary" href="/home" role="button">Regresar</a>
+                  </div>
                 </div>
 
             </div>

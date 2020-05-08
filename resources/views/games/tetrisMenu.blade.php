@@ -16,19 +16,19 @@
                     </div>
 
                     <div class="card-body" style="margin-left: auto; margin-right: auto;">
-                        <a class="btn btn-primary" href="{{route('tetrisDifficulty')}}" role="button">Seleccionar Nivel</a>
+                        <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{route('tetrisDifficulty')}}" role="button"><i class="fas fa-mouse-pointer"></i> Nivel</a>
                     </div>
 
                     <div class="card-body" style="margin-left: auto; margin-right: auto;">
-                        <a class="btn btn-primary" href="{{ route('tetrisLeaderboard') }}" role="button"> Leaderboards</a>
+                        <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{ route('tetrisLeaderboard') }}" role="button"><i class="fas fa-trophy"></i> Leaderboards</a>
                     </div>
 
                     <div class="card-body" style="margin-left: auto; margin-right: auto;">
-                        <a class="btn btn-primary" href="#" role="button"> ¿Cómo jugar?</a>
+                        <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="#" role="button"><i class="fas fa-chalkboard-teacher"></i> ¿Cómo jugar?</a>
                     </div>
 
                     <div class="card-body">
-                        <a class="btn btn-primary" href="{{route('gamesMenu')}}" role="button">Regresar</a>
+                        <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{route('gamesMenu')}}" role="button"><i class="fas fa-angle-left"></i> Regresar</a>
                     </div>
 
                 </div>

@@ -73,7 +73,7 @@
                       
                       <!-- Go back button -->
                       <div class="card-body">
-                          <a class="btn btn-primary" href="{{route('home')}}" role="button">Regresar</a>
+                          <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{route('home')}}" role="button"><i class="fas fa-angle-left"></i> Regresar</a>
                       </div>
                     </div>
 
