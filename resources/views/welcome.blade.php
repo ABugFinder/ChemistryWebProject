@@ -18,7 +18,7 @@
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
-                background: radial-gradient(circle, rgba(2,0,36,1) 10%, rgba(9,75,121,1) 30%, rgba(0,212,255,1) 100%);
+                background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,75,121,1) 30%, rgba(0,212,255,1) 100%);
             }
 
             .full-height {
@@ -69,12 +69,12 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Inicio</a>
+                        <a style="font-size: 20px" href="{{ url('/home') }}">Inicio</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        <a style="font-size: 20px" href="{{ route('login') }}">Login</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Registrarse</a>
+                            <a style="font-size: 20px" href="{{ route('register') }}">Registrarse</a>
                         @endif
                     @endauth
                 </div>
@@ -90,8 +90,8 @@
                     @if (Route::has('register'))
                         
                         <div class="links">
-                            <a href="{{ route('tetrisTest') }}">¡Probar Tetris!</a>
-                            <a href="{{ route('memoramaTest') }}">¡Probar Memorama!</a>
+                            <a style="font-size: 20px;" href="{{ route('tetrisTest') }}">¡Probar Tetris!</a>
+                            <a style="font-size: 20px;" href="{{ route('memoramaTest') }}">¡Probar Memorama!</a>
                         </div>
                     @endif
                 @endauth

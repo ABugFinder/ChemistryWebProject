@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="card" style="width: 70%">
-                <div class="card-header text-primary" style="font-size:22px; margin-top: 20px;">Editar Mi Perfil</div>
+                <div class="card-header text-primary" style="font-size:22px;">Editar Mi Perfil</div>
                 <div class="card-body" style="text-align:center; font-size: 18px;">
                     <p>Información actual</p>
                     <p><i class="fas fa-user"></i> Nombre: {{$user->name}} {{$user->surname}}</p>
@@ -32,12 +32,12 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <button class="btn btn-primary" type="submit"><i class="fas fa-save"></i> Guardar</button>
+                            <button style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" type="submit"><i class="fas fa-save"></i> Guardar</button>
                         </div>
                         </form>
                 </div>
                 <div class="card-body">
-                        <a class="btn btn-primary" href="{{ route('myProfile') }}" role="button"><i class="fas fa-angle-left"></i> Regresar</a>
+                        <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{ route('myProfile') }}" role="button"><i class="fas fa-angle-left"></i> Regresar</a>
                 </div>
             </div>
         </div>

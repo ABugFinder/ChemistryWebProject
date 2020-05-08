@@ -1,6 +1,11 @@
 @extends('layouts.app')
 @section('content')
 
+<style>
+    body{
+      background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,75,121,1) 0%, rgba(0,212,255,1) 100%);
+    }
+  </style>
     <div id="cont-game">
         
         <!--Aqui aparece el contador-->
