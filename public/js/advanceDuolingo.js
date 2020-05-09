@@ -158,194 +158,106 @@ function clearStatusClass(element) {
 
 const questions = [
 
-    {
-        question: '¿A qué elemento corresponde el símbolo H?',
+  {
+        
+  //1
+  question: '¿Cuál es elemento que sigue después de el Hidrógeno?',
         answers: [
-        { text: 'Helio', correct: false },
-        { text: 'Litio', correct: false },
-        { text: 'Hidrógeno', correct: true },
-        { text: 'Berilio', correct: false }
+          { text: 'Helio', correct: false },
+          { text: 'Litio', correct: true },
+          { text: 'Hidrógeno', correct: false },
+          { text: 'Berilio', correct: false }
         ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Al?',
+    },{
+        
+  //2
+  question: '¿Cuál es elemento que sigue después de el Itrio??',
         answers: [
-        { text: 'Fósforo', correct: false },
-        { text: 'Silicio', correct: false },
-        { text: 'Aluminio', correct: true },
-        { text: 'Azufre', correct: false }
+          { text: 'Circonio', correct: true },
+          { text: 'Copemicio', correct: false },
+          { text: 'Mercurio', correct: false },
+          { text: 'Lantano', correct: false }
         ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Rutherfordio?',
+    },{
+        
+  //3
+  question: '¿Cuál es elemento que sigue después de el Zinc?',
         answers: [
-        { text: 'Sólido', correct: false },
-        { text: 'Plasma', correct: false },
-        { text: 'Desconocido', correct: true },
-        { text: 'Líquido', correct: false }
+          { text: 'Yodo', correct: false },
+          { text: 'Galio', correct: true },
+          { text: 'Bario', correct: false },
+          { text: 'Radio', correct: false }
         ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Niobio?',
+    },{
+        
+  //4
+  question: '¿Cuál es elemento que sigue después de el Fósforo?',
         answers: [
-        { text: 'Mo', correct: false },
-        { text: 'Md', correct: false },
-        { text: 'Nd', correct: false },
-        { text: 'Nb', correct: true }
+          { text: 'Aluminio', correct: false },
+          { text: 'Azufre', correct: true },
+          { text: 'Boro', correct: false },
+          { text: 'Silicio', correct: false }
         ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Cu?',
+    },{
+        
+  //5
+  question: '¿Cuál es elemento que sigue después de el Manganeso?',
         answers: [
-        { text: 'Zinc', correct: false },
-        { text: 'Cobre', correct: true },
-        { text: 'Galio', correct: false },
-        { text: 'Germio', correct: false }
+          { text: 'Carbono', correct: false },
+          { text: 'Rodio', correct: false },
+          { text: 'Osmio', correct: false },
+          { text: 'Hierro', correct: true }
         ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Mn?',
+    },{
+        
+  //6
+  question: '¿Cuál es elemento que sigue después de el Hierro?',
         answers: [
-        { text: 'Níquel', correct: false },
-        { text: 'Cobalto', correct: false },
-        { text: 'Hierro', correct: false },
-        { text: 'Manganeso', correct: true }
+          { text: 'Cobalto', correct: true },
+          { text: 'Copemicio', correct: false },
+          { text: 'Mercurio', correct: false },
+          { text: 'Lantano', correct: false }
         ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo As?',
+    },{
+        
+  //7
+  question: '¿Cuál es elemento que sigue después de el Rutenio?',
         answers: [
-        { text: 'Selenio', correct: false },
-        { text: 'Bromo', correct: false },
-        { text: 'Kriptón', correct: false },
-        { text: 'Arsénico', correct: true }
+          { text: 'Cromo', correct: false },
+          { text: 'Rodio', correct: true },
+          { text: 'Renio', correct: false },
+          { text: 'Titanio', correct: true }
         ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Nb?',
+    },{
+        
+  //8
+  question: '¿Cuál es elemento que sigue después de el Litio?',
         answers: [
-        { text: 'Niobio', correct: true },
-        { text: 'Molibdeno', correct: false },
-        { text: 'Tecnesio', correct: false },
-        { text: 'Rutenio', correct: false }
+          { text: 'Sodio', correct: true },
+          { text: 'Cadmio', correct: false },
+          { text: 'Indio', correct: false },
+          { text: 'Antimonio', correct: false }
         ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Rb?',
+    },{
+        
+  //9
+  question: '¿Cuál es elemento que sigue después de el Indio?',
         answers: [
-        { text: 'Estroncio', correct: false },
-        { text: 'Itrio', correct: false },
-        { text: 'Rubidio', correct: true },
-        { text: 'Circonio', correct: false }
+          { text: 'Oro', correct: false },
+          { text: 'Estaño', correct: true },
+          { text: 'Osmio', correct: false },
+          { text: 'Plomo', correct: true }
         ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Rh?',
+    },{
+        
+  //10
+  question: '¿Cuál es elemento que sigue después de el Plomo?',
         answers: [
-        { text: 'Paladio', correct: false },
-        { text: 'Plata', correct: false },
-        { text: 'Cadmio', correct: false },
-        { text: 'Rodio', correct: true }
+          { text: 'Bismuto', correct: true },
+          { text: 'Bario', correct: false },
+          { text: 'Osmio', correct: false },
+          { text: 'Seleno', correct: false }
         ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo I?',
-        answers: [
-        { text: 'Xenón', correct: false },
-        { text: 'Yodo', correct: true },
-        { text: 'Cesio', correct: false },
-        { text: 'Bario', correct: false }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo La?',
-        answers: [
-        { text: 'Lantano', correct: true },
-        { text: 'Cerio', correct: false },
-        { text: 'Praseodimio', correct: false },
-        { text: 'Neodimio', correct: false }
-        ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Aluminio?',
-        answers: [
-        { text: 'Gaseoso', correct: false },
-        { text: 'Desconocido', correct: false },
-        { text: 'Sólido', correct: true },
-        { text: 'Líquido', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Plomo?',
-        answers: [
-        { text: 'P', correct: false },
-        { text: 'Pb', correct: true },
-        { text: 'Pt', correct: false },
-        { text: 'Pd', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Cobalto?',
-        answers: [
-        { text: 'Co', correct: true },
-        { text: 'Cr', correct: false },
-        { text: 'Ca', correct: false },
-        { text: 'C', correct: false }
-        ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Neón?',
-        answers: [
-        { text: 'Líquido', correct: false },
-        { text: 'Desconocido', correct: false },
-        { text: 'Gaseoso', correct: true },
-        { text: 'Plasma', correct: false }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo C?',
-        answers: [
-        { text: 'Carbono', correct: true },
-        { text: 'Boro', correct: false },
-        { text: 'Nitrógeno', correct: false },
-        { text: 'Oxígeno', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Talio?',
-        answers: [
-        { text: 'Ti', correct: false },
-        { text: 'Ta', correct: false },
-        { text: 'Tl', correct: true },
-        { text: 'Tm', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Arsenico?',
-        answers: [
-        { text: 'Ac', correct: false },
-        { text: 'As', correct: true },
-        { text: 'Au', correct: false },
-        { text: 'At', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Meitnerio?',
-        answers: [
-        { text: 'Mt', correct: true },
-        { text: 'Mg', correct: false },
-        { text: 'Mn', correct: false },
-        { text: 'Mo', correct: false }
-        ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Mercurio?',
-        answers: [
-        { text: 'Plasma', correct: false },
-        { text: 'Sólido', correct: false },
-        { text: 'Gaseoso', correct: false },
-        { text: 'Líquido', correct: true }
-        ]
-        },
+    },
 
 ]

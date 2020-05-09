@@ -158,104 +158,106 @@ function clearStatusClass(element) {
 
 const questions = [
 
-    {
-        question: '¿A qué elemento corresponde el símbolo H?',
-        answers: [
-        { text: 'Helio', correct: false },
-        { text: 'Litio', correct: false },
-        { text: 'Hidrógeno', correct: true },
-        { text: 'Berilio', correct: false }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Al?',
-        answers: [
-        { text: 'Fósforo', correct: false },
-        { text: 'Silicio', correct: false },
-        { text: 'Aluminio', correct: true },
-        { text: 'Azufre', correct: false }
-        ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Rutherfordio?',
-        answers: [
-        { text: 'Sólido', correct: false },
-        { text: 'Plasma', correct: false },
-        { text: 'Desconocido', correct: true },
-        { text: 'Líquido', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Niobio?',
-        answers: [
-        { text: 'Mo', correct: false },
-        { text: 'Md', correct: false },
-        { text: 'Nd', correct: false },
-        { text: 'Nb', correct: true }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Cu?',
-        answers: [
-        { text: 'Zinc', correct: false },
-        { text: 'Cobre', correct: true },
-        { text: 'Galio', correct: false },
-        { text: 'Germio', correct: false }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Mn?',
-        answers: [
-        { text: 'Níquel', correct: false },
-        { text: 'Cobalto', correct: false },
-        { text: 'Hierro', correct: false },
-        { text: 'Manganeso', correct: true }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo As?',
-        answers: [
-        { text: 'Selenio', correct: false },
-        { text: 'Bromo', correct: false },
-        { text: 'Kriptón', correct: false },
-        { text: 'Arsénico', correct: true }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Nb?',
-        answers: [
-        { text: 'Niobio', correct: true },
-        { text: 'Molibdeno', correct: false },
-        { text: 'Tecnesio', correct: false },
-        { text: 'Rutenio', correct: false }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Rb?',
-        answers: [
-        { text: 'Estroncio', correct: false },
-        { text: 'Itrio', correct: false },
-        { text: 'Rubidio', correct: true },
-        { text: 'Circonio', correct: false }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Rh?',
-        answers: [
-        { text: 'Paladio', correct: false },
-        { text: 'Plata', correct: false },
-        { text: 'Cadmio', correct: false },
-        { text: 'Rodio', correct: true }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo I?',
-        answers: [
-        { text: 'Xenón', correct: false },
-        { text: 'Yodo', correct: true },
-        { text: 'Cesio', correct: false },
-        { text: 'Bario', correct: false }
-        ]
-        },
+  {
+        
+    //1
+    question: '¿A qué elemento corresponde el símbolo Li?',
+          answers: [
+            { text: 'Helio', correct: false },
+            { text: 'Litio', correct: true },
+            { text: 'Hidrógeno', correct: false },
+            { text: 'Berilio', correct: false }
+          ]
+      },{
+          
+    //2
+    question: '¿A qué elemento corresponde el símbolo Zr?',
+          answers: [
+            { text: 'Circonio', correct: true },
+            { text: 'Copemicio', correct: false },
+            { text: 'Mercurio', correct: false },
+            { text: 'Lantano', correct: false }
+          ]
+      },{
+          
+    //3
+    question: '¿A qué elemento corresponde el símbolo Ga?',
+          answers: [
+            { text: 'Yodo', correct: false },
+            { text: 'Galio', correct: true },
+            { text: 'Bario', correct: false },
+            { text: 'Radio', correct: false }
+          ]
+      },{
+          
+    //4
+    question: '¿A qué elemento corresponde el símbolo S?',
+          answers: [
+            { text: 'Fósforo', correct: false },
+            { text: 'Azufre', correct: true },
+            { text: 'Boro', correct: false },
+            { text: 'Silicio', correct: false }
+          ]
+      },{
+          
+    //5
+    question: '¿A qué elemento corresponde el símbolo Fe?',
+          answers: [
+            { text: 'Carbono', correct: false },
+            { text: 'Rodio', correct: false },
+            { text: 'Osmio', correct: false },
+            { text: 'Hierro', correct: true }
+          ]
+      },{
+          
+    //6
+    question: '¿A qué elemento corresponde el símbolo Co?',
+          answers: [
+            { text: 'Cobalto', correct: true },
+            { text: 'Copemicio', correct: false },
+            { text: 'Mercurio', correct: false },
+            { text: 'Lantano', correct: false }
+          ]
+      },{
+          
+    //7
+    question: '¿A qué elemento corresponde el símbolo Rh?',
+          answers: [
+            { text: 'Cromo', correct: false },
+            { text: 'Rodio', correct: true },
+            { text: 'Renio', correct: false },
+            { text: 'Titanio', correct: true }
+          ]
+      },{
+          
+    //8
+    question: '¿A qué elemento corresponde el símbolo Na?',
+          answers: [
+            { text: 'Sodio', correct: true },
+            { text: 'Cadmio', correct: false },
+            { text: 'Indio', correct: false },
+            { text: 'Antimonio', correct: false }
+          ]
+      },{
+          
+    //9
+    question: '¿A qué elemento corresponde el símbolo Sn?',
+          answers: [
+            { text: 'Oro', correct: false },
+            { text: 'Estaño', correct: true },
+            { text: 'Osmio', correct: false },
+            { text: 'Plomo', correct: true }
+          ]
+      },{
+          
+    //10
+    question: '¿A qué elemento corresponde el símbolo Bi?',
+          answers: [
+            { text: 'Bismuto', correct: true },
+            { text: 'Bario', correct: false },
+            { text: 'Osmio', correct: false },
+            { text: 'Seleno', correct: false }
+          ]
+      },
 
 ]

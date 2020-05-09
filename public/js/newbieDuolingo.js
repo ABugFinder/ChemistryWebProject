@@ -160,48 +160,75 @@ function clearStatusClass(element) {
 const questions = [
 
   {
-    question: '¿A qué elemento corresponde el símbolo H?',
+    question: '¿A qué símbolo corresponde el Elemento H?',
     answers: [
-    { text: 'Helio', correct: false },
-    { text: 'Litio', correct: false },
-    { text: 'Hidrógeno', correct: true },
-    { text: 'Berilio', correct: false }
+      { text: 'Helio', correct: false },
+      { text: 'Litio', correct: false },
+      { text: 'Hidrógeno', correct: true },
+      { text: 'Berilio', correct: false }
     ]
     },
     {
-    question: '¿A qué elemento corresponde el símbolo Al?',
+    question: '¿A qué símbolo corresponde el Elemento Aluminio?',
     answers: [
-    { text: 'Fósforo', correct: false },
-    { text: 'Silicio', correct: false },
-    { text: 'Aluminio', correct: true },
-    { text: 'Azufre', correct: false }
+      { text: 'Fs', correct: false },
+      { text: 'Si', correct: false },
+      { text: 'Al', correct: true },
+      { text: 'Az', correct: false }
     ]
     },
     {
-    question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Rutherfordio?',
+    question: '¿A qué símbolo corresponde el elemento Rutherfordio?',
     answers: [
-    { text: 'Sólido', correct: false },
-    { text: 'Plasma', correct: false },
-    { text: 'Desconocido', correct: true },
-    { text: 'Líquido', correct: false }
+      { text: 'Ds', correct: false },
+      { text: 'Sg', correct: false },
+      { text: 'Rf', correct: true },
+      { text: 'Cn', correct: false }
     ]
     },
     {
-    question: '¿A que símbolo pertenece este el elemento Niobio?',
+    question: '¿A qué símbolo corresponde este el elemento Niobio?',
     answers: [
-    { text: 'Mo', correct: false },
-    { text: 'Md', correct: false },
-    { text: 'Nd', correct: false },
-    { text: 'Nb', correct: true }
+      { text: 'Mo', correct: false },
+      { text: 'Md', correct: false },
+      { text: 'Nd', correct: false },
+      { text: 'Nb', correct: true }
     ]
     },
     {
-    question: '¿A qué elemento corresponde el símbolo Cu?',
+    question: '¿A qué símbolo corresponde el Elemento Cobre?',
     answers: [
-    { text: 'Zinc', correct: false },
-    { text: 'Cobre', correct: true },
-    { text: 'Galio', correct: false },
-    { text: 'Germio', correct: false }
+      { text: 'Z', correct: false },
+      { text: 'Cu', correct: true },
+      { text: 'Ga', correct: false },
+      { text: 'Ge', correct: false }
+    ]
+    },
+    {
+    question: '¿A qué símbolo corresponde el Elemento Bohrio?',
+    answers: [
+      { text: 'Am', correct: false },
+      { text: 'FM', correct: false },
+      { text: 'Bh', correct: true },
+      { text: 'Lr', correct: false }
+    ]
+    },
+    {
+    question: '¿A qué símbolo corresponde el Elemento Flevorio?',
+    answers: [
+      { text: 'Cn', correct: false },
+      { text: 'Fl', correct: true },
+      { text: 'Mc', correct: false },
+      { text: 'Og', correct: false }
+    ]
+    },
+    {
+    question: '¿A qué símbolo corresponde el Elemento Galodino?',
+    answers: [
+      { text: 'Gd', correct: true },
+      { text: 'Er', correct: false },
+      { text: 'Ta', correct: false },
+      { text: 'W', correct: false }
     ]
     },
 

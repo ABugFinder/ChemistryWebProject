@@ -5,7 +5,7 @@
         <div class="row justify-content-center" style="margin-top: 80px;">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header text-primary" style="font-size:22px;">Duolingo - Seleccionar Nivel</div>
+                    <div class="card-header text-primary" style="font-size:22px;">ChemiQuiz - Seleccionar Nivel</div>
 
                     <div class="card-body">
                         @if (session('status'))

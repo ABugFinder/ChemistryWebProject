@@ -24,7 +24,7 @@
                 </div>
 
                 <div class="card-body" style=" margin-left: auto; margin-right: auto;">
-                    <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{route('duolingoMenu')}}" role="button"><i class="fas fa-gamepad"></i> Duolingo</a>
+                    <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{route('duolingoMenu')}}" role="button"><i class="fas fa-gamepad"></i> ChemiQuiz</a>
                 </div>
 
                 <div class="card-body" style="margin-left: auto; margin-right: auto;">

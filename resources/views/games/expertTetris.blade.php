@@ -17,7 +17,7 @@
               
               <ul id="flex-container">
                 <div id="elements">
-                  <p> Elementos descubiertos</p>
+                  <p style="color: #FFF"> Elementos descubiertos</p>
                 </div>
                 <li id ="e1" style="display: none;"> Lantano - La <br> 138.9055 </li> <!-- display: none; para que no aparezcan -->
                 <li id ="e2" style="display: none;"> Cerio - Ce <br> 140.116 </li>
@@ -44,7 +44,7 @@
           <!---------------------------------->
          <li id="next-piece" class="col-sm">
           <div style="font-size:20px" id="nextPz">
-            Siguiente pieza:
+            <p style="color: #FFF"> Siguiente pieza: </p>
           <div id="nextPiece" class="width: 80%;">
             <img style="width: 100%;">
           </div>
@@ -53,19 +53,19 @@
       <!---------------------------------->
       <li id="game-data" class="col">
         
-        <div class="score-div" id="score-div">
-          <p>Datos</p>
-          Puntuanción:
+        <div class="score-div" id="score-div" style="color: #FFF">
+          <p style="color: #FFF">Datos</p>
+          Puntuaci&oacute;n:
           <div id="score">0</div>
         </div>
-        <div class="level-div" id="level-div">
+        <div class="level-div" id="level-div" style="color: #FFF">
           Nivel:
           <div id="level">0</div>
         </div>
-        <div class="diffculty-div" id="diffculty-div">
+        <div class="diffculty-div" id="diffculty-div" style="color: #FFF">
           Dificultad: Avanzado
         </div>
-        <div class="game-div" id="game-div">
+        <div class="game-div" id="game-div" style="color: #FFF">
           Modo de juego: Normal
         </div>
         <br>

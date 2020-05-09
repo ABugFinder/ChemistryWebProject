@@ -16,7 +16,7 @@
             <div id="contElementos">
               
               <ul id="flex-container">
-                <p> Elementos descubiertos</p>
+                <p style="color: #FFF"> Elementos descubiertos</p>
                 <li id="e1" style="display: none;"> Hidrógeno - H <br> 1.00794  </li> <!-- display: none; para que no aparezcan -->
                 <li id="e2" style="display: none;"> Carbono - C <br> 12.0107 </li>
                 <li id="e3" style="display: none;"> Nitrógeno - N <br> 17.0067 </li>
@@ -33,28 +33,29 @@
           </li>
           <!---------------------------------->
           <li id="next-piece" class="col-sm">
-              <div style="font-size:20px">
-                Siguiente pieza:
+              <div style="font-size:20px" style="color: #FFF">
+                <p  style="color: #FFF"> Siguiente pieza:</p>
+              </div>
               <div id="nextPiece" class="width: 80%;">
                 <img style="width: 100%;">
-              </div>
+              </>
               <img src="/images/tetristuto.png" alt="controles-image" style="width: 85%; margin-top: 10px;">
           </li>
           <!---------------------------------->
           <li id="game-data" class="col">
-             <p>Datos</p>
-            <div class="score-div">
-              Puntuanción:
+             <p style="color: #FFF"> Datos</p>
+            <div class="score-div" style="color: #FFF">
+              Puntuaci&oacute;n:
               <div id="score">0</div>
             </div>
-            <div class="level-div">
+            <div class="level-div" style="color: #FFF">
               Nivel:
               <div id="level">0</div>
             </div>
-            <div class="diffculty-div">
+            <div class="diffculty-div" style="color: #FFF">
               Dificultad: Novato
             </div>
-            <div class="game-div">
+            <div class="game-div" style="color: #FFF">
               Modo de juego: Normal
             </div>
           </li>

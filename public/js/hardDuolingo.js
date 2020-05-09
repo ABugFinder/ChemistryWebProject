@@ -159,248 +159,105 @@ function clearStatusClass(element) {
 
 const questions = [
 
-    {
-        question: '¿A qué elemento corresponde el símmbolo H?',
+  {
+  //1
+  question: '¿A qué grupo corresponde el elemento Vanadio?',
         answers: [
-        { text: 'Helio', correct: false },
-        { text: 'Litio', correct: false },
-        { text: 'Hidrógeno', correct: true },
-        { text: 'Berilio', correct: false }
+          { text: '4', correct: false },
+          { text: '5', correct: true },
+          { text: '3', correct: false },
+          { text: '6', correct: false }
         ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símmbolo Al?',
+    },{
+        
+  //2
+  question: '¿A qué grupo corresponde el elemento Níquel?',
         answers: [
-        { text: 'Fósforo', correct: false },
-        { text: 'Silicio', correct: false },
-        { text: 'Aluminio', correct: true },
-        { text: 'Azufre', correct: false }
+          { text: '10', correct: true },
+          { text: '7', correct: false },
+          { text: '2', correct: false },
+          { text: '6', correct: false }
         ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Rutherfordio?',
+    },{
+        
+  //3
+  question: '¿A qué grupo corresponde el elemento Cadmio?',
         answers: [
-        { text: 'Sólido', correct: false },
-        { text: 'Plasma', correct: false },
-        { text: 'Desconocido', correct: true },
-        { text: 'Líquido', correct: false }
+          { text: '11', correct: false },
+          { text: '12', correct: true },
+          { text: '13', correct: false },
+          { text: '14', correct: false }
         ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Niobio?',
+    },{
+        
+  //4
+  question: '¿A qué grupo corresponde el elemento Astato?',
         answers: [
-        { text: 'Mo', correct: false },
-        { text: 'Md', correct: false },
-        { text: 'Nd', correct: false },
-        { text: 'Nb', correct: true }
+          { text: '15', correct: false },
+          { text: '17', correct: true },
+          { text: '14', correct: false },
+          { text: '7', correct: false }
         ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símmbolo Cu?',
+    },{
+        
+  //5
+  question: '¿A qué grupo corresponde el elemento Helio?',
         answers: [
-        { text: 'Zinc', correct: false },
-        { text: 'Cobre', correct: true },
-        { text: 'Galio', correct: false },
-        { text: 'Germio', correct: false }
+          { text: '1', correct: false },
+          { text: '6', correct: false },
+          { text: '17', correct: false },
+          { text: '18', correct: true }
         ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símmbolo Mn?',
+    },{
+        
+  //6
+  question: '¿A qué grupo corresponde el elemento Calcio?',
         answers: [
-        { text: 'Níquel', correct: false },
-        { text: 'Cobalto', correct: false },
-        { text: 'Hierro', correct: false },
-        { text: 'Manganeso', correct: true }
+          { text: '2', correct: true },
+          { text: '3', correct: false },
+          { text: '1', correct: false },
+          { text: '5', correct: false }
         ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símmbolo As?',
+    },{
+        
+  //7
+  question: '¿A qué grupo corresponde el elemento Aluminio?',
         answers: [
-        { text: 'Selenio', correct: false },
-        { text: 'Bromo', correct: false },
-        { text: 'Kriptón', correct: false },
-        { text: 'Arsénico', correct: true }
+          { text: '10', correct: false },
+          { text: '13', correct: true },
+          { text: '11', correct: false },
+          { text: '16', correct: true }
         ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símmbolo Nb?',
+    },{
+        
+  //8
+  question: '¿A qué grupo corresponde el elemento Cromo?',
         answers: [
-        { text: 'Niobio', correct: true },
-        { text: 'Molibdeno', correct: false },
-        { text: 'Tecnesio', correct: false },
-        { text: 'Rutenio', correct: false }
+          { text: '6', correct: true },
+          { text: '8', correct: false },
+          { text: '10', correct: false },
+          { text: '13', correct: false }
         ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símmbolo Rb?',
+    },{
+        
+  //9
+  question: '¿A qué grupo corresponde el elemento Germanio?',
         answers: [
-        { text: 'Estroncio', correct: false },
-        { text: 'Itrio', correct: false },
-        { text: 'Rubidio', correct: true },
-        { text: 'Circonio', correct: false }
+          { text: '6', correct: false },
+          { text: '14', correct: true },
+          { text: '18', correct: false },
+          { text: '13', correct: true }
         ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Rh?',
+    },{
+        
+  //10
+  question: '¿A qué grupo corresponde el elemento Francio?',
         answers: [
-        { text: 'Paladio', correct: false },
-        { text: 'Plata', correct: false },
-        { text: 'Cadmio', correct: false },
-        { text: 'Rodio', correct: true }
+          { text: '1', correct: true },
+          { text: '5', correct: false },
+          { text: '2', correct: false },
+          { text: '10', correct: false }
         ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo I?',
-        answers: [
-        { text: 'Xenón', correct: false },
-        { text: 'Yodo', correct: true },
-        { text: 'Cesio', correct: false },
-        { text: 'Bario', correct: false }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo La?',
-        answers: [
-        { text: 'Lantano', correct: true },
-        { text: 'Cerio', correct: false },
-        { text: 'Praseodimio', correct: false },
-        { text: 'Neodimio', correct: false }
-        ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Aluminio?',
-        answers: [
-        { text: 'Gaseoso', correct: false },
-        { text: 'Desconocido', correct: false },
-        { text: 'Sólido', correct: true },
-        { text: 'Líquido', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Plomo?',
-        answers: [
-        { text: 'P', correct: false },
-        { text: 'Pb', correct: true },
-        { text: 'Pt', correct: false },
-        { text: 'Pd', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Cobalto?',
-        answers: [
-        { text: 'Co', correct: true },
-        { text: 'Cr', correct: false },
-        { text: 'Ca', correct: false },
-        { text: 'C', correct: false }
-        ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Neón?',
-        answers: [
-        { text: 'Líquido', correct: false },
-        { text: 'Desconocido', correct: false },
-        { text: 'Gaseoso', correct: true },
-        { text: 'Plasma', correct: false }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo C?',
-        answers: [
-        { text: 'Carbono', correct: true },
-        { text: 'Boro', correct: false },
-        { text: 'Nitrógeno', correct: false },
-        { text: 'Oxígeno', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Talio?',
-        answers: [
-        { text: 'Ti', correct: false },
-        { text: 'Ta', correct: false },
-        { text: 'Tl', correct: true },
-        { text: 'Tm', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Arsenico?',
-        answers: [
-        { text: 'Ac', correct: false },
-        { text: 'As', correct: true },
-        { text: 'Au', correct: false },
-        { text: 'At', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Meitnerio?',
-        answers: [
-        { text: 'Mt', correct: true },
-        { text: 'Mg', correct: false },
-        { text: 'Mn', correct: false },
-        { text: 'Mo', correct: false }
-        ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Mercurio?',
-        answers: [
-        { text: 'Plasma', correct: false },
-        { text: 'Sólido', correct: false },
-        { text: 'Gaseoso', correct: false },
-        { text: 'Líquido', correct: true }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Telurio?',
-        answers: [
-        { text: 'Tm', correct: false },
-        { text: 'Tb', correct: false },
-        { text: 'Tc', correct: false },
-        { text: 'Te', correct: true }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Curio?',
-        answers: [
-        { text: 'Cm', correct: true },
-        { text: 'Cf', correct: false },
-        { text: 'Cn', correct: false },
-        { text: 'Ca', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Torio?',
-        answers: [
-        { text: 'Th', correct: true },
-        { text: 'Tl', correct: false },
-        { text: 'Pd', correct: false },
-        { text: 'Pt', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Praseodimio?',
-        answers: [
-        { text: 'Pa', correct: false },
-        { text: 'Pr', correct: true },
-        { text: 'Po', correct: false },
-        { text: 'Pd', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Disprosio?',
-        answers: [
-        { text: 'Fm', correct: false },
-        { text: 'Am', correct: false },
-        { text: 'Hf', correct: false },
-        { text: 'Dy', correct: true }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Plata?',
-        answers: [
-        { text: 'Ac', correct: false },
-        { text: 'Ag', correct: true },
-        { text: 'Au', correct: false },
-        { text: 'Am', correct: false }
-        ]
-        },
+    },
 
 ]

@@ -8,35 +8,33 @@
 
 <div id="cont-game" style="height: calc(100vh - 190px);" value ="{{$user->id}}">
 
-  <!--Aqui aparece el contador-->
-  <div style="position: absolute; right: 132px; text-align: center;">
-    <p id="contenedor" style="font-size:20px; text-decoration: none; color: #636b6f;">
-      Pares encontrados: 0
-    </p>
-    <p id="contenedorIntentos" style="font-size:20px; text-decoration: none; color: #636b6f;">
-        Intentos restantes: 20
-    </p>
-    <p id="recordPointsElement" style="font-size:20px; text-decoration: none; color: #636b6f;">
-      Puntuación actual: 0
-    </p>
-
-    <br>
+ <!--Aqui aparece el contador-->
+ <div style="position: absolute; right: 132px; text-align: center;">
+  <p id="contenedor" style="font-size:20px; text-decoration: none; color: #FFF;">
+    Pares encontrados: 0
+  </p>
+  <p id="contenedorIntentos" style="font-size:20px; text-decoration: none; color: #FFF;">
+      Intentos restantes: 20
+  </p>
+  <p id="recordPointsElement" style="font-size:20px; text-decoration: none; color: #FFF;">
+    Puntuaci&oacute;n actual: 0
+  </p>
   @if($medieval > 0)
-    <div class="btnMedieval-div" style="margin-left: 47%">
-      <button onclick="replaceMedieval()" type="button" style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-primary">Skin Medieval</button>
-    </div>
-  @endif
-  <br>
-    @if($cyber > 0)
-    <div class="btnCyebr-div" style="margin-left: 47%">
-      <button onclick="replaceCyber()" type="button" style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-primary">Skin Cyber</button>
-    </div>
-  @endif
+  <div class="btnMedieval-div" style="margin-left: 47%">
+    <button onclick="replaceMedieval()" type="button" style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-primary">Skin Medieval</button>
   </div>
-  
-  <!--Frame of the cards-->
-  <section id="card-container" class="memory-game"></section>
+@endif
+<br>
+  @if($cyber > 0)
+  <div class="btnCyebr-div" style="margin-left: 47%">
+    <button onclick="replaceCyber()" type="button" style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-primary">Skin Cyber</button>
+  </div>
+@endif
+</div>
 
+  <!--Frame of the cards-->
+<section id="card-container" class="memory-game"></section>
+</div>
     <script>
 
       function replaceMedieval() {

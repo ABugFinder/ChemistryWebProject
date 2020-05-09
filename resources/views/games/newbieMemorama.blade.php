@@ -11,14 +11,14 @@
 
   <!--Aqui aparece el contador-->
   <div style="position: absolute; right: 132px; text-align: center;">
-    <p id="contenedor" style="font-size:20px; text-decoration: none; color: #636b6f;">
+    <p id="contenedor" style="font-size:20px; text-decoration: none; color: #FFF;">
       Pares encontrados: 0
     </p>
-    <p id="contenedorIntentos" style="font-size:20px; text-decoration: none; color: #636b6f;">
+    <p id="contenedorIntentos" style="font-size:20px; text-decoration: none; color: #FFF;">
         Intentos restantes: 20
     </p>
-    <p id="recordPointsElement" style="font-size:20px; text-decoration: none; color: #636b6f;">
-      Puntuación actual: 0
+    <p id="recordPointsElement" style="font-size:20px; text-decoration: none; color: #FFF;">
+      Puntuaci&oacute;n actual: 0
     </p>
 
     <br>

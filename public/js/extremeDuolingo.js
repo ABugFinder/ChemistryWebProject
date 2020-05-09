@@ -158,410 +158,94 @@ function clearStatusClass(element) {
 }
 
 const questions = [
-
-    {
-        question: '¿A qué elemento corresponde el símbolo H?',
-        answers: [
-        { text: 'Helio', correct: false },
-        { text: 'Litio', correct: false },
-        { text: 'Hidrógeno', correct: true },
-        { text: 'Berilio', correct: false }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Al?',
-        answers: [
-        { text: 'Fósforo', correct: false },
-        { text: 'Silicio', correct: false },
-        { text: 'Aluminio', correct: true },
-        { text: 'Azufre', correct: false }
-        ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Rutherfordio?',
-        answers: [
-        { text: 'Sólido', correct: false },
-        { text: 'Plasma', correct: false },
-        { text: 'Desconocido', correct: true },
-        { text: 'Líquido', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Niobio?',
-        answers: [
-        { text: 'Mo', correct: false },
-        { text: 'Md', correct: false },
-        { text: 'Nd', correct: false },
-        { text: 'Nb', correct: true }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Cu?',
-        answers: [
-        { text: 'Zinc', correct: false },
-        { text: 'Cobre', correct: true },
-        { text: 'Galio', correct: false },
-        { text: 'Germio', correct: false }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Mn?',
-        answers: [
-        { text: 'Níquel', correct: false },
-        { text: 'Cobalto', correct: false },
-        { text: 'Hierro', correct: false },
-        { text: 'Manganeso', correct: true }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo As?',
-        answers: [
-        { text: 'Selenio', correct: false },
-        { text: 'Bromo', correct: false },
-        { text: 'Kriptón', correct: false },
-        { text: 'Arsénico', correct: true }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Nb?',
-        answers: [
-        { text: 'Niobio', correct: true },
-        { text: 'Molibdeno', correct: false },
-        { text: 'Tecnesio', correct: false },
-        { text: 'Rutenio', correct: false }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Rb?',
-        answers: [
-        { text: 'Estroncio', correct: false },
-        { text: 'Itrio', correct: false },
-        { text: 'Rubidio', correct: true },
-        { text: 'Circonio', correct: false }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Rh?',
-        answers: [
-        { text: 'Paladio', correct: false },
-        { text: 'Plata', correct: false },
-        { text: 'Cadmio', correct: false },
-        { text: 'Rodio', correct: true }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo I?',
-        answers: [
-        { text: 'Xenón', correct: false },
-        { text: 'Yodo', correct: true },
-        { text: 'Cesio', correct: false },
-        { text: 'Bario', correct: false }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo La?',
-        answers: [
-        { text: 'Lantano', correct: true },
-        { text: 'Cerio', correct: false },
-        { text: 'Praseodimio', correct: false },
-        { text: 'Neodimio', correct: false }
-        ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Aluminio?',
-        answers: [
-        { text: 'Gaseoso', correct: false },
-        { text: 'Desconocido', correct: false },
-        { text: 'Sólido', correct: true },
-        { text: 'Líquido', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Plomo?',
-        answers: [
-        { text: 'P', correct: false },
-        { text: 'Pb', correct: true },
-        { text: 'Pt', correct: false },
-        { text: 'Pd', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Cobalto?',
-        answers: [
-        { text: 'Co', correct: true },
-        { text: 'Cr', correct: false },
-        { text: 'Ca', correct: false },
-        { text: 'C', correct: false }
-        ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Neón?',
-        answers: [
-        { text: 'Líquido', correct: false },
-        { text: 'Desconocido', correct: false },
-        { text: 'Gaseoso', correct: true },
-        { text: 'Plasma', correct: false }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo C?',
-        answers: [
-        { text: 'Carbono', correct: true },
-        { text: 'Boro', correct: false },
-        { text: 'Nitrógeno', correct: false },
-        { text: 'Oxígeno', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Talio?',
-        answers: [
-        { text: 'Ti', correct: false },
-        { text: 'Ta', correct: false },
-        { text: 'Tl', correct: true },
-        { text: 'Tm', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Arsénico?',
-        answers: [
-        { text: 'Ac', correct: false },
-        { text: 'As', correct: true },
-        { text: 'Au', correct: false },
-        { text: 'At', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Meitnerio?',
-        answers: [
-        { text: 'Mt', correct: true },
-        { text: 'Mg', correct: false },
-        { text: 'Mn', correct: false },
-        { text: 'Mo', correct: false }
-        ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Mercurio?',
-        answers: [
-        { text: 'Plasma', correct: false },
-        { text: 'Sólido', correct: false },
-        { text: 'Gaseoso', correct: false },
-        { text: 'Líquido', correct: true }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Telurio?',
-        answers: [
-        { text: 'Tm', correct: false },
-        { text: 'Tb', correct: false },
-        { text: 'Tc', correct: false },
-        { text: 'Te', correct: true }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Curio?',
-        answers: [
-        { text: 'Cm', correct: true },
-        { text: 'Cf', correct: false },
-        { text: 'Cn', correct: false },
-        { text: 'Ca', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Torio?',
-        answers: [
-        { text: 'Th', correct: true },
-        { text: 'Tl', correct: false },
-        { text: 'Pd', correct: false },
-        { text: 'Pt', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Praseodimio?',
-        answers: [
-        { text: 'Pa', correct: false },
-        { text: 'Pr', correct: true },
-        { text: 'Po', correct: false },
-        { text: 'Pd', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Disprosio?',
-        answers: [
-        { text: 'Fm', correct: false },
-        { text: 'Am', correct: false },
-        { text: 'Hf', correct: false },
-        { text: 'Dy', correct: true }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Plata?',
-        answers: [
-        { text: 'Ac', correct: false },
-        { text: 'Ag', correct: true },
-        { text: 'Au', correct: false },
-        { text: 'Am', correct: false }
-        ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Neodimio?',
-        answers: [
-        { text: 'Gaseoso', correct: false },
-        { text: 'Plasma', correct: false },
-        { text: 'Sólido', correct: true },
-        { text: 'Líquido', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Radon?',
-        answers: [
-        { text: 'Rn', correct: true },
-        { text: 'Sn', correct: false },
-        { text: 'V', correct: false },
-        { text: 'Ra', correct: false }
-        ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Tecnesio?',
-        answers: [
-        { text: 'Sólido', correct: true },
-        { text: 'Líquido', correct: false },
-        { text: 'Plama', correct: false },
-        { text: 'Gaseoso', correct: false }
-        ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Erbio?',
-        answers: [
-        { text: 'Plasma', correct: false },
-        { text: 'Gaseoso', correct: false },
-        { text: 'Líquido', correct: false },
-        { text: 'Sólido', correct: true }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo In?',
-        answers: [
-        { text: 'Estaño', correct: false },
-        { text: 'Antimonio', correct: false },
-        { text: 'Indio', correct: true },
-        { text: 'Telurio', correct: false }
-        ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Sodio?',
-        answers: [
-        { text: 'Sólido', correct: true },
-        { text: 'Líquido', correct: false },
-        { text: 'Plasma', correct: false },
-        { text: 'Gaseoso', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Bario?',
-        answers: [
-        { text: 'B', correct: false },
-        { text: 'Bk', correct: false },
-        { text: 'Ba', correct: true },
-        { text: 'Be', correct: false }
-        ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Oro?',
-        answers: [
-        { text: 'Líquido', correct: false },
-        { text: 'Gaseoso', correct: false },
-        { text: 'Sólido', correct: true },
-        { text: 'Plasma', correct: false }
-        ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Copernico?',
-        answers: [
-        { text: 'Desconocido', correct: true },
-        { text: 'Plasma', correct: false },
-        { text: 'Líquido', correct: false },
-        { text: 'Sólido', correct: false }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Sc?',
-        answers: [
-        { text: 'Scandino', correct: true },
-        { text: 'Titanio', correct: false },
-        { text: 'Vanadio', correct: false },
-        { text: 'Cromo', correct: false }
-        ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Actinio?',
-        answers: [
-        { text: 'Sólido', correct: true },
-        { text: 'Líquido', correct: false },
-        { text: 'Desconocido', correct: false },
-        { text: 'Plasma', correct: false }
-        ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Prometio?',
-        answers: [
-        { text: 'Sólido', correct: true },
-        { text: 'Desconocido', correct: false },
-        { text: 'Plasma', correct: false },
-        { text: 'Gaseoso', correct: false }
-        ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Flúor?',
-        answers: [
-        { text: 'Plasma', correct: false },
-        { text: 'Desconocido', correct: false },
-        { text: 'Sólido', correct: true },
-        { text: 'Líquido', correct: false }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo F?',
-        answers: [
-        { text: 'Magnesio', correct: false },
-        { text: 'Sodio', correct: false },
-        { text: 'Neón', correct: false },
-        { text: 'Flúor', correct: true }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Cl?',
-        answers: [
-        { text: 'Argón', correct: false },
-        { text: 'Cloro', correct: true },
-        { text: 'Potasio', correct: false },
-        { text: 'Calcio', correct: false }
-        ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Astato?',
-        answers: [
-        { text: 'Sólido', correct: true },
-        { text: 'Plasma', correct: false },
-        { text: 'Líquido', correct: false },
-        { text: 'Gaseoso', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Estroncio?',
-        answers: [
-        { text: 'Si', correct: false },
-        { text: 'Sb', correct: false },
-        { text: 'Sr', correct: true },
-        { text: 'Os', correct: false }
-        ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Xenón?',
-        answers: [
-        { text: 'Gaseoso', correct: true },
-        { text: 'Sólido', correct: false },
-        { text: 'Plasma', correct: false },
-        { text: 'Desconocido', correct: false }
-        ]
-        },
+  {
+    question: '¿Cuál es la masa atómica del Helio?',
+    answers: [
+      { text: '1.00794', correct: false },
+      { text: '6.941', correct: false },
+      { text: '4.002602', correct: true },
+      { text: '9.012182', correct: false }
+    ]
+  },
+  {
+    question: '¿Cuál es la masa atómica de Kriptón?',
+    answers: [
+      { text: '74.9216', correct: false },
+      { text: '78.96', correct: false },
+      { text: '83.8', correct: true },
+      { text: '87.62', correct: false }
+    ]
+  },
+  {
+    question: '¿Cuál es la masa atómica de Oro?',
+    answers: [
+      { text: '204.3833', correct: false },
+      { text: '200.59', correct: false },
+      { text: '196.966569', correct: true },
+      { text: '210', correct: false }
+    ]
+  },
+  {
+    question: '¿Cuál es la masa atómica de Fósforo?',
+    answers: [
+      { text: '22.98976', correct: false },
+      { text: '26.981538', correct: false },
+      { text: '30.973762', correct: true },
+      { text: '26.981538', correct: false }
+    ]
+  },
+  {
+    question: '¿Cuál es la masa atómica de Cromo?',
+    answers: [
+      { text: '12.0107', correct: false },
+      { text: '9.012182', correct: false },
+      { text: '10.811', correct: true },
+      { text: '10.811', correct: false }
+    ]
+  },
+  {
+    question: '¿Cuál es la masa atómica de Boro?',
+    answers: [
+      { text: '15.9994', correct: false },
+      { text: '9.012182', correct: false },
+      { text: '10.811', correct: true },
+      { text: '20.1797', correct: false }
+    ]
+  },
+  {
+    question: '¿Cuál es la masa atómica de Itrio?',
+    answers: [
+      { text: '101.07', correct: false },
+      { text: '92.90638', correct: false },
+      { text: '88.90585', correct: true },
+      { text: '102.9055', correct: false }
+    ]
+  },
+  {
+    question: '¿Cuál es la masa atómica de Europio?',
+    answers: [
+      { text: '140.116', correct: false },
+      { text: '145', correct: false },
+      { text: '151.964', correct: true },
+      { text: '157.25', correct: false }
+    ]
+  },
+  {
+    question: '¿Cuál es la masa atómica de Platino?',
+    answers: [
+      { text: '167.259', correct: false },
+      { text: '180.9479', correct: false },
+      { text: '195.084', correct: true },
+      { text: '204.3833', correct: false }
+    ]
+  },
+  {
+    question: '¿Cuál es la masa atómica de Hierro?',
+    answers: [
+      { text: '50.9415', correct: false },
+      { text: '44.95591', correct: false },
+      { text: '55.847', correct: true },
+      { text: '63.546', correct: false }
+    ]
+  },
 ]

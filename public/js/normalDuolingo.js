@@ -159,149 +159,95 @@ function clearStatusClass(element) {
 
 const questions = [
 
-    {
-        question: '¿A qué elemento corresponde el símbolo H?',
-        answers: [
-        { text: 'Helio', correct: false },
-        { text: 'Litio', correct: false },
-        { text: 'Hidrógeno', correct: true },
-        { text: 'Berilio', correct: false }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Al?',
-        answers: [
-        { text: 'Fósforo', correct: false },
-        { text: 'Silicio', correct: false },
-        { text: 'Aluminio', correct: true },
-        { text: 'Azufre', correct: false }
-        ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Rutherfordio?',
-        answers: [
-        { text: 'Sólido', correct: false },
-        { text: 'Plasma', correct: false },
-        { text: 'Desconocido', correct: true },
-        { text: 'Líquido', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Niobio?',
-        answers: [
-        { text: 'Mo', correct: false },
-        { text: 'Md', correct: false },
-        { text: 'Nd', correct: false },
-        { text: 'Nb', correct: true }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Cu?',
-        answers: [
-        { text: 'Zinc', correct: false },
-        { text: 'Cobre', correct: true },
-        { text: 'Galio', correct: false },
-        { text: 'Germio', correct: false }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Mn?',
-        answers: [
-        { text: 'Níquel', correct: false },
-        { text: 'Cobalto', correct: false },
-        { text: 'Hierro', correct: false },
-        { text: 'Manganeso', correct: true }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo As?',
-        answers: [
-        { text: 'Selenio', correct: false },
-        { text: 'Bromo', correct: false },
-        { text: 'Kriptón', correct: false },
-        { text: 'Arsénico', correct: true }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Nb?',
-        answers: [
-        { text: 'Niobio', correct: true },
-        { text: 'Molibdeno', correct: false },
-        { text: 'Tecnesio', correct: false },
-        { text: 'Rutenio', correct: false }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Rb?',
-        answers: [
-        { text: 'Estroncio', correct: false },
-        { text: 'Itrio', correct: false },
-        { text: 'Rubidio', correct: true },
-        { text: 'Circonio', correct: false }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo Rh?',
-        answers: [
-        { text: 'Paladio', correct: false },
-        { text: 'Plata', correct: false },
-        { text: 'Cadmio', correct: false },
-        { text: 'Rodio', correct: true }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo I?',
-        answers: [
-        { text: 'Xenón', correct: false },
-        { text: 'Yodo', correct: true },
-        { text: 'Cesio', correct: false },
-        { text: 'Bario', correct: false }
-        ]
-        },
-        {
-        question: '¿A qué elemento corresponde el símbolo La?',
-        answers: [
-        { text: 'Lantano', correct: true },
-        { text: 'Cerio', correct: false },
-        { text: 'Praseodimio', correct: false },
-        { text: 'Neodimio', correct: false }
-        ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Aluminio?',
-        answers: [
-        { text: 'Gaseoso', correct: false },
-        { text: 'Desconocido', correct: false },
-        { text: 'Sólido', correct: true },
-        { text: 'Líquido', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Plomo?',
-        answers: [
-        { text: 'P', correct: false },
-        { text: 'Pb', correct: true },
-        { text: 'Pt', correct: false },
-        { text: 'Pd', correct: false }
-        ]
-        },
-        {
-        question: '¿A que símbolo pertenece este el elemento Cobalto?',
-        answers: [
-        { text: 'Co', correct: true },
-        { text: 'Cr', correct: false },
-        { text: 'Ca', correct: false },
-        { text: 'C', correct: false }
-        ]
-        },
-        {
-        question: '¿En qué estado de la materia se encuentra a temperatura ambiente el elemento Neón?',
-        answers: [
-        { text: 'Líquido', correct: false },
-        { text: 'Desconocido', correct: false },
-        { text: 'Gaseoso', correct: true },
-        { text: 'Plasma', correct: false }
-        ]
-        },
+  {
+    question: '¿A qué categoría corresponde el elemento Hidrógeno?',
+    answers: [
+      { text: 'Alcalinos', correct: false },
+      { text: 'Gases nobles', correct: false },
+      { text: 'Alcalinotérreos', correct: false },
+      { text: 'Otros no metales', correct: true },
+    ]
+  },
+  {
+    question: '¿A qué categoría corresponde el elemento Oxígeno?',
+    answers: [
+      { text: 'Gases nobles', correct: false },
+      { text: 'Otros no metales', correct: true },
+      { text: 'Meteloides', correct: false },
+      { text: 'Metales de Transición', correct: false }
+    ]
+  },
+  {
+    question: '¿A qué categoría corresponde el elemento Sodio?',
+    answers: [
+      { text: 'Alcalinos', correct: true },
+      { text: 'Otros metales', correct: false },
+      { text: 'Metaloides', correct: false },
+      { text: 'Hlógenos', correct: false }
+    ]
+  },
+  {
+    question: '¿A qué categoría corresponde el elemento Cobalto?',
+    answers: [
+      { text: 'Halógenos', correct: false },
+      { text: 'Otros no metales', correct: false },
+      { text: 'Alcalinos', correct: false },
+      { text: 'Metales de transisción', correct: true },
+    ]
+  },
+  {
+    question: '¿A qué categoría corresponde el elemento Calcio?',
+    answers: [
+      { text: 'Metaloides', correct: false },
+      { text: 'Alcalinotérreos', correct: false },
+      { text: 'Alcalinos', correct: true },
+      { text: 'Otros metales', correct: false }
+    ]
+  },
+  {
+    question: '¿A qué categoría corresponde el elemento Vanadio?',
+    answers: [
+      { text: 'Otros no metales', correct: false },
+      { text: 'Metales de transición', correct: true },
+      { text: 'Alcalinos', correct: false },
+      { text: 'Metales', correct: false }
+    ]
+  },
+  {
+    question: '¿A qué categoría corresponde el elemento Selenio?',
+    answers: [
+      { text: 'Otros no metales', correct: true },
+      { text: 'Metaloides', correct: false },
+      { text: 'Gases nobles', correct: false },
+      { text: 'Otros metales', correct: false }
+    ]
+  },
+  {
+    question: '¿A qué categoría corresponde el elemento Indio?',
+    answers: [
+      { text: 'Lantánidos', correct: false },
+      { text: 'Halógenos', correct: false },
+      { text: 'Alcalinos', correct: false },
+      { text: 'Otros metales', correct: true },
+    ]
+  },
+  {
+    question: '¿A qué categoría corresponde el elemento Molibdeno?',
+    answers: [
+      { text: 'Lantánidos', correct: false },
+      { text: 'Metales de transición', correct: true },
+      { text: 'Halógenos', correct: false },
+      { text: 'Alcalinos', correct: false }
+    ]
+  },
+  {
+    question: '¿A qué categoría corresponde el elemento Plata?',
+    answers: [
+      { text: 'Metales de transición', correct: true },
+      { text: 'Gases nobles', correct: false },
+      { text: 'Halógenos', correct: false },
+      { text: 'Otros no metales', correct: false }
+    ]
+  },
 
 ]
