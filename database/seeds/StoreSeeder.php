@@ -22,7 +22,8 @@ class StoreSeeder extends Seeder
         $product = Store::create([
             'name' => 'Tetris - Medieval',
             'description' => 'Desbloquea el skin Medieval para Tetris',
-            'price' => 5000
+            'price' => 5000,
+            'ventas' => 1
         ]);
 
         $product = Store::create([

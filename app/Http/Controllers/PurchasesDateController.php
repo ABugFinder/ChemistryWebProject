@@ -2,14 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\PurchasesDate;
 use Illuminate\Http\Request;
 
-use App\User;
-use App\Store;
-use App\Purchase;
-use Carbon\Carbon; 
-use App\PurchasesDate;
-class DashboardController extends Controller
+class PurchasesDateController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,28 +14,7 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        
-        
-        $pointsTop = User::select('username','points')->orderBy('points','desc')->paginate(7);
-        $tetrisRecord = User::select('tetrisrecord')->sum('tetrisrecord');
-        $memoramaRecord = User::select('memoramarecord')->sum('memoramarecord');
-        $purchasesDate = PurchasesDate::all();
-
-
-        $gamesPoints = [
-            'tetrisRecord' => $tetrisRecord,
-            'memoramaRecord' => $memoramaRecord
-        ];
-        
-        
-
-        
-        
-        return view('stats',[
-            'pointsTop' => $pointsTop->toJson(),
-            'gamesPoints' => $gamesPoints,
-            'purchasesDate' => $purchasesDate->toJson()
-        ]);
+        //
     }
 
     /**
@@ -66,10 +41,10 @@ class DashboardController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\PurchasesDate  $purchasesDate
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(PurchasesDate $purchasesDate)
     {
         //
     }
@@ -77,10 +52,10 @@ class DashboardController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\PurchasesDate  $purchasesDate
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(PurchasesDate $purchasesDate)
     {
         //
     }
@@ -89,10 +64,10 @@ class DashboardController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\PurchasesDate  $purchasesDate
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, PurchasesDate $purchasesDate)
     {
         //
     }
@@ -100,10 +75,10 @@ class DashboardController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\PurchasesDate  $purchasesDate
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(PurchasesDate $purchasesDate)
     {
         //
     }

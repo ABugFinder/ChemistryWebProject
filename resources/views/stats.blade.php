@@ -82,17 +82,43 @@
  *
  * Why not try some of the options above?
  */
+
+var data = <?= json_encode($purchasesDate);?>;
+
+var morrisData = [];
+
+data = JSON.parse(data);
+console.log(data);
+
+
+for (var i = 0; i < data.length; i++) {
+    morrisData[i]={
+      date: data[i]['date'], 
+      MemoramaMedieval: data[i]['Memorama - Medieval'], 
+      TetrisMedieval: data[i]['Tetris - Medieval'], 
+      MemoramaCyber: data[i]['Memorama - Cyber'], 
+      TetrisCyber: data[i]['Tetris - Cyber'], 
+      MemoramaExperto: data[i]['Memorama - Experto'], 
+      TetrisExperto: data[i]['Tetris - Experto'], 
+      MemoramaExtremo: data[i]['Memorama - Extremo'], 
+      TetrisExtremo: data[i]['Tetris - Extremo'], 
+    };
+}
+
 Morris.Line({
   element: 'line-example',
-  data: [
-    { y: '2011', a: 2, b: 1, c: 3, d:0 },
-    { y: '2013', a: 20,  b: 15, c: 30, d:30 },
-    { y: '2015', a: 300,  b: 350, c: 450, d:30 },
-    { y: '2018', a: 10000,  b: 9050, c: 12000, d:200 },
-    { y: '2020', a: 20000, b: 8000, c: 35000, d:7000 }
+  data: morrisData,
+  xkey: 'date',
+  ykeys: [
+      'MemoramaMedieval',
+      'TetrisMedieval',
+      'MemoramaCyber',
+      'TetrisCyber',
+      'MemoramaExperto',
+      'TetrisExperto',
+      'MemoramaExtremo',
+      'TetrisExtremo'
   ],
-  xkey: 'y',
-  ykeys: ['a', 'b', 'c', 'd'],
   labels: ['Skin Tetris', 'Skin Memorama', 'Dificultad Tetris', 'Dificultad Memorama']
 });
 </script>
@@ -131,7 +157,6 @@ Morris.Donut({
       morrisData[i]={username: data[i]['username'], points: data[i]['points']};
   }
   
-  console.log(morrisData);
 
   Morris.Bar({
     element: 'bar-example',

@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
         $this->call(PurchasesSeeder::class);
         $this->call(RecordTetrisSeeder::class);
         $this->call(RecordMemoramaSeeder::class);
+        $this->call(PurchasesDateSeeder::class);
         
     }
 }
