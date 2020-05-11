@@ -5,24 +5,25 @@
     <div class="row justify-content-center">
 
         <div class="card" style="width: 100%">
-            <div class="card-header text-primary" style="font-size:22px;">
-              Tráfico de datos
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Veces al día que un usuario utiliza nuestra página</h5>
-              <p class="card-text">Se muestran la cantidad de usuarios que se conectan al mes desde el inicio de los tiempos.</p>
-              <div id="myfirstchart" style="height:350px;"></div>
-            </div>
+          <div class="card-header text-primary" style="font-size:22px;">
+            Artículos más comprados
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Comparativa de artículos preferidos por los usuarios</h5>
+            <p class="card-text">Se meustra una línea de popularidad basada en la cantidad de compras anuales que se le atrubuye a un artículo específico.</p>
+            <div id="line-example"></div>
+          </div>
         </div>
         <div class="card" style="width: 50%">
-            <div class="card-header text-primary" style="font-size:22px;">
-              Artículos más comprados
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Comparativa de artículos preferidos por los usuarios</h5>
-              <p class="card-text">Se meustr una línea de popularidad basada en la cantidad de compras mensuales que se le atrubuye a un artículo específico.</p>
-              <div id="line-example"></div>
-            </div>
+          <div class="card-header text-primary" style="font-size:22px;">
+            Tráfico de datos
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Veces al día que un usuario utiliza nuestra página</h5>
+            <p class="card-text">Se muestran la cantidad de usuarios que se conectan al mes desde el inicio de los tiempos.</p>
+            <div id="myfirstchart" style="height:350px;"></div>
+          </div>
+            
         </div>
         <div class="card" style="width: 50%">
           <div class="card-header text-primary" style="font-size:22px;">
@@ -61,10 +62,8 @@
     // Chart data records -- each entry in this array corresponds to a point on
     // the chart.
     data: [
-        { year: '2011', value: 10 },
-        { year: '2013', value: 100 },
-        { year: '2015', value: 1200 },
-        { year: '2018', value: 10300 },
+        { year: '2018', value: 3950 },
+        { year: '2019', value: 15000 },
         { year: '2020', value: 50000 }
     ],
     // The name of the data record attribute that contains x-values.
@@ -119,7 +118,8 @@ Morris.Line({
       'MemoramaExtremo',
       'TetrisExtremo'
   ],
-  labels: ['Skin Tetris', 'Skin Memorama', 'Dificultad Tetris', 'Dificultad Memorama']
+  labels: ['Memorama Medieval', 'Tetris Medieval', 'Memorama Cyber', 'Tetris Cyber',
+          'Memorama Experto','Tetris Experto','Memorama Extremo','Tetris Extremo']
 });
 </script>
 
