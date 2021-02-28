@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="" style="width: 80%">
-                <div class="card" style="width: 100%">
+                <div class="card glass" style="width: 100%">
 
                     <div class="card-header"><h4>Perfil de {{$user->username}}</h4></div>
 

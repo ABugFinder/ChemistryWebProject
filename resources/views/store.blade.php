@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md">
-                <div class="card">
+                <div class="card glass">
                     <div class="card-header text-primary" style="font-size:22px;">Tienda</div>
                         
                     <div class="card-body">
@@ -15,7 +15,7 @@
 
                         @for ($i = 0; $i < 4; $i++)
                           <div class="col mb-4">
-                            <div class="card text-center">
+                            <div class="card glass text-center">
                               <img src="..." class="card-img-top" alt="imagen memorama medieval">
                               <div class="card-body">
                               <h5 class="card-title"> {{ $store[$i]['name'] }}</h5>
@@ -35,7 +35,7 @@
                         
                         @for ($i = 4; $i < 8; $i++)
                           <div class="col mb-4">
-                            <div class="card text-center">
+                            <div class="card glass text-center">
                               <img src="..." class="card-img-top" alt="imagen memorama medieval">
                               <div class="card-body">
                                 <h5 class="card-title"> {{ $store[$i]['name'] }}</h5>

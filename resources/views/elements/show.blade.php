@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="">
-            <div class="card">
+            <div class="card glass">
             <div class="card-header text-primary" style="font-size:22px;">
                 
                 <?php
@@ -26,7 +26,7 @@
             </div>
 
                 <div class="card-body">
-                    <table class="table">
+                    <table class="table" style="font-size: 16px">
                         <thead>
                             <tr>
                                 <th scope="col">Nombre</th>
@@ -54,10 +54,12 @@
                             </tr>
                         </tbody>
                     </table>
-                    <p>
+                    <div>
                         <hr>
-                        {{$element->description}}
-                    </p>
+                        <p style="font-size: 16px" align="justify">
+                            {{$element->description}}
+                        </p>
+                    </div>
 
                     <div>
                         <img src="/images/elementDescription/{{$element->atomicNumber}}.jpg" alt="" width="500"  style="display: block; margin-left: auto; margin-right: auto;">

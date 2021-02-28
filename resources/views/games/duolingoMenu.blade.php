@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row justify-content-center" style="margin-top: 160px;">
             <div class="col-md-8">
-                <div class="card">
+                <div class="card glass">
                     <div class="card-header text-primary" style="font-size:22px;">ChemisQuiz - Menú principal</div>
 
                     <div class="card-body">

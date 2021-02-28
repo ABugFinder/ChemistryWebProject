@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row justify-content-center" style="margin-top: 150px;">
             <div class="col-md-8">
-                <div class="card">
+                <div class="card glass">
                     <div class="card-header text-primary" style="font-size:22px;">Tetris - Seleccionar Nivel</div>
 
                     <div class="card-body">

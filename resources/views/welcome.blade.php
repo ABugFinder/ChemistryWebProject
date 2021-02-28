@@ -18,7 +18,8 @@
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
-                background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,75,121,1) 30%, rgba(0,212,255,1) 100%);
+                background: rgb(174,225,238);
+                background: radial-gradient(circle, rgba(174,225,238,1) 0%, rgba(148,187,233,1) 100%);
             }
 
             .full-height {

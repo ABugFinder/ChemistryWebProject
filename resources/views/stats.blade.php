@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
 
-        <div class="card" style="width: 100%">
+        <div class="card glass" style="width: 100%">
           <div class="card-header text-primary" style="font-size:22px;">
             Artículos más comprados
           </div>
@@ -14,7 +14,7 @@
             <div id="line-example"></div>
           </div>
         </div>
-        <div class="card" style="width: 50%">
+        <div class="card glass" style="width: 50%">
           <div class="card-header text-primary" style="font-size:22px;">
             Tráfico de datos
           </div>
@@ -25,7 +25,7 @@
           </div>
             
         </div>
-        <div class="card" style="width: 50%">
+        <div class="card glass" style="width: 50%">
           <div class="card-header text-primary" style="font-size:22px;">
             Juego con más puntos de record
           </div>
@@ -35,7 +35,7 @@
             <div id="donut-example"></div>
           </div>
       </div>
-      <div class="card" style="width: 100%">
+      <div class="card glass" style="width: 100%">
           <div class="card-header text-primary" style="font-size:22px;">
             Top usuarios con más dinero
           </div>

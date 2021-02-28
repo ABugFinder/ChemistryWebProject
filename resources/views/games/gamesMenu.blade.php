@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row justify-content-center" style="margin-top: 140px;">
             <div class="col-md-8">
-                <div class="card">
+                <div class="card glass">
                     <div class="card-header text-primary" style="font-size:22px;">Seleccionar mini-juego</div>
 
                     <div class="card-body">

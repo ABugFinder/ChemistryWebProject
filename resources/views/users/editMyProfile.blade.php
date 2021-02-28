@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
-            <div class="card" style="width: 70%">
+            <div class="card glass" style="width: 70%">
                 <div class="card-header text-primary" style="font-size:22px;">Editar Mi Perfil</div>
                 <div class="card-body" style="text-align:center; font-size: 18px;">
                     <p>Información actual</p>
@@ -14,7 +14,7 @@
                     <p><i class="far fa-id-card"></i> Biografía: {{$user->biografi}}</p>
                 </div>
                 <div class="card-body">
-                    Nuevos datos:
+                    <p style="font-size: 18px">Nuevos datos:</p>
                     <form method="POST" action="{{route('updateUser')}}">
                         @csrf
                         <div class="row">

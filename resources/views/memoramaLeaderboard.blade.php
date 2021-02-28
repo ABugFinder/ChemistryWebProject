@@ -1,15 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-<style>
-    body{
-      background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,75,121,1) 0%, rgba(0,212,255,1) 100%);
-    }
-  </style>
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="">
-            <div class="card">
+            <div class="card glass">
                 <div class="card-header text-primary" style="font-size:22px;">Memorama - Leaderboards</div>
 
                 <div class="card-body" style="width: 50em">
