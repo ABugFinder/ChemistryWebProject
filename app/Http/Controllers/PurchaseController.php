@@ -70,6 +70,11 @@ class PurchaseController extends Controller
         return view('yesbuy');
     }
 
+    //Funcion para el gacha de la tienda
+    public function gachaStore(){
+
+    }
+
     /**
      * Display the specified resource.
      *

@@ -76,5 +76,10 @@ class User extends Authenticatable
         return $this->hasMany('App\RecordMemorama','id_user');
     }
 
+    public function misCuriosidades()
+    {
+        return $this->belongsToMany('App\Curiosidades', 'miscuriosidades', 'id_user', 'id_curiosidad');
+    }
+
 
 }

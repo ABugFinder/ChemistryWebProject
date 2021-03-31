@@ -33,6 +33,7 @@ Route::post('/editMyProfile', 'UserController@updateUser')->name('updateUser');
 // Store
 Route::get('/myStore', 'StoreController@showStore')->name('myStore');
 Route::post('/myStore/purchase', 'PurchaseController@store')->name('purchaseTest');
+Route::post('/myStore/gachaPurchase', 'PurchaseController@gachaStore') -> name('gachaStore');
 
 // Notifications
 Route::get('/myStore/cantbuythis', 'PurchaseController@showNoBuy')->name('nobuy');
