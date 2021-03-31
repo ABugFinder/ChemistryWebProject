@@ -16,7 +16,7 @@ class CreateCuriosidadesTable extends Migration
         Schema::create('curiosidades', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nombre');
-            $table->string('contenido');
+            $table->longText('contenido');
             $table->string('imagen');
             $table->timestamps();
         });
