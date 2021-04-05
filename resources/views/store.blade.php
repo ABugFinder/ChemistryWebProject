@@ -66,10 +66,10 @@
                               <h5 class="card-title">Conocimientos</h5>
                               <p class="card-text">Desbloquea una curiosidad aleatoria sobre la tabla periodica.</p>
                               <p>Precio: 250 Chemicoins</p>
-                              <form method="POST" action="{{route('purchaseTest')}}">
+                              <form method="POST" action="{{route('gachaStore')}}">
                                 @csrf
                                 <input type="hidden" id="price" name="price" value="">
-                                <button type="submit" href="#" onclick="gachaStore();" style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-warning"><i class="fab fa-bitcoin"></i> Comprar</button>
+                                <button type="submit" href="#"  style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-warning"><i class="fab fa-bitcoin"></i> Comprar</button>
 
                               </form>
                             </div>
