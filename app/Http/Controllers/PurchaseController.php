@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Purchase;
 use App\Store;
 use App\User;
+use App\curiosidades;
+use App\MisCuriosidades;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -72,7 +74,27 @@ class PurchaseController extends Controller
 
     //Funcion para el gacha de la tienda
     public function gachaStore(){
+        $user = Auth::user();
+        $curiosidad = Curiosidades::inRandomOrder()->first();
 
+        $user->points -= 200;
+        $user->save();
+
+        if(MisCuriosidades::all()->where('id_user', '=', $user->id)
+            ->where('id_curiosidad', '=', $curiosidad->id)
+            ->count() > 0){
+
+                return view('nobuy');
+
+        } else {
+            $micuriosidad = MisCuriosidades::create([
+                'id_user' => $user->id,
+                'id_curiosidad' => $curiosidad->id,
+            ]);
+            $micuriosidad->save();
+
+            return view('yesbuy');
+        }
     }
 
     /**

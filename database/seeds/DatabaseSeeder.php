@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
         $this->call(RecordTetrisSeeder::class);
         $this->call(RecordMemoramaSeeder::class);
         $this->call(PurchasesDateSeeder::class);
+        $this->call(CuriosidadesSeeder::class);
         
     }
 }
