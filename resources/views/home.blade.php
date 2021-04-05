@@ -35,6 +35,10 @@
                     <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{route('elements.index')}}" role="button"><i class="fas fa-atom"></i> Elementos</a>
                 </div>
 
+                <div class="card-body" style="margin-left: auto; margin-right: auto;">
+                    <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{route('elements.index')}}" role="button"><i class="fas fa-brain"></i> Conocimientos</a>
+                </div>
+
             </div>
         </div>
     </div>

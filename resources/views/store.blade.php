@@ -31,6 +31,8 @@
                             </div>
                           </div>
                         @endfor
+
+
                         
                         
                         @for ($i = 4; $i < 8; $i++)
@@ -51,30 +53,36 @@
                           </div>
                         @endfor
                           
-                      <!-- Random tip item --
-                      <h3>Tips</h3>
-
-                        <div class="col mb-4">
-                          <div class="card text-center" style="margin-left:auto; margin-right:auto; width: 35%;">
+                         <!-- Go back button -->
+                        <div class="card-body d-flex align-items-end">
+                            <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{route('home')}}" role="button"><i class="fas fa-angle-left"></i> Regresar</a>
+                        </div>
+                      <!-- Random tip item -->
+                     
+                        <div class="col mb-4 ">
+                          <div class="card glass text-center" >
                             <img src="..." class="card-img-top" alt="imagen tip">
                             <div class="card-body">
-                              <h5 class="card-title">Tips</h5>
-                              <p class="card-text">Desbloquea un tip aleatorio.</p>
-                              <p>Precio: 100 Chemicoins</p>
-                              <a href="#" class="btn btn-warning">Comprar</a>
+                              <h5 class="card-title">Conocimientos</h5>
+                              <p class="card-text">Desbloquea una curiosidad aleatoria sobre la tabla periodica.</p>
+                              <p>Precio: 250 Chemicoins</p>
+                              <form method="POST" action="{{route('purchaseTest')}}">
+                                @csrf
+                                <input type="hidden" id="price" name="price" value="">
+                                <button type="submit" href="#" onclick="gachaStore();" style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-warning"><i class="fab fa-bitcoin"></i> Comprar</button>
+
+                              </form>
                             </div>
                           </div>
-                        </div>-->
+                        </div>
+                        
 
                       <!--<hr>
 
                        Difficulty items 
                       <h3>Dificultades</h3>-->
                       
-                      <!-- Go back button -->
-                      <div class="card-body">
-                          <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{route('home')}}" role="button"><i class="fas fa-angle-left"></i> Regresar</a>
-                      </div>
+                     
                     </div>
 
                 </div>
