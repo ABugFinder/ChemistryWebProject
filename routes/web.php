@@ -99,3 +99,6 @@ Route::post('/extremeMemorama/records', 'RecordMemoramaController@updateRecords'
 
 // Dashboard tats
 Route::get('/stats', 'DashboardController@index')->name('stats');
+
+//Mis Curiosidades
+Route::get('/misCuriosidades', 'CuriosidadesController@index')->name('misCuriosidades.index');
