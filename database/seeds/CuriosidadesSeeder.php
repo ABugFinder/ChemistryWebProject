@@ -24,7 +24,7 @@ class CuriosidadesSeeder extends Seeder
                             Esto quiere decir que, a presión atmosférica, un litro de Osmio pesa
                             22,6 kilogramos. Entre los más pesados hay 5 elementos que superan los
                             20 kg por litro como el Neptunio, el Platino y el Iridio.',
-            'imagen' => '/public/images/curiosidadesImages/osmio.jpg'
+            'imagen' => '/images/curiosidadesImages/osmio.jpg'
         ]);
 
         //2
@@ -33,7 +33,7 @@ class CuriosidadesSeeder extends Seeder
             'contenido' => 'Sabías que para crear el acero, se requiere una aleación de hierro
                             y carbono en un porcentaje de este último elemento variable entre el 0,08% y el 2%
                             en masa de su composición.',
-            'imagen' => '/public/images/curiosidadesImages/acero.jpg'
+            'imagen' => '/images/curiosidadesImages/acero.jpg'
         ]);
         
         //3
@@ -42,7 +42,7 @@ class CuriosidadesSeeder extends Seeder
             'contenido' => 'Sabías que el rubí es un mineral, que pertenece a la familia del corindón
                             cuya composición está hecha mediante el hierro y el cromo.
                             Si su color es rojo se considera gema, pero si esta es morada se le llama balaje.',
-            'imagen' => '/public/images/curiosidadesImages/rubi.jpg'
+            'imagen' => '/images/curiosidadesImages/rubi.jpg'
         ]);
 
         //4
@@ -51,7 +51,7 @@ class CuriosidadesSeeder extends Seeder
             'contenido' => 'La plata, el cual es un metal noble, se suele encontrar en la naturaleza
                             como un elemento libre, sin embargo el encontrar este metal, implica lo más probable,
                             que en la veta de mineral que encuentres, esté mezclado con cobre, zinc, plomo y oro.',
-            'imagen' => '/public/images/curiosidadesImages/plata.jpg'
+            'imagen' => '/images/curiosidadesImages/plata.jpg'
         ]);
         
         //5
@@ -61,7 +61,7 @@ class CuriosidadesSeeder extends Seeder
                             también es uno de los metales más usados en el mundo en muchos ámbitos, como;
                             En la industria del vidrio y cerámica, en las baterías de laptops, uso medicinal,
                             entre otros.',
-            'imagen' => '/public/images/curiosidadesImages/litio.jpg'
+            'imagen' => '/images/curiosidadesImages/litio.jpg'
         ]);
         
         //6
@@ -72,7 +72,7 @@ class CuriosidadesSeeder extends Seeder
                             conductivo en su estado sólido, que en su estado líquido, por ello este se le considera
                             raro, sin mencionar que siendo sólido, tiende a ser quebradizo como un cristal
                             muy delgado.',
-            'imagen' => '/public/images/curiosidadesImages/antimonio.jpg'
+            'imagen' => '/images/curiosidadesImages/antimonio.jpg'
         ]);
 
         //7
@@ -81,7 +81,7 @@ class CuriosidadesSeeder extends Seeder
             'contenido' => 'Sabías que en la tabla periódica de los elementos, el oro viene representado por las
                             iniciales “Au” que proviene de la palabra en latín Aurum que significa
                             “Amanecer Brillante”',
-            'imagen' => '/public/images/curiosidadesImages/oro.jpg'
+            'imagen' => '/images/curiosidadesImages/oro.jpg'
         ]);
 
         //8
@@ -91,7 +91,7 @@ class CuriosidadesSeeder extends Seeder
                             terrestre, que contiene el 2.83% de sodio en sus formas combinadas. El sodio es, después
                             del cloro, el segundo elemento más abundante en solución en el agua de mar.
             ',
-            'imagen' => '/public/images/curiosidadesImages/sodio.jpg'
+            'imagen' => '/images/curiosidadesImages/sodio.jpg'
         ]);
 
         //9
@@ -99,7 +99,7 @@ class CuriosidadesSeeder extends Seeder
             'nombre' => 'Gas frutal',
             'contenido' => 'El etileno es un gas producido por la fruta al madurar. 
                             Las naranjas son muy sensibles al etileno y se deterioran pronto.',
-            'imagen' => '/public/images/curiosidadesImages/etileno.jpg'
+            'imagen' => '/images/curiosidadesImages/etileno.jpg'
         ]);
 
         //10
@@ -108,7 +108,7 @@ class CuriosidadesSeeder extends Seeder
             'contenido' => 'En la tabla periódica no hay ninguna “J”. La razón de esta pequeña curiosidad es bastante
                             sencilla: el nombre de los elementos químicos proviene del latín, lengua en la que
                             no existía este carácter.',
-            'imagen' => '/public/images/curiosidadesImages/tablaperiodica.jpg'
+            'imagen' => '/images/curiosidadesImages/tablaperiodica.jpg'
         ]);
 
         //11
@@ -118,14 +118,14 @@ class CuriosidadesSeeder extends Seeder
                             todavía son desconocidas, debido a su posición se prevé que sean similares a las de otros metales
                             alcalinos, como el litio, el sodio o el potasio. Es decir, probablemente será muy
                             reactivo con diversas sustancias químicas como el agua o el oxígeno.',
-            'imagen' => '/public/images/curiosidadesImages/unumenium.jpg'
+            'imagen' => '/images/curiosidadesImages/unumenium.jpg'
         ]);
 
         //12
         DB::table('curiosidades')->insert([
             'nombre' => 'El artificial',
             'contenido' => 'El Tecnecio, descubierto en 1937, fue el primer elemento fabricado artificialmente.',
-            'imagen' => '/public/images/curiosidadesImages/tecnecio.jpg'
+            'imagen' => '/images/curiosidadesImages/tecnecio.jpg'
         ]);
 
         //13
@@ -134,7 +134,7 @@ class CuriosidadesSeeder extends Seeder
             'contenido' => 'Sabías que el fósforo, es un mineral esencial en la vida misma y se encuentra prácticamente
                             en todos los seres vivos, en tu cuerpo el  85% del fósforo se localiza en los huesos y dientes,
                             mientras que el 15% restante está distribuido en los tejidos blandos.',
-            'imagen' => '/public/images/curiosidadesImages/fosforo.jpg'
+            'imagen' => '/images/curiosidadesImages/fosforo.jpg'
         ]);
 
         //14
@@ -144,7 +144,7 @@ class CuriosidadesSeeder extends Seeder
                             esto es debido a su densidad natural, sin embargo para que este sea tan duro como
                             el acero, se requiere técnicas de la forma y cantidad de esta. Y aun asi sera mas ligero
                             que cualquier otro metal.',
-            'imagen' => '/public/images/curiosidadesImages/aluminio.jpg'
+            'imagen' => '/images/curiosidadesImages/aluminio.jpg'
         ]);
 
         //15
@@ -155,7 +155,7 @@ class CuriosidadesSeeder extends Seeder
                             El color lila es proporcionado por el potasio (K), el anaranjado es dado por el hierro (Fe),
                             el amarillo por el sodio (Na) , el cobre (Cu): verde intenso, el litio (Li) rojo suave, incluso
                             puede parecer rosado.',
-            'imagen' => '/public/images/curiosidadesImages/cohetes.jpg'
+            'imagen' => '/images/curiosidadesImages/cohetes.jpg'
         ]);
 
         //16
@@ -164,7 +164,7 @@ class CuriosidadesSeeder extends Seeder
             'contenido' => 'El bronce es un metal producto de la aleación (combinación) entre ciertos porcentajes
                             de cobre, estaño u otros metales. La proporción entre los dos componentes principales
                             determinará el color, la rigidez y el uso del producto resultante.',
-            'imagen' => '/public/images/curiosidadesImages/bronce.jpg'
+            'imagen' => '/images/curiosidadesImages/bronce.jpg'
         ]);
 
         //17
@@ -173,7 +173,7 @@ class CuriosidadesSeeder extends Seeder
             'contenido' => 'El titanio es el elemento metálico que posee la mayor proporción de dureza-densidad.
                             Es un metal fuerte, con una baja densidad y alta ductilidad, es considerado un metal 
                             joven ,debido a su fecha de descubrimiento.',
-            'imagen' => '/public/images/curiosidadesImages/titanio.jpg'
+            'imagen' => '/images/curiosidadesImages/titanio.jpg'
         ]);
 
         //18
@@ -184,7 +184,7 @@ class CuriosidadesSeeder extends Seeder
                             La inhalación de fibras de asbesto puede conducir a varias afecciones pulmonares graves, 
                             al respecto las autoridades médicas demostraron que los productos relacionados con el asbesto/amianto 
                             provocan asbestosis y cáncer con una elevada mortalidad desde 1906.',
-            'imagen' => '/public/images/curiosidadesImages/asbestos.jpg'
+            'imagen' => '/images/curiosidadesImages/asbestos.jpg'
         ]);
 
         //19
@@ -194,7 +194,7 @@ class CuriosidadesSeeder extends Seeder
                             oxígeno, carbono, hidrógeno, nitrógeno, calcio y fósforo. Solo alrededor del 0,85% está
                             compuesto por otros cinco elementos: potasio, azufre, sodio, cloro y magnesio. Los 11 son 
                             necesarios para la vida.',
-            'imagen' => '/public/images/curiosidadesImages/cuerpo.jpg'
+            'imagen' => '/images/curiosidadesImages/cuerpo.jpg'
         ]);
 
         //20
@@ -204,7 +204,7 @@ class CuriosidadesSeeder extends Seeder
                             el uso sustantivado de Cyprius. Es, por tanto, un origen ciertamente sutil, puesto que 
                             su símbolo proviene de un lugar, ya que el término cyprium hace referencia Chipre, 
                             cuya isla era famosa en la antigüedad por sus reservas de cobre.',
-            'imagen' => '/public/images/curiosidadesImages/cobre.jpg'
+            'imagen' => '/images/curiosidadesImages/cobre.jpg'
         ]);
     }
 }
