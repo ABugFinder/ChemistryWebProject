@@ -77,7 +77,7 @@ class PurchaseController extends Controller
         $user = Auth::user();
         $curiosidad = Curiosidades::inRandomOrder()->first();
 
-        $user->points -= 200;
+        $user->points -= 250;
         $user->save();
 
         if(MisCuriosidades::all()->where('id_user', '=', $user->id)
