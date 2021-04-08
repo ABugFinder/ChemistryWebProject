@@ -16,7 +16,6 @@
                         @for ($i = 0; $i < 4; $i++)
                           <div class="col mb-4">
                             <div class="card glass text-center">
-                              <img src="..." class="card-img-top" alt="imagen memorama medieval">
                               <div class="card-body">
                               <h5 class="card-title"> {{ $store[$i]['name'] }}</h5>
                                 <p class="card-text">{{ $store[$i]['description'] }}</p>
@@ -32,13 +31,10 @@
                           </div>
                         @endfor
 
-
-                        
                         
                         @for ($i = 4; $i < 8; $i++)
                           <div class="col mb-4">
                             <div class="card glass text-center">
-                              <img src="..." class="card-img-top" alt="imagen memorama medieval">
                               <div class="card-body">
                                 <h5 class="card-title"> {{ $store[$i]['name'] }}</h5>
                                   <p class="card-text">{{ $store[$i]['description'] }}</p>
@@ -61,7 +57,6 @@
                      
                         <div class="col mb-4 ">
                           <div class="card glass text-center" >
-                            <img src="..." class="card-img-top" alt="imagen tip">
                             <div class="card-body">
                               <h5 class="card-title">Conocimientos</h5>
                               <p class="card-text">Desbloquea una curiosidad aleatoria sobre la tabla periodica.</p>

@@ -83,6 +83,11 @@ Route::get('/extremeDuolingo', 'GameController@playExtremeDuolingo')->name('extr
 
 Route::get('/infiniteDuolingo', 'GameController@playInfiniteDuolingo')->name('infiniteDuolingo');
 
+// Tutoriales
+Route::get('/Tetris_comojugar', 'GameController@showTutoTetris')->name('tutoTetris');
+Route::get('/Memorama_comojugar', 'GameController@showTutoMemorama')->name('tutoMemorama');
+Route::get('/Quiz_comojugar', 'GameController@showTutoQuiz')->name('tutoQuiz');
+
 // Points
 Route::post('/getPoints/{id}', 'UserController@update');
 

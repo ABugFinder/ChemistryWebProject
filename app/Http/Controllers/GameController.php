@@ -56,6 +56,20 @@ class GameController extends Controller
         return view('games.gamesMenu');
     }
 
+    // Tutoriales
+
+    public function showTutoTetris(){
+        return view('games.tutoTetris');
+    }
+
+    public function showTutoMemorama(){
+        return view('games.tutoMemorama');
+    }
+
+    public function showTutoQuiz(){
+        return view('games.tutoQuiz');
+    }
+
     //Tetris
     public function showTetrisMenu(){
         

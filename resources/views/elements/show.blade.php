@@ -5,25 +5,25 @@
     <div class="row justify-content-center">
         <div class="">
             <div class="card glass">
-            <div class="card-header text-primary" style="font-size:22px;">
-                
-                <?php
-                    if($element->id == 1){
-                        echo '<a href="118"> Elemento Anterior</a> - Elemento Actual '; 
-                        echo $element->name;
-                        echo ' - <a href="'; echo $element->id+1; echo '"> Siguiente Elemento </a>';
-                    } else if($element->id == 118){
-                        echo ' - <a href="'; echo $element->id-1; echo '"> Elemento Anterior </a> - Elemento Actual ';
-                        echo $element->name;
-                        echo ' - <a href="1"> Siguiente Elemento </a>';
-                    } else {
-                        echo ' - <a href="'; echo $element->id-1; echo '"> Elemento Anterior </a> - Elemento Actual ';
-                        echo $element->name;
-                        echo ' - <a href="'; echo $element->id+1; echo '"> Siguiente Elemento </a>';
-                    }
-                ?> 
+                <div class="card-header text-primary" style="font-size:22px;">
+                    
+                    <?php
+                        if($element->id == 1){
+                            echo '<a href="118"> Elemento Anterior</a> - Elemento Actual '; 
+                            echo $element->name;
+                            echo ' - <a href="'; echo $element->id+1; echo '"> Siguiente Elemento </a>';
+                        } else if($element->id == 118){
+                            echo ' - <a href="'; echo $element->id-1; echo '"> Elemento Anterior </a> - Elemento Actual ';
+                            echo $element->name;
+                            echo ' - <a href="1"> Siguiente Elemento </a>';
+                        } else {
+                            echo ' - <a href="'; echo $element->id-1; echo '"> Elemento Anterior </a> - Elemento Actual ';
+                            echo $element->name;
+                            echo ' - <a href="'; echo $element->id+1; echo '"> Siguiente Elemento </a>';
+                        }
+                    ?> 
 
-            </div>
+                </div>
 
                 <div class="card-body">
                     <table class="table" style="font-size: 16px">

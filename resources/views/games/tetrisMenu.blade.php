@@ -24,7 +24,7 @@
                     </div>
 
                     <div class="card-body" style="margin-left: auto; margin-right: auto;">
-                        <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="#" role="button"><i class="fas fa-chalkboard-teacher"></i> ¿Cómo jugar?</a>
+                        <a style="width: 170px; height: 40px; font-size: 18px;" class="btn btn-outline-primary" href="{{ route('tutoTetris') }}" role="button"><i class="fas fa-chalkboard-teacher"></i> ¿Cómo jugar?</a>
                     </div>
 
                     <div class="card-body">
